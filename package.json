@@ -1,0 +1,22 @@
+{
+  "name": "edukeep-cap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "papaparse": "^5.5.1",
+    "xlsx": "^0.18.5"
+  }
+}

@@ -1,0 +1,220 @@
+.dashboard-row {
+    display: flex;
+    justify-content: space-between; /* Distributes space between boxes */
+    flex-wrap: wrap; /* Allows wrapping to the next line if necessary */
+}
+.dashboard-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 1px; /* Adjusted margin for better spacing */
+    flex: 1; /* Allows boxes to grow equally */
+    min-width: 200px; /* Ensures boxes don't get too small */
+    max-width: 24%; /* Ensures a maximum width for four boxes in a row */
+    text-align: center;
+}
+.box-header h2 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 0px;
+}
+.box-content {
+    font-size: 30px;
+    font-weight: bold;
+    color: #007bff; /* Bootstrap primary color */
+}
+.box-footer {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+.update-time {
+    margin-top: 0;
+    font-weight: bold;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .dashboard-box {
+        max-width: 48%; /* Two boxes per row on medium screens */
+    }
+}
+@media (max-width: 480px) {
+    .dashboard-box {
+        max-width: 100%; /* One box per row on small screens */
+    }
+}
+.sf-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    margin: 5px;
+    background-color: #e8fffe;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    height: 160px;
+    width: 100%;
+    max-width: 250px; /* Ensuring a consistent size */
+}
+.sf-boxes:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.18);
+}
+/* Styling for icons inside the boxes */
+.sf-boxes i {
+    font-size: 32px;
+    color: #007bff;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.sf-boxes:hover i {
+    color: #02e2cf;
+    transform: scale(1.1);
+}
+/* Styling for the buttons */
+.btn-view {
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.btn-view:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Spacing between the button and icon */
+.sf-boxes .mt-3 {
+    margin-top: 10px;
+}
+/* Responsive design */
+@media (max-width: 768px) {
+    .sf-boxes {
+        height: auto;
+        padding: 25px;
+    }
+    .sf-boxes i {
+        font-size: 28px;
+    }
+    .btn-view {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+/* Table Styling */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Ensures table is scrollable on small screens */
+}
+table {
+    width: 100%; /* Ensure table takes full width */
+    table-layout: auto; /* Allow columns to adjust dynamically */
+    border-collapse: collapse; /* Merge cell borders for cleaner look */
+}
+th {
+    background: linear-gradient(to right, #073472, #000e75); /* Gradient header */
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 12px; /* More padding for height */
+    height: 40px;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+}
+/* Table Cells */
+th, td {
+    min-width: 50px;
+    padding: 0!important;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #dee2e6;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 3px!important; /* Adjust row height */
+}
+/* Alternate row colors for better readability */
+tr:nth-child(even) {
+    background-color: #f8f9fa; /* Light gray */
+}
+tr:nth-child(odd) {
+    background-color: #ffffff; /* White */
+}
+/* Hover effect for rows */
+tr:hover {
+    background-color: #aff8ff!important; /* Light blue on hover */
+}
+/* Reduce padding in cells for compact view */
+td {
+    padding: 10px;
+}
+/* Custom Radio Button Styling */
+.custom-radio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    
+}
+/* Centering radio button */
+.radio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: auto;
+}
+/* Custom checkmark */
+.checkmark {
+    position: relative;
+    display: inline-block;
+    height: 14px; /* Smaller size */
+    width: 14px;
+    background-color: #ddd;
+    border-radius: 50%;
+    border: 2px solid #888;
+    transition: all 0.3s ease-in-out;
+}
+/* Checked radio button */
+.custom-radio:checked + .checkmark {
+    background-color: #23ccff;
+    border-color: #235eff;
+}
+/* Add a white dot inside when checked */
+.custom-radio:checked + .checkmark::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+}
+/* Hover effect */
+.radio-container:hover .checkmark {
+    border-color: #23ff39;
+}
+/* Responsive: Make the table scrollable on small screens */
+@media screen and (max-width: 768px) {
+    .table-container {
+        overflow-x: auto;
+    }
+    table {
+        width: 100%;
+    }
+    th, td {
+        padding: 6px;
+        font-size: 11px; /* Smaller font size for mobile */
+    }
+}

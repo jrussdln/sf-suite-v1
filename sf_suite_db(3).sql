@@ -1,0 +1,3081 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jul 07, 2025 at 04:07 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `sf_suite_db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `anc_ass_list_tbl`
+--
+
+CREATE TABLE `anc_ass_list_tbl` (
+  `anc_ass_list_id` int(11) NOT NULL,
+  `anc_ass_list` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `anc_ass_list_tbl`
+--
+
+INSERT INTO `anc_ass_list_tbl` (`anc_ass_list_id`, `anc_ass_list`, `created_at`) VALUES
+(3, 'XCDSD', '2025-01-25 14:55:54'),
+(4, 'ENGLISH COORDINATOR', '2025-01-25 15:10:23'),
+(5, 'SCHOOL PLANNING OFFICER', '2025-01-25 15:10:23'),
+(6, 'REMEDIAL / ENHANCEMENT CLASSES COORDINATOR', '2025-01-25 15:10:23'),
+(7, 'MATHEMATICS COORDINATOR', '2025-01-25 15:10:23'),
+(8, 'SBM KEY PERSON', '2025-01-25 15:10:23'),
+(10, 'LR COORDINATOR', '2025-01-25 15:10:23'),
+(11, 'SCHOOL LIBRARIAN', '2025-01-25 15:10:23'),
+(12, 'SCHOOL INFORMATION OFFICER', '2025-01-25 15:10:23'),
+(13, '4PS COORDINATOR', '2025-01-25 15:10:23'),
+(14, 'READING COORDINATOR', '2025-01-25 15:10:23'),
+(18, 'GAD FOCAL PERSON', '2025-01-25 15:10:23'),
+(19, 'SCHOOL PAPER ADVISER', '2025-01-25 15:10:23'),
+(21, 'SCHOOL TESTING COORDINATOR', '2025-01-25 15:10:23'),
+(22, 'GRADE 10 LEVEL COORDINATOR', '2025-01-25 15:10:23'),
+(23, 'DESIGNATED AO', '2025-01-25 15:10:23'),
+(24, 'SCHOOL RECORDS CUSTODIAN', '2025-01-25 15:10:23'),
+(25, 'JHS LIS & EBEIS COORDINATOR', '2025-01-25 15:10:23'),
+(26, 'SCHOOL ICT COORDINATOR', '2025-01-25 15:10:23'),
+(29, 'ASP COORDINATOR', '2025-01-25 15:10:23'),
+(32, 'ASSISTANT ASP COORDINATOR', '2025-01-25 15:10:23'),
+(33, 'GRADE 7 LEVEL COORDINATOR', '2025-01-25 15:10:23'),
+(34, 'GULAYAN SA PAARALAN COORDINATOR', '2025-01-25 15:10:23'),
+(35, 'SDRRM COORDINATOR', '2025-01-25 15:10:23'),
+(36, 'BSP COORDINATOR', '2025-01-25 15:10:23'),
+(37, 'SCHOOL GROUND IMPROVEMENT CHAIR', '2025-01-25 15:10:23'),
+(39, 'SSP COORDINATOR', '2025-01-25 15:10:23'),
+(40, 'SCIENCE COORDINATOR', '2025-01-25 15:10:23'),
+(41, 'INSPECTORATE TEAM MEMBER', '2025-01-25 15:10:23'),
+(43, 'GRADE 9 LEVEL COORDINATOR', '2025-01-25 15:10:23'),
+(45, 'GRADE 8 LEVEL COORDINATOR', '2025-01-25 15:10:23'),
+(47, 'FILIPINO COORDINATOR', '2025-01-25 15:10:23'),
+(48, 'LAIASON OFFICER', '2025-01-25 15:10:23'),
+(49, 'ESP COORDINATOR', '2025-01-25 15:10:23'),
+(52, 'FILIPINO READING COORDINATOR', '2025-01-25 15:10:23'),
+(53, 'SUPPLY OFFICER', '2025-01-25 15:10:23'),
+(54, 'HEAD INSPECTORATE TEAM', '2025-01-25 15:10:23'),
+(55, 'AP COORDINATOR', '2025-01-25 15:10:23'),
+(56, 'SSLG ADVISER', '2025-01-25 15:10:23'),
+(57, 'CANTEEN MANAGER', '2025-01-25 15:10:23'),
+(58, 'TLE COORDINATOR', '2025-01-25 15:10:23'),
+(59, 'GSP COORDINATOR', '2025-01-25 15:10:23'),
+(60, 'DESIGNATED SCHOOL GUIDANCE COUNSELOR', '2025-01-25 15:10:23'),
+(61, 'SCHOOL PROPERTY CUSTODIAN', '2025-01-25 15:10:23'),
+(62, 'PHYSICAL FACILITIES COORDINATOR', '2025-01-25 15:10:23'),
+(63, 'DESIGNATED SCHOOL NURSE', '2025-01-25 15:10:23'),
+(65, 'CULTURE AND ARTS COORDINATOR', '2025-01-25 15:10:23'),
+(66, 'MAPEH COORDINATOR', '2025-01-25 15:10:23'),
+(67, 'SPORTS COORDINATOR', '2025-01-25 15:10:23'),
+(68, 'BE COORDINATOR', '2025-01-25 15:10:23'),
+(70, 'WINS COORDINATOR', '2025-01-25 15:10:23'),
+(71, 'YES - O COORDINATOR', '2025-01-25 15:10:23'),
+(84, '8-E', '2025-04-07 15:57:37'),
+(85, '7-STE', '2025-04-08 02:10:12'),
+(86, '7-B', '2025-04-08 02:10:23'),
+(88, '7-C', '2025-04-08 02:10:43'),
+(89, '7-D', '2025-04-08 02:10:49'),
+(91, '8-B', '2025-04-08 02:11:04'),
+(92, '8-C', '2025-04-08 02:11:09'),
+(93, '8-D', '2025-04-08 02:11:15'),
+(95, '9-B', '2025-04-08 02:11:28'),
+(96, '9-STE', '2025-04-08 02:11:41'),
+(97, '8-STE', '2025-04-08 02:11:58'),
+(98, '9-C', '2025-04-08 02:12:19'),
+(99, '9-D', '2025-04-08 02:12:24'),
+(100, '9-E', '2025-04-08 02:12:28'),
+(101, '10-D', '2025-04-08 02:12:40'),
+(102, '10-C', '2025-04-08 02:12:47'),
+(103, '10-E', '2025-04-08 02:12:51'),
+(104, '10-B', '2025-04-08 02:13:14'),
+(105, '10-STE', '2025-04-08 02:13:20'),
+(106, 'GRADE 8 CHIEF ADVISER', '2025-04-08 02:36:04');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `anc_ass_tbl`
+--
+
+CREATE TABLE `anc_ass_tbl` (
+  `anc_ass_id` int(11) NOT NULL,
+  `anc_ass_desc` varchar(50) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `PersonnelId` int(11) DEFAULT NULL,
+  `anc_ass_term` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `anc_ass_tbl`
+--
+
+INSERT INTO `anc_ass_tbl` (`anc_ass_id`, `anc_ass_desc`, `created_at`, `updated_at`, `PersonnelId`, `anc_ass_term`) VALUES
+(92, 'ICT COORDINATOR', '2025-01-26 01:27:54', '2025-01-26 03:04:43', 32, '2025-2026'),
+(98, 'GRADE 7 LEVEL COORDINATOR', '2025-01-27 01:25:16', '2025-01-27 01:25:16', 32, '2025-2026'),
+(105, 'GRADE 8', '2025-02-17 05:05:56', '2025-02-17 05:05:56', 32, '2024-2025'),
+(106, 'GRADE 7', '2025-02-17 10:03:24', '2025-02-17 10:03:24', 17, '2024-2025'),
+(108, 'ENGLISH COORDINATOR', '2025-04-03 11:39:18', '2025-04-03 11:39:18', 32, '2024-2025'),
+(109, '7-B', '2025-04-05 11:33:36', '2025-04-05 11:33:36', 21, '2024-2025'),
+(110, 'ENGLISH COORDINATOR', '2025-04-07 15:24:18', '2025-04-07 15:24:18', 152, '2024-2025'),
+(111, 'SCHOOL PLANNING OFFICER', '2025-04-07 15:24:32', '2025-04-07 15:24:32', 152, '2024-2025'),
+(112, 'REMEDIAL / ENHANCEMENT CLASSES COORDINATOR', '2025-04-07 15:24:39', '2025-04-07 15:24:39', 152, '2024-2025'),
+(114, 'SBM KEY PERSON', '2025-04-07 15:25:10', '2025-04-07 15:25:10', 152, '2024-2025'),
+(115, 'MATHEMATICS COORDINATOR', '2025-04-07 15:41:26', '2025-04-07 15:41:26', 153, '2024-2025'),
+(116, 'SBM KEY PERSON', '2025-04-07 15:41:32', '2025-04-07 15:41:32', 153, '2024-2025'),
+(117, '8-E', '2025-04-07 15:58:13', '2025-04-07 15:58:13', 155, '2024-2025'),
+(118, 'SCHOOL LIBRARIAN', '2025-04-07 16:01:36', '2025-04-07 16:01:36', 156, '2024-2025'),
+(119, 'LR COORDINATOR', '2025-04-07 16:01:47', '2025-04-07 16:01:47', 156, '2024-2025'),
+(120, 'SCHOOL INFORMATION OFFICER', '2025-04-07 16:01:56', '2025-04-07 16:01:56', 156, '2024-2025'),
+(121, '4PS COORDINATOR', '2025-04-08 02:09:36', '2025-04-08 02:09:36', 157, '2024-2025'),
+(122, 'READING COORDINATOR', '2025-04-08 02:09:43', '2025-04-08 02:09:43', 157, '2024-2025'),
+(123, '7-D', '2025-04-08 02:13:47', '2025-04-08 02:13:47', 157, '2024-2025'),
+(125, '9-E', '2025-04-08 02:27:03', '2025-04-08 02:27:03', 158, '2024-2025'),
+(126, 'DESIGNATED AO', '2025-04-08 02:29:29', '2025-04-08 02:29:29', 161, '2024-2025'),
+(127, 'SCHOOL RECORDS CUSTODIAN', '2025-04-08 02:30:12', '2025-04-08 02:30:12', 161, '2024-2025'),
+(128, 'JHS LIS & EBEIS COORDINATOR', '2025-04-08 02:30:56', '2025-04-08 02:30:56', 161, '2024-2025'),
+(129, 'SCHOOL ICT COORDINATOR', '2025-04-08 02:31:07', '2025-04-08 02:31:07', 161, '2024-2025'),
+(130, 'GAD FOCAL PERSON', '2025-04-08 02:32:04', '2025-04-08 02:32:04', 159, '2024-2025'),
+(131, 'SCHOOL PAPER ADVISER', '2025-04-08 02:32:11', '2025-04-08 02:32:11', 159, '2024-2025'),
+(132, 'SCHOOL TESTING COORDINATOR', '2025-04-08 02:33:10', '2025-04-08 02:33:10', 160, '2024-2025'),
+(133, 'GRADE 10 LEVEL COORDINATOR', '2025-04-08 02:33:42', '2025-04-08 02:33:42', 160, '2024-2025'),
+(134, '8-B', '2025-04-08 02:34:31', '2025-04-08 02:34:31', 162, '2024-2025'),
+(135, 'ASP COORDINATOR', '2025-04-08 02:35:14', '2025-04-08 02:35:14', 162, '2024-2025'),
+(136, 'GRADE 8 CHIEF ADVISER', '2025-04-08 02:36:29', '2025-04-08 02:36:29', 162, '2024-2025'),
+(137, '8-D', '2025-04-08 02:37:21', '2025-04-08 02:37:21', 163, '2024-2025'),
+(138, '7-B', '2025-04-08 02:39:04', '2025-04-08 02:39:04', 164, '2024-2025'),
+(139, 'ASSISTANT ASP COORDINATOR', '2025-04-08 02:39:17', '2025-04-08 02:39:17', 164, '2024-2025'),
+(140, 'GRADE 7 LEVEL COORDINATOR', '2025-04-08 02:39:37', '2025-04-08 02:39:37', 164, '2024-2025'),
+(141, 'GULAYAN SA PAARALAN COORDINATOR', '2025-04-08 02:40:30', '2025-04-08 02:40:30', 165, '2024-2025'),
+(142, 'SDRRM COORDINATOR', '2025-04-08 02:41:45', '2025-04-08 02:41:45', 165, '2024-2025'),
+(143, 'BSP COORDINATOR', '2025-04-08 02:41:57', '2025-04-08 02:41:57', 165, '2024-2025'),
+(144, 'SCHOOL GROUND IMPROVEMENT CHAIR', '2025-04-08 02:42:12', '2025-04-08 02:42:12', 165, '2024-2025'),
+(145, '10-STE', '2025-04-08 02:42:55', '2025-04-08 02:42:55', 166, '2024-2025'),
+(146, 'SSP COORDINATOR', '2025-04-08 02:43:12', '2025-04-08 02:43:12', 166, '2024-2025'),
+(147, 'SSP COORDINATOR', '2025-04-08 02:43:35', '2025-04-08 02:43:35', 166, '2024-2025'),
+(148, 'SCIENCE COORDINATOR', '2025-04-08 02:43:54', '2025-04-08 02:43:54', 166, '2024-2025'),
+(149, 'INSPECTORATE TEAM MEMBER', '2025-04-08 02:44:05', '2025-04-08 02:44:05', 166, '2024-2025'),
+(150, '9-STE', '2025-04-08 02:44:42', '2025-04-08 02:44:42', 167, '2024-2025'),
+(151, 'GRADE 9 LEVEL COORDINATOR', '2025-04-08 02:44:51', '2025-04-08 02:44:51', 167, '2024-2025'),
+(152, '8-STE', '2025-04-08 02:46:11', '2025-04-08 02:46:11', 168, '2024-2025'),
+(153, 'GRADE 8 LEVEL COORDINATOR', '2025-04-08 02:46:28', '2025-04-08 02:46:28', 168, '2024-2025'),
+(154, '7-C', '2025-04-08 02:47:19', '2025-04-08 02:47:19', 169, '2024-2025'),
+(155, 'FILIPINO COORDINATOR', '2025-04-08 02:47:41', '2025-04-08 02:47:41', 169, '2024-2025'),
+(156, 'LAIASON OFFICER', '2025-04-08 02:48:21', '2025-04-08 02:48:21', 170, '2024-2025'),
+(157, 'FILIPINO COORDINATOR', '2025-04-08 02:48:38', '2025-04-08 02:48:38', 170, '2024-2025'),
+(158, 'ESP COORDINATOR', '2025-04-08 02:48:53', '2025-04-08 02:48:53', 170, '2024-2025'),
+(159, '10-D', '2025-04-08 02:49:21', '2025-04-08 02:49:21', 171, '2024-2025'),
+(160, '9-C', '2025-04-08 02:49:50', '2025-04-08 02:49:50', 172, '2024-2025'),
+(161, 'FILIPINO READING COORDINATOR', '2025-04-08 02:50:00', '2025-04-08 02:50:00', 172, '2024-2025'),
+(162, 'SUPPLY OFFICER', '2025-04-08 02:51:36', '2025-04-08 02:51:36', 173, '2024-2025'),
+(163, 'HEAD INSPECTORATE TEAM', '2025-04-08 02:52:12', '2025-04-08 02:52:12', 173, '2024-2025'),
+(164, 'AP COORDINATOR', '2025-04-08 02:52:38', '2025-04-08 02:52:38', 173, '2024-2025'),
+(165, 'SSLG ADVISER', '2025-04-08 02:52:52', '2025-04-08 02:52:52', 173, '2024-2025'),
+(166, 'CANTEEN MANAGER', '2025-04-08 02:53:41', '2025-04-08 02:53:41', 174, '2024-2025'),
+(168, 'TLE COORDINATOR', '2025-04-08 02:55:45', '2025-04-08 02:55:45', 175, '2024-2025'),
+(169, 'GULAYAN SA PAARALAN COORDINATOR', '2025-04-08 02:55:57', '2025-04-08 02:55:57', 175, '2024-2025'),
+(170, 'GSP COORDINATOR', '2025-04-08 02:56:15', '2025-04-08 02:56:15', 175, '2024-2025'),
+(171, 'DESIGNATED SCHOOL GUIDANCE COUNSELOR', '2025-04-08 02:56:26', '2025-04-08 02:56:26', 175, '2024-2025'),
+(172, 'SCHOOL PROPERTY CUSTODIAN', '2025-04-08 02:57:20', '2025-04-08 02:57:20', 176, '2024-2025'),
+(173, 'PHYSICAL FACILITIES COORDINATOR', '2025-04-08 02:58:01', '2025-04-08 02:58:01', 177, '2024-2025'),
+(174, 'DESIGNATED SCHOOL NURSE', '2025-04-08 02:58:30', '2025-04-08 02:58:30', 177, '2024-2025');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `announcement_tbl`
+--
+
+CREATE TABLE `announcement_tbl` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `message` text NOT NULL,
+  `recipient` varchar(20) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `announcement_tbl`
+--
+
+INSERT INTO `announcement_tbl` (`id`, `title`, `subject`, `message`, `recipient`, `created_at`) VALUES
+(2, 'Reminder', 'test', 'test', 'teachers', '2025-06-04 09:29:31'),
+(3, 'Reminder', 'test2', 'test2', 'all', '2025-06-04 09:41:49'),
+(4, 'Alumni Notice', 'test1', 'test1', '2024-2025', '2025-06-04 09:46:21'),
+(5, 'Alumni Notice', 'test2', 'test2', '2024-2025', '2025-06-04 10:07:20'),
+(6, 'Alumni Notice', 'test3', 'test3', '2024-2025', '2025-06-04 10:09:22'),
+(19, 'Alumni Notice', 'Alumni Notice', '', '2024-2025', '2025-06-05 11:27:04'),
+(20, 'Reminder', 'GENERAL MEETING', 'TBA', 'students', '2025-06-05 11:33:26');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `attendance_tbl`
+--
+
+CREATE TABLE `attendance_tbl` (
+  `attendance_id` int(11) NOT NULL,
+  `section_id` int(11) NOT NULL,
+  `lrn` varchar(255) DEFAULT NULL,
+  `section` varchar(50) NOT NULL,
+  `Day1` varchar(7) DEFAULT NULL,
+  `Day2` varchar(7) DEFAULT NULL,
+  `Day3` varchar(7) DEFAULT NULL,
+  `Day4` varchar(7) DEFAULT NULL,
+  `Day5` varchar(7) DEFAULT NULL,
+  `Day6` varchar(7) DEFAULT NULL,
+  `Day7` varchar(7) DEFAULT NULL,
+  `Day8` varchar(7) DEFAULT NULL,
+  `Day9` varchar(7) DEFAULT NULL,
+  `Day10` varchar(7) DEFAULT NULL,
+  `Day11` varchar(7) DEFAULT NULL,
+  `Day12` varchar(7) DEFAULT NULL,
+  `Day13` varchar(7) DEFAULT NULL,
+  `Day14` varchar(7) DEFAULT NULL,
+  `Day15` varchar(7) DEFAULT NULL,
+  `Day16` varchar(7) DEFAULT NULL,
+  `Day17` varchar(7) DEFAULT NULL,
+  `Day18` varchar(7) DEFAULT NULL,
+  `Day19` varchar(7) DEFAULT NULL,
+  `Day20` varchar(7) DEFAULT NULL,
+  `Day21` varchar(7) DEFAULT NULL,
+  `Day22` varchar(7) DEFAULT NULL,
+  `Day23` varchar(7) DEFAULT NULL,
+  `Day24` varchar(7) DEFAULT NULL,
+  `Day25` varchar(7) DEFAULT NULL,
+  `Day26` varchar(7) DEFAULT NULL,
+  `Day27` varchar(7) DEFAULT NULL,
+  `Day28` varchar(7) DEFAULT NULL,
+  `Day29` varchar(7) DEFAULT NULL,
+  `Day30` varchar(7) DEFAULT NULL,
+  `Day31` varchar(7) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `attendance_term` varchar(50) DEFAULT NULL,
+  `attendance_remarks` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `choices_tracer_tbl`
+--
+
+CREATE TABLE `choices_tracer_tbl` (
+  `choices_id` int(11) NOT NULL,
+  `choices_content` text NOT NULL,
+  `question_id` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `choices_tracer_tbl`
+--
+
+INSERT INTO `choices_tracer_tbl` (`choices_id`, `choices_content`, `question_id`) VALUES
+(55, 'Yes', 45),
+(56, 'Not yet', 45),
+(57, 'Widowed', 45),
+(54, 'Education', 5),
+(53, 'Healthcare', 5),
+(52, 'Information Technology', 5),
+(51, 'Direct Application', 4),
+(50, 'Networking', 4),
+(49, 'Online Job Portals', 4),
+(48, 'Somewhat', 3),
+(47, 'No', 3),
+(46, 'Yes', 3),
+(45, 'Postgraduate Degree', 2),
+(44, 'Bachelor\'s Degree', 2),
+(43, 'High School Diploma', 2),
+(42, 'Unemployed', 1),
+(41, 'Employed part-time', 1),
+(40, 'Employed full-time', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `control_tbl`
+--
+
+CREATE TABLE `control_tbl` (
+  `c_id` int(11) NOT NULL,
+  `c_desc` int(10) NOT NULL,
+  `c_status` tinyint(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `control_tbl`
+--
+
+INSERT INTO `control_tbl` (`c_id`, `c_desc`, `c_status`) VALUES
+(1, 1, 0),
+(2, 11, 1),
+(3, 12, 1),
+(4, 13, 1),
+(5, 14, 1),
+(6, 21, 0),
+(7, 22, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dble_holidays_tbl`
+--
+
+CREATE TABLE `dble_holidays_tbl` (
+  `dble_id` int(11) NOT NULL,
+  `holiday_id` int(10) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `export_record_tbl`
+--
+
+CREATE TABLE `export_record_tbl` (
+  `er_id` int(11) NOT NULL,
+  `er_desc` varchar(255) NOT NULL,
+  `status` varchar(50) NOT NULL,
+  `exported_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `export_record_tbl`
+--
+
+INSERT INTO `export_record_tbl` (`er_id`, `er_desc`, `status`, `exported_at`) VALUES
+(1, 'SF-SUITE_SF2_2025-06-09_19-25-49.xlsx', 'Completed', '2025-06-09 17:25:50'),
+(2, 'SF-SUITE_SF9JHS_2025-06-09_19-31-24.xlsx', 'Completed', '2025-06-09 17:31:24'),
+(3, 'SF-SUITE_SF3_2025-06-12_05-13-38.xlsx', 'Completed', '2025-06-12 03:13:41'),
+(4, 'SF-SUITE_SF10JHS_2025-06-14_14-09-59.xlsx', 'Completed', '2025-06-14 12:10:01'),
+(5, 'SF-SUITE_SF10JHS_2025-06-14_14-12-10.xlsx', 'Completed', '2025-06-14 12:12:10'),
+(6, 'SF-SUITE_SF10JHS_2025-06-14_14-32-26.xlsx', 'Completed', '2025-06-14 12:32:26'),
+(7, 'SF-SUITE_SF10JHS_OMAñA RENZO OPREDO_2025-06-14_14-38-06.xlsx', 'Completed', '2025-06-14 12:38:06'),
+(8, 'SF-SUITE_SF9JHS_OMAñA,RENZO, OPREDO_2025-06-14_14-55-36.xlsx', 'Completed', '2025-06-14 12:55:36'),
+(9, 'SF-SUITE_SF1_8-D-2025-20262025-06-14_15-04-16.xlsx', 'Completed', '2025-06-14 13:04:17');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `grade_tbl`
+--
+
+CREATE TABLE `grade_tbl` (
+  `grade_id` int(11) NOT NULL,
+  `lrn` varchar(20) NOT NULL,
+  `subject_id` int(11) NOT NULL,
+  `section_id` int(11) NOT NULL,
+  `grade` varchar(15) DEFAULT NULL,
+  `grade_trans` varchar(15) DEFAULT NULL,
+  `grade_quarter` varchar(20) DEFAULT NULL,
+  `grade_term` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `health_nutrition_tbl`
+--
+
+CREATE TABLE `health_nutrition_tbl` (
+  `health_nutrition_id` int(11) NOT NULL,
+  `section_id` int(11) DEFAULT NULL,
+  `lrn` varchar(50) DEFAULT NULL,
+  `section` varchar(255) DEFAULT NULL,
+  `birthdate` varchar(20) DEFAULT NULL,
+  `age` varchar(11) DEFAULT NULL,
+  `weight` varchar(10) DEFAULT NULL,
+  `height` varchar(10) DEFAULT NULL,
+  `height_squared` varchar(10) DEFAULT NULL,
+  `nutritional_status` varchar(20) DEFAULT NULL,
+  `height_for_age` varchar(20) DEFAULT NULL,
+  `remarks` varchar(50) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `hnr_term` varchar(255) DEFAULT NULL,
+  `bmi` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `holidays_tbl`
+--
+
+CREATE TABLE `holidays_tbl` (
+  `holiday_id` int(11) NOT NULL,
+  `holiday_name` varchar(100) NOT NULL,
+  `holiday_date` varchar(20) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `holidays_tbl`
+--
+
+INSERT INTO `holidays_tbl` (`holiday_id`, `holiday_name`, `holiday_date`, `created_at`, `updated_at`) VALUES
+(42, '5656', NULL, '2025-04-02 04:05:05', '2025-04-02 04:05:05'),
+(43, 'rtrtrt', NULL, '2025-04-02 04:05:58', '2025-04-02 04:05:58'),
+(77, 'df', '2025-06-10', '2025-06-10 04:15:58', '2025-06-10 04:16:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `learning_material_tbl`
+--
+
+CREATE TABLE `learning_material_tbl` (
+  `learning_material_id` int(11) NOT NULL,
+  `section_id` int(11) NOT NULL,
+  `lrn` varchar(50) NOT NULL,
+  `section` varchar(50) NOT NULL,
+  `lm_term` varchar(20) DEFAULT NULL,
+  `Desc1` varchar(255) DEFAULT NULL,
+  `Status1` varchar(50) DEFAULT NULL,
+  `Returned1` varchar(20) DEFAULT NULL,
+  `Desc2` varchar(255) DEFAULT NULL,
+  `Status2` varchar(50) DEFAULT NULL,
+  `Returned2` varchar(20) DEFAULT NULL,
+  `Desc3` varchar(255) DEFAULT NULL,
+  `Status3` varchar(50) DEFAULT NULL,
+  `Returned3` varchar(20) DEFAULT NULL,
+  `Desc4` varchar(255) DEFAULT NULL,
+  `Status4` varchar(50) DEFAULT NULL,
+  `Returned4` varchar(20) DEFAULT NULL,
+  `Desc5` varchar(255) DEFAULT NULL,
+  `Status5` varchar(50) DEFAULT NULL,
+  `Returned5` varchar(20) DEFAULT NULL,
+  `Desc6` varchar(255) DEFAULT NULL,
+  `Status6` varchar(50) DEFAULT NULL,
+  `Returned6` varchar(20) DEFAULT NULL,
+  `Desc7` varchar(255) DEFAULT NULL,
+  `Status7` varchar(50) DEFAULT NULL,
+  `Returned7` varchar(20) DEFAULT NULL,
+  `Desc8` varchar(255) DEFAULT NULL,
+  `Status8` varchar(50) DEFAULT NULL,
+  `Returned8` varchar(20) DEFAULT NULL,
+  `Desc9` varchar(255) DEFAULT NULL,
+  `Status9` varchar(50) DEFAULT NULL,
+  `Returned9` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `learning_material_tbl`
+--
+
+INSERT INTO `learning_material_tbl` (`learning_material_id`, `section_id`, `lrn`, `section`, `lm_term`, `Desc1`, `Status1`, `Returned1`, `Desc2`, `Status2`, `Returned2`, `Desc3`, `Status3`, `Returned3`, `Desc4`, `Status4`, `Returned4`, `Desc5`, `Status5`, `Returned5`, `Desc6`, `Status6`, `Returned6`, `Desc7`, `Status7`, `Returned7`, `Desc8`, `Status8`, `Returned8`, `Desc9`, `Status9`, `Returned9`) VALUES
+(1, 1, '110525150042', '8-B', '2024-2025', NULL, NULL, NULL, 'we', '2025-06-12 04:21:19', '2025-06-12 04:21:11', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(2, 1, '111575160067', '8-B', '2024-2025', NULL, NULL, NULL, 'we', '2025-06-12 04:21:19', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(3, 1, '132067160002', '8-B', '2024-2025', NULL, NULL, NULL, 'fg', '2025-06-12 11:17:22', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(4, 1, '110525160002', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(5, 1, '111555140014', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(6, 1, '111578160024', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(7, 1, '111555160005', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(8, 1, '111578160002', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(9, 1, '111575160059', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(10, 1, '110524160010', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(11, 1, '111574160011', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(12, 1, '112185160005', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(13, 1, '111575160063', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(14, 1, '111555160027', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(15, 1, '136885160642', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(16, 1, '111575160014', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(17, 1, '111575160027', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(18, 1, '153507160036', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(19, 1, '111575160005', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(20, 1, '111575160013', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(21, 1, '107514160019', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(22, 1, '111575160025', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(23, 1, '111575160078', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(24, 1, '111575160082', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(25, 1, '111575160016', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(26, 1, '111570160092', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(27, 1, '111575160089', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(28, 1, '429511150204', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(29, 1, '111575160024', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(30, 1, '111555160013', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(31, 1, '110516160016', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(32, 1, '111575160009', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(33, 1, '111575160008', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(34, 1, '111578160025', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(35, 1, '111575160084', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(36, 1, '111578160014', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(37, 1, '110524160024', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(38, 1, '110512160003', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(39, 1, '111544160034', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(40, 1, '110505160018', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(41, 1, '129648140079', '8-B', '2024-2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `plantilla_pos_list_tbl`
+--
+
+CREATE TABLE `plantilla_pos_list_tbl` (
+  `ppl_id` int(11) NOT NULL,
+  `ppl_desc` varchar(50) NOT NULL,
+  `ppl_rank` int(50) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `ppl_code` varchar(20) DEFAULT NULL,
+  `ppl_category` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `plantilla_pos_list_tbl`
+--
+
+INSERT INTO `plantilla_pos_list_tbl` (`ppl_id`, `ppl_desc`, `ppl_rank`, `created_at`, `ppl_code`, `ppl_category`) VALUES
+(1, 'SCHOOL PRINCIPAL II', 1, '2025-02-09 16:33:33', 'OSEC - DECSB - SP2	', 'A'),
+(2, 'TEACHER III', 4, '2025-02-09 17:16:38', 'OSEC - DECSB - TCH3	', 'A'),
+(3, 'TEACHER I', 6, '2025-02-09 19:30:27', 'OSEC - DECSB - TCH1	', 'A'),
+(5, 'MASTER TEACHER I', 2, '2025-04-08 01:07:17', 'OSEC - DECSB - MTCHR', 'A'),
+(6, 'HEAD TEACHER II', 3, '2025-04-08 01:08:16', 'OSEC - DECSB - HTEAC', 'A'),
+(7, 'TEACHER II', 5, '2025-04-08 01:10:38', 'OSEC - DECSB - TCH2	', 'A'),
+(8, 'ADMIN ASSISTANT III', 1, '2025-04-08 01:13:08', 'OSEC - DECSB - ADAS3', 'B'),
+(9, 'ADMIN ASSISTANT II', 2, '2025-04-08 01:13:31', 'OSEC - DECSB - ADAS2', 'B'),
+(10, 'ADMIN I', 3, '2025-04-08 01:15:34', 'OSEC - DECSB - ADA1	', 'B'),
+(11, 'GUARD', 1, '2025-04-08 01:16:27', 'GUARD		', 'C');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `plantilla_pos_tbl`
+--
+
+CREATE TABLE `plantilla_pos_tbl` (
+  `pp_id` int(10) NOT NULL,
+  `pp_desc` varchar(50) NOT NULL,
+  `PersonnelId` int(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `plantilla_pos_tbl`
+--
+
+INSERT INTO `plantilla_pos_tbl` (`pp_id`, `pp_desc`, `PersonnelId`) VALUES
+(16, 'SCHOOL PRINCIPAL II', 21),
+(17, 'TEACHER III', 32),
+(18, 'SCHOOL PRINCIPAL II', 151),
+(19, 'MASTER TEACHER I', 152),
+(20, 'MASTER TEACHER I', 153),
+(21, 'HEAD TEACHER II', 154),
+(22, 'TEACHER III', 155),
+(23, 'TEACHER III', 156),
+(24, 'TEACHER III', 0),
+(25, 'TEACHER III', 157),
+(26, 'TEACHER III', 159),
+(27, 'TEACHER III', 161),
+(28, 'TEACHER III', 160),
+(29, 'TEACHER III', 162),
+(30, 'TEACHER III', 163),
+(31, 'TEACHER III', 164),
+(32, 'TEACHER III', 165),
+(33, 'TEACHER III', 166),
+(34, 'TEACHER III', 167),
+(35, 'TEACHER III', 168),
+(36, 'TEACHER III', 169),
+(37, 'TEACHER III', 170),
+(38, 'TEACHER III', 171),
+(39, 'TEACHER III', 172),
+(40, 'TEACHER III', 173),
+(41, 'TEACHER III', 174),
+(42, 'TEACHER III', 175),
+(43, 'TEACHER III', 176),
+(44, 'TEACHER III', 177),
+(45, 'TEACHER III', 178);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `prom_achievement_tbl`
+--
+
+CREATE TABLE `prom_achievement_tbl` (
+  `pa_id` int(10) NOT NULL,
+  `lrn` varchar(20) DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `grade_level` varchar(20) DEFAULT NULL,
+  `section` varchar(50) DEFAULT NULL,
+  `school_year` varchar(20) DEFAULT NULL,
+  `sex` varchar(10) DEFAULT NULL,
+  `general_average` varchar(10) DEFAULT NULL,
+  `action_taken` varchar(10) DEFAULT NULL,
+  `cecs` varchar(100) DEFAULT NULL,
+  `ecs` varchar(100) DEFAULT NULL,
+  `remarks` varchar(30) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `prom_achievement_tbl`
+--
+
+INSERT INTO `prom_achievement_tbl` (`pa_id`, `lrn`, `name`, `grade_level`, `section`, `school_year`, `sex`, `general_average`, `action_taken`, `cecs`, `ecs`, `remarks`) VALUES
+(1, '111575150058', 'ADARLO,JOHN RENZ, GAMBOA', '9', '9-B', '2025-2026', 'M', NULL, 'Retained', NULL, NULL, NULL),
+(2, '111575150033', 'ANDRADE,RINZO JHON, GUYO', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(3, '111575150025', 'ARCAYOS,ROMEL, ABIUL', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(4, '111555150023', 'ASI,BENNETH HARVEY, ARELLANO', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(5, '111575150015', 'BONDOC,JIM JAKE, GAMIER', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(6, '110524150010', 'DE VERA,JOHN RAFAEL, BASCOGIN', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(7, '111575150060', 'FABILLORIN,MARK ANGELO, MENDOZA', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(8, '110524140053', 'GUTIERREZ,JOHN SAIRON, REANO', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(9, '110635150026', 'HERNANDEZ,TJ, DIMAPELES', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(10, '111575150063', 'ILAGAN,CEDRICK, MARAMOT', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(11, '111575150095', 'ISIANG,CHARLES JEROME, DIPASUPIL', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(12, '111575150067', 'MARQUEZ,JOHN MARK, ESTEVES', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(13, '110512150018', 'MELEGRITO,VINCENT, NOCHE', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(14, '111578130025', 'MERCIALES,JENDEL MARK, DOMINGO', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(15, '110512150002', 'NOCHE,MARK ALVIN, ALDOVINO', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(16, '111575150021', 'OCAMPO,ADRIAN, EVANGELISTA', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(17, '110524150017', 'OLLA,JHON CARLO, CRISOLO', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(18, '111575150097', 'PAREJA,SEAN EJ, CERVAN', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(19, '107246150027', 'PELAEZ,EMERSON, ABIAD', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(20, '111575150098', 'QUI�ONES,JOHN CHRYS, JR QUIBULOY', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(21, '109625140248', 'SARAJAN,JAN JOSHUA, MINGUELA', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(22, '111555150030', 'VILLAS,GIAN CARLO, MATIBAG', '9', '9-B', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(23, '111575150071', 'ABACA,MA. JAQUELYN, BENDICION', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(24, '117468150265', 'ALDOVINO,KRIZYL KHATE, TULIO', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(25, '105587150014', 'ANDRES,JASMIN KEY, COMO', '9', '9-B', '2025-2026', 'F', '94', 'Promoted', '', '', NULL),
+(26, '111575150011', 'ARGENTE,JEAN, MASAPOL', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(27, '111575150088', 'ARIAS,RIANNA, BALDOVIA', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(28, '111578150021', 'BURGOS,CASSANDRA ALIAH, DE ROSALES', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(29, '111575150042', 'CARINGAL,DIANNA, MARASIGAN', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(30, '111575150043', 'COLLADO,KAYCEE ANN, GLORIA', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(31, '111555150031', 'DELA VEGA,NADINE, HERNANDEZ', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(32, '111578150007', 'DELOS REYES,STEPHANIE, PALARIA', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(33, '107624150026', 'DIMACULANGAN,SHANELLE, GASPAR', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(34, '111575150004', 'DINGLASAN,LESLIE, ALAGAO', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(35, '111578150024', 'DIPASUPIL,MA. VENUS, CABRAL', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(36, '111578150026', 'EVANGELISTA,EMIE, GAMIER', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(37, '110524150039', 'PEDILLONE,BABY JANE, BOSLON', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(38, '432002160005', 'RAMOS,FRINZES HAILEY YUAN, -', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(39, '111575150083', 'SUMUGAT,NATHALIE, GUNDRAN', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(40, '110635140105', 'TAPALLA,KYLA, -', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(41, '117460160141', 'VERGARA,FIONA ANNE, VALLADOR', '9', '9-B', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(42, '110525150042', 'ALMANON,VICTOR, SIETON', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(43, '111575160067', 'ARCAYOS,JERWIN, TIONGSON', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(44, '132067160002', 'BOOC,BRYLE, HINAY', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(45, '110525160002', 'CAPACIA,ANDREY, GUTIERREZ', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(46, '111555140014', 'CAUNCERAN,GIAN CARLO, ASI', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(47, '111578160024', 'DE ROSALES,PETER JOHN, ATIENZA', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(48, '111555160005', 'DELA CRUZ,CHRISTIAN, UMALI', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(49, '111578160002', 'FALLARIA,DOMINIC, BERIOSO', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(50, '111575160059', 'GANDIA,PRINCE ANGELO, IGNACIO', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(51, '110524160010', 'LACERNA,JIAN CARL, BLANCO', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(52, '111574160011', 'MANALO,JHORHENZ, ALMARIO', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(53, '112185160005', 'MEJIDANA,JETT LAWRENCE, BENTING', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(54, '111575160063', 'NEPOMUCENO,JHERZEL, BONILLA', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(55, '111555160027', 'PADILLON,JERMAINE, BAUTISTA', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(56, '136885160642', 'PLANDEZ,DARYL JAKE, PADUA', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(57, '111575160014', 'RAMIREZ,NATHAN, MA�EBO', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(58, '111575160027', 'RIZA,LORENCESS, BAID', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(59, '153507160036', 'SALES,KHENJIE, VINOYA', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(60, '111575160005', 'SAMBAOA,ABDEL MORRIS, DAGOS', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(61, '111575160013', 'VERDERA,JERRICK, FUNELAS', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(62, '107514160019', 'VILLAVIRAY,AZEL JESLIAH, BORDONADA', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(63, '111575160025', 'VILLAVIRAY,MALCHIEL JEUSH KEITH, VICENTE', '8', '8-B', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(64, '111575160078', 'ADARLO,XYRENE, DELOS SANTOS', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(65, '111575160082', 'ALI,JESSICA, AFABLE', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(66, '111575160016', 'ALI,ZYRILLE, HIGENA', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(67, '111570160092', 'ALIPIO,PRINCESS XYRELLE, ALEA', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(68, '111575160089', 'AYENDE,PRINCESS, ARAGON', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(69, '429511150204', 'BALQUIN,EUNICE GRACE, MANLUNAS', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(70, '111575160024', 'BURGOS,NICOLE, GALICIA', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(71, '111555160013', 'CANTOS,KHRIZIEL, DOTE', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(72, '110516160016', 'CUETO,MARIA JANELL, ABIUL', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(73, '111575160009', 'DATINGUINOO,NIKKA SHAIRA, DACULIO', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(74, '111575160008', 'DATINGUINOO,NIKKI XYRIEL, DACULIO', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(75, '111578160025', 'DI�O,ANGEL MAY, DALISAY', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(76, '111575160084', 'EBORA,JANELLA, CLOSA', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(77, '111578160014', 'ENRIQUEZ,JEANNA, ALMANZOR', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(78, '110524160024', 'GACILO,KYLA, AZUL', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(79, '110512160003', 'GACO,MYCEL, NOCHE', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(80, '111544160034', 'MARASIGAN,CHLOE NICHOLE, MANALO', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(81, '110505160018', 'MERCADO,LOVELYN JOY, SAGUN', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(82, '129648140079', 'PALERO,ERICA, -', '8', '8-B', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(83, '110524160002', 'ABELA,JOHN ALDRIE, GARCIA', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(84, '117468160217', 'ALDOVINO,KHENT BRYAN, TULIO', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(85, '108019160002', 'ALEA,CHESTER DAVE, ABAS', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(86, '111575160092', 'CABRERA,LESTER, CORNEJO', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(87, '110524160033', 'CASAO,CARLOS IVAN, DELOS REYES', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(88, '110512160006', 'CEZAR,LHANZ JURIE, TALAY', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(89, '111578160008', 'CIPRES,RHAZEL, CRUEL', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(90, '110512160008', 'EVANGELISTA,TRAVIZ E�IGO, FORCA', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(91, '111578160005', 'EVANGELISTA,WARREN, EVANGELISTA', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(92, '111555160006', 'GUILO,ERONE ELISON, MONTEMAYOR', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(93, '117009160023', 'HEMENA,JAMES, OLEA', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(94, '170002140006', 'LUZON,DEN MARK, ALBAN', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(95, '111536160060', 'MAGSINO,KIAN ZYLEX, CLANZA', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(96, '111555160009', 'MELENDEZ,KEITH ZANDER, JAVIER', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(97, '136498160121', 'MENDOZA,MATHEW MARK, MOULIC', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(98, '111578160006', 'MORTELLA,KIEFER GIAN, DAPAT', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(99, '110524160013', 'OBSEQUIO,KERVEY, BASCOGIN', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(100, '111575160029', 'OPREDO,JOHN PAUL, BRIONES', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(101, '136426160328', 'PERONA,ZHUE BERNARD DAINE, TOLENTINO', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(102, '136444140536', 'QUINDAO,ALLDREM, SOLIS', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(103, '111575160039', 'RADA,REX NATHANIEL, -', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(104, '136688160038', 'RICABLANCA,JARED, GONZALES', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(105, '111575160026', 'RUBIO,ANGELO, YLAGAN', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(106, '111575160087', 'TALAY,REYMARK, SALA', '8', '8-C', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(107, '111575160015', 'ABIHIN,MARY JOY, LABAJO', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(108, '110524160031', 'ANGELES,LOVELY JANE, DIMAANO', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(109, '111575160018', 'BALILA,PRINCES MAE ANNE, CARDINAL', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(110, '110524160021', 'BISA,KRISTINE MAE, ARANDA', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(111, '111566160040', 'CAPARROS,BERNADETTE, ARELLANO', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(112, '111575160065', 'CAPILI,APRIL JHOY, FRANCISCO', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(113, '136546160477', 'CARLET,SOPHIA CLARENZE, PERI�A', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(114, '111575160011', 'DELA VEGA,LYRA JANE, CLOSA', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(115, '110513130035', 'DI�O,MA ANA JAYNE, -', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(116, '111555160018', 'ELARDE,ARYAN DANIELLE, CENIZA', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(117, '111575150046', 'GABA,LEALYN, -', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(118, '110505150021', 'GAMIER,ERICH MAE, MACARAIG', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(119, '111575160093', 'GONZALES,JILLIAN, CADACIO', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(120, '110544140017', 'IMBANG,KATRICE, PATULOT', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(121, '111570160179', 'LACRE,JHURIS, GARDIANO', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(122, '111575160021', 'LALONG-ISIP,JHANA, VALDEZ', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(123, '110512160004', 'LORENTE,FRENCHESKA NICOLLE, MAXINO', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(124, '110524160029', 'OLLA,KEANNA MAE, NICOLAS', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(125, '111578160012', 'PALLARIA,BERNADETTE, ALBA', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(126, '110524160030', 'REA�O,PRINCESS LOURENCE, LACERNA', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(127, '111555150020', 'VILLAS,GRACE, CONCEPCION', '8', '8-C', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(128, '110524170002', 'ANDRES,RICKS CALEB, COMO', '7', '7-D', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(129, '111575170023', 'AZUL,MARL DHANIEL, TALBAN', '7', '7-D', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(130, '110524160006', 'CARBONEL,GEREMIAH, JOSE', '7', '7-D', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(131, '110524170006', 'CASAO,VINCE PATRICK, BALMES', '7', '7-D', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(132, '111575170040', 'CLANZA,PRINCE MJ, MARASIGAN', '7', '7-D', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(133, '110524170008', 'COLIS,SAMWYNNE, TOLENTINO', '7', '7-D', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(134, '111556170023', 'DE VILLA,MARK ANDRIE, GUTIERREZ', '7', '7-D', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(135, '111555170022', 'EVORA,JOHN REINELL, DE CASTRO', '7', '7-D', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(136, '111568170004', 'FONTE,VON KENNEDY, RAMIREZ', '7', '7-D', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(137, '111555170009', 'JOVER,RIXCEL, DOMINICO', '7', '7-D', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(138, '110524170013', 'LALATA,RICHARD, BARAQUEL', '7', '7-D', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(139, '118350170025', 'MAPUTE,PRINCE KHARLMARX, SACDALAN', '7', '7-D', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(140, '110576150012', 'MERCADO,JOHN MARK, FORMALEJO', '7', '7-D', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(141, '110512170006', 'OMAñA,RENZO, OPREDO', '7', '7-D', '2024-2025', 'M', '94', 'Promoted', NULL, NULL, NULL),
+(142, '110512170007', 'OPREDO,JAY LORD, ALDOVINO', '7', '7-D', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(143, '110524170014', 'PALAW,DJ, VIAÑA', '7', '7-D', '2024-2025', 'M', NULL, NULL, NULL, NULL, NULL),
+(144, '111570170273', 'ABAS,LEA MARNELLY, ULAYAN', '7', '7-D', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(145, '110512170010', 'ALVAREZ,KHATRINE ACE, PEREZ', '7', '7-D', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(146, '110524170018', 'AZUL,PRINCES NICOLE, BISA', '7', '7-D', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(147, '111575170028', 'CARINGAL,STEFANIE KATE, BRUCE', '7', '7-D', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(148, '111575170060', 'CLAY,RHOMA GAIL, BUENO', '7', '7-D', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(149, '111568160011', 'GREGORIO,JANICE, GURAY', '7', '7-D', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(150, '110516170027', 'JAVIER,AYESHA NICOLE, DIMAANO', '7', '7-D', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(151, '110524160035', 'MAGADIA,PRINCESS JELLIAN, GENZOLA', '7', '7-D', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(152, '111575170022', 'MORTOS,ZHIA MAE, UMALI', '7', '7-D', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(153, '111575170074', 'QUIÑONES,AJIEA SHANE, CANTOS', '7', '7-D', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(154, '111575170036', 'RIVERO,ANGEL, ULIP', '7', '7-D', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(155, '111575170056', 'SALES,KHEANNA MAE, VINOYA', '7', '7-D', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(156, '111564160008', 'VILLAS,ERIKA JANE, GARCIA', '7', '7-D', '2024-2025', 'F', NULL, NULL, NULL, NULL, NULL),
+(157, '110524170002', 'ANDRES,RICKS CALEB, COMO', '7', '8-D', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(158, '111575170023', 'AZUL,MARL DHANIEL, TALBAN', '7', '8-D', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(159, '110524160006', 'CARBONEL,GEREMIAH, JOSE', '7', '8-D', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(160, '110524170006', 'CASAO,VINCE PATRICK, BALMES', '7', '8-D', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(161, '111575170040', 'CLANZA,PRINCE MJ, MARASIGAN', '7', '8-D', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(162, '110524170008', 'COLIS,SAMWYNNE, TOLENTINO', '7', '8-D', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(163, '111556170023', 'DE VILLA,MARK ANDRIE, GUTIERREZ', '7', '8-D', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(164, '111555170022', 'EVORA,JOHN REINELL, DE CASTRO', '7', '8-D', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(165, '111568170004', 'FONTE,VON KENNEDY, RAMIREZ', '7', '8-D', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(166, '111555170009', 'JOVER,RIXCEL, DOMINICO', '7', '8-D', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(167, '110524170013', 'LALATA,RICHARD, BARAQUEL', '7', '8-D', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(168, '118350170025', 'MAPUTE,PRINCE KHARLMARX, SACDALAN', '7', '8-D', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(169, '110576150012', 'MERCADO,JOHN MARK, FORMALEJO', '7', '8-D', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(170, '110512170006', 'OMAñA,RENZO, OPREDO', '7', '8-D', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(171, '110512170007', 'OPREDO,JAY LORD, ALDOVINO', '7', '8-D', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(172, '110524170014', 'PALAW,DJ, VIAÑA', '7', '8-D', '2025-2026', 'M', NULL, NULL, NULL, NULL, NULL),
+(173, '111570170273', 'ABAS,LEA MARNELLY, ULAYAN', '7', '8-D', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(174, '110512170010', 'ALVAREZ,KHATRINE ACE, PEREZ', '7', '8-D', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(175, '110524170018', 'AZUL,PRINCES NICOLE, BISA', '7', '8-D', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(176, '111575170028', 'CARINGAL,STEFANIE KATE, BRUCE', '7', '8-D', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(177, '111575170060', 'CLAY,RHOMA GAIL, BUENO', '7', '8-D', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(178, '111568160011', 'GREGORIO,JANICE, GURAY', '7', '8-D', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(179, '110516170027', 'JAVIER,AYESHA NICOLE, DIMAANO', '7', '8-D', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(180, '110524160035', 'MAGADIA,PRINCESS JELLIAN, GENZOLA', '7', '8-D', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(181, '111575170022', 'MORTOS,ZHIA MAE, UMALI', '7', '8-D', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(182, '111575170074', 'QUIÑONES,AJIEA SHANE, CANTOS', '7', '8-D', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(183, '111575170036', 'RIVERO,ANGEL, ULIP', '7', '8-D', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(184, '111575170056', 'SALES,KHEANNA MAE, VINOYA', '7', '8-D', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL),
+(185, '111564160008', 'VILLAS,ERIKA JANE, GARCIA', '7', '8-D', '2025-2026', 'F', NULL, NULL, NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `quest_tracer_tbl`
+--
+
+CREATE TABLE `quest_tracer_tbl` (
+  `question_id` int(11) NOT NULL,
+  `question_desc` text NOT NULL,
+  `school_year` varchar(20) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `quest_tracer_tbl`
+--
+
+INSERT INTO `quest_tracer_tbl` (`question_id`, `question_desc`, `school_year`) VALUES
+(5, 'WHAT IS YOUR PREFERRED INDUSTRY?', '2024-2025'),
+(45, 'ARE YOU MARRIED??', '2024-2025'),
+(3, 'ARE YOU SATISFIED WITH YOUR JOB?', '2024-2025'),
+(4, 'HOW DID YOU FIND YOUR CURRENT JOB?', '2024-2025'),
+(1, 'WHAT IS YOUR CURRENT EMPLOYMENT STATUS?', '2024-2025'),
+(2, 'WHAT IS YOUR HIGHEST EDUCATIONAL ATTAINMENT?', '2024-2025');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `responses`
+--
+
+CREATE TABLE `responses` (
+  `id` int(11) NOT NULL,
+  `identifier` varchar(20) NOT NULL,
+  `question_id` int(11) NOT NULL,
+  `choice_id` int(11) NOT NULL,
+  `submitted_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `responses`
+--
+
+INSERT INTO `responses` (`id`, `identifier`, `question_id`, `choice_id`, `submitted_at`) VALUES
+(125, '111548090022', 5, 53, '2025-06-05 06:39:43'),
+(124, '111548090022', 4, 50, '2025-06-05 06:39:43'),
+(123, '111548090022', 3, 46, '2025-06-05 06:39:43'),
+(122, '111548090022', 2, 43, '2025-06-05 06:39:43'),
+(121, '111548090022', 1, 40, '2025-06-05 06:39:43'),
+(131, '107514160019', 45, 55, '2025-06-12 04:25:04'),
+(130, '107514160019', 5, 52, '2025-06-12 04:25:04');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `response_log_tbl`
+--
+
+CREATE TABLE `response_log_tbl` (
+  `response_log_id` int(11) NOT NULL,
+  `identifier` varchar(20) NOT NULL,
+  `submitted_at` datetime DEFAULT current_timestamp(),
+  `school_year` varchar(50) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `response_log_tbl`
+--
+
+INSERT INTO `response_log_tbl` (`response_log_id`, `identifier`, `submitted_at`, `school_year`) VALUES
+(8, '111548090022', '2025-06-04 23:39:43', '2024-2025'),
+(10, '107514160019', '2025-06-12 12:25:04', '2024-2025');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `school_curriculum_tbl`
+--
+
+CREATE TABLE `school_curriculum_tbl` (
+  `curriculum_id` int(11) NOT NULL,
+  `curriculum_desc` varchar(255) DEFAULT NULL,
+  `curriculum_status` varchar(50) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `school_curriculum_tbl`
+--
+
+INSERT INTO `school_curriculum_tbl` (`curriculum_id`, `curriculum_desc`, `curriculum_status`, `created_at`, `updated_at`) VALUES
+(1, 'K-12 Basic Education Curriculum', 'Active', '2025-02-24 16:18:42', '2025-03-16 01:12:48'),
+(2, 'Matatag Curriculum', 'Inactive', '2025-02-24 16:48:53', '2025-06-10 14:31:56'),
+(5, 'Trial', NULL, '2025-02-24 17:17:13', '2025-02-24 17:17:13');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `school_info_tbl`
+--
+
+CREATE TABLE `school_info_tbl` (
+  `id` int(11) NOT NULL,
+  `school_id` varchar(20) NOT NULL,
+  `school_name` varchar(50) NOT NULL,
+  `region` varchar(50) DEFAULT NULL,
+  `division` varchar(50) DEFAULT NULL,
+  `district` varchar(50) DEFAULT NULL,
+  `bosy_date` date DEFAULT NULL,
+  `eosy_date` date DEFAULT NULL,
+  `school_head` varchar(50) DEFAULT NULL,
+  `school_curriculum` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `school_info_tbl`
+--
+
+INSERT INTO `school_info_tbl` (`id`, `school_id`, `school_name`, `region`, `division`, `district`, `bosy_date`, `eosy_date`, `school_head`, `school_curriculum`) VALUES
+(1, '301803', 'PEDRO V. PANALIGAN MEMORIAL NATIONAL HIGH SCHOOL', 'REGION IV-B', 'CALAPAN DIVISION', 'CALAPAN DISTRICT', '2024-06-10', '2025-03-20', 'GLORINEIL DILLUPAC ROMERO', 'K-12 Basic Education Curriculum');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `school_per_tbl`
+--
+
+CREATE TABLE `school_per_tbl` (
+  `PersonnelId` int(11) NOT NULL,
+  `EmpNo` varchar(50) DEFAULT NULL,
+  `EmpLName` varchar(50) DEFAULT NULL,
+  `EmpFName` varchar(50) DEFAULT NULL,
+  `EmpMName` varchar(50) DEFAULT NULL,
+  `EmpEName` varchar(50) DEFAULT NULL,
+  `Sex` char(10) DEFAULT NULL,
+  `FundSource` varchar(50) DEFAULT NULL,
+  `BirthDate` date DEFAULT NULL,
+  `EmploymentStatus` varchar(50) DEFAULT NULL,
+  `EducDegree` varchar(50) DEFAULT NULL,
+  `EducMajor` varchar(50) DEFAULT NULL,
+  `EducMinor` varchar(50) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `email` varchar(30) DEFAULT NULL,
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `PostGraduate` varchar(100) DEFAULT NULL,
+  `Specialization` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `school_per_tbl`
+--
+
+INSERT INTO `school_per_tbl` (`PersonnelId`, `EmpNo`, `EmpLName`, `EmpFName`, `EmpMName`, `EmpEName`, `Sex`, `FundSource`, `BirthDate`, `EmploymentStatus`, `EducDegree`, `EducMajor`, `EducMinor`, `created_at`, `email`, `updated_at`, `PostGraduate`, `Specialization`) VALUES
+(151, '6012501', 'DELA TORRE', 'DENNIS', 'T.', NULL, 'M', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BS IN SECONDARY', 'ENGLISH', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'MAED', 'ADMINISTRATION AND SUPERVISION'),
+(152, '4587130', 'ORDANZA', 'LEMUEL', 'I.', NULL, 'M', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'ENGLISH', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'MAED', 'TEACHING ENGLISH LANGUAGE'),
+(153, '0000008', 'DELOS REYES', 'AMELIA', 'P.', '', 'F', '', '0001-01-01', 'PERMANENT', 'BS IN SECONDARY', 'MATHEMATICS', '', '2025-04-07 15:00:08', 'johnrusselldalina@GMAIL.COM', '2025-06-04 09:29:16', 'MA', 'MATHEMATICS'),
+(154, '4215087', 'BUHAT', 'ALEXANDER', 'L.', NULL, 'M', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSBA/BSE', 'MAPEH', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'MAED', NULL),
+(155, '4215584', 'QUITOS', 'ANNABEL', 'D.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'ENGLISH', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'ED D', NULL),
+(156, '4640744', 'AMORES', 'MAICA VANESSA', 'A.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'ENGLISH', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'MAED', 'ENGLISH LITERATURE'),
+(157, '4640742', 'HERNANDEZ', 'ROSE ANN', 'E.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'ENGLISH', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'MAED', 'ENGLISH LITERATURE'),
+(158, '6024090', 'BEA', 'KIMBERLY', 'L .', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'ENGLISH', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', NULL, NULL),
+(159, '6020992', 'FAMILARA', 'PATRICIA LEI', 'A .', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'ENGLISH', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', NULL, NULL),
+(160, '4554776', 'NAVARRO', 'RONALYN', 'S.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'MATHEMATICS', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'MAED', 'MATHEMATICS'),
+(161, '4587083', 'AGUADO', 'MARCELA', 'M.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'MAED', 'MATHEMATICS', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', NULL, NULL),
+(162, '4640745', 'BANUELOS', 'MERCY', 'M.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'MATHEMATICS', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'MAED', 'MATHEMATICS'),
+(163, '4640747', 'PEREZ', 'GUADALYN', 'S.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'MATHEMATICS', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'MAED', 'MATHEMATICS'),
+(164, '47423500', 'DIMASACAT', 'ROCHELLE MA LIZA', 'B.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'MATHEMATICS', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'MAED', 'MATHEMATICS'),
+(165, '4744979', 'AMORES', 'RICHARD', 'B.', NULL, 'M', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'MATHEMATICS', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'MAED', 'MATHEMATICS'),
+(166, '4215934', 'ROMASANTA', 'ELSA', 'T.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'CHEMISTRY', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'MAED', 'SCIENCE EDUCATION'),
+(167, '4554774', 'MALIMBAN', 'CARMEL RAY', 'M.', '', 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'GENERAL SCIENCE', '', '2025-04-07 15:00:08', 'CARMEL@GMAIL.COM', '2025-05-29 01:54:02', 'MAED', 'BIOLOGICAL SCIENCE'),
+(168, '4640743', 'BURGOS', 'MARY GRACE', 'D.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'GENERAL SCIENCE', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'MAED', 'SCIENCE EDUCATION'),
+(169, '4640756', 'PANALIGAN', 'PAULINE NERIE', 'A.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'FILIPINO', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'MAED', 'FILIPINO'),
+(170, '6013362', 'MAOG', 'SHERWIN', 'O.', NULL, 'M', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'FILIPINO', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'MAED', 'FILIPINO'),
+(171, '4742350', 'ICALLA', 'TONY ROSE', 'C.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'FILIPINO', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'MAED', 'FILIPINO'),
+(172, '6020995', 'FELIPE', 'JENIFER', 'L.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'FILIPINO', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', NULL, NULL),
+(173, '4554775', 'MATIBAG', 'EMMA', 'D.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'SOCIAL SCIENCE', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'MAED', 'ADMINISTRATION AND SUPERVISION'),
+(174, '0000014', 'BELEN', 'AILENE', 'C.', '', 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSIE', 'GARMENTS', '', '2025-04-07 15:00:08', '', '2025-05-29 01:54:02', 'MAED', 'ADMINISTRATION AND SUPERVISION'),
+(175, '4371753', 'CATAPANG', 'CARIDAD', 'A.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSIE', 'HOME ECONOMICS', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', 'MAED', 'ADMINISTRATION AND SUPERVISION'),
+(176, '4371754', 'NOEL GARCIA', 'TERESA', 'U.', '', 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSIE', 'HOME ECONOMICS', '', '2025-04-07 15:00:08', 'CONDASHO@GMAIL.COM', '2025-05-29 01:54:02', 'MAED', 'ADMINISTRATION AND SUPERVISION'),
+(177, '4587082', 'SANCHEZ', 'CARLO', 'D.', NULL, 'M', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'TLE', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', NULL, NULL),
+(178, '0000010', 'COLOCAR', 'ALBRIX', 'P.', '', 'M', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'MAPEH', '', '2025-04-07 15:00:08', 'COLOCAR@GMAIL.COM', '2025-05-29 01:54:02', '', ''),
+(179, '6020993', 'GIDAO', 'JOHN CHRISTIAN', 'R.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'PHYSICAL SCIENCE', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', NULL, NULL),
+(180, '4554847', 'MERILLES', 'CYLLIZ KAESSA', 'M', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'GENERAL SCIENCE', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', NULL, NULL),
+(181, '6436301', 'ROXAS', 'APPLE', 'C', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'GENERAL SCIENCE', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', NULL, NULL),
+(182, '6436300', 'YLAGAN', 'IMEE', 'R.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'FILIPINO', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', NULL, NULL),
+(183, '6020997', 'SALAZAR', 'ANDRIA', 'L', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'TLE', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', NULL, NULL),
+(184, '6020996', 'ROJAS', 'JHON JHON', 'B.', NULL, 'M', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSED', 'MAPEH', NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', NULL, NULL),
+(185, '4745333', 'HALILI', 'GERALDINE', 'B.', NULL, 'F', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSCS', NULL, NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', NULL, NULL),
+(186, '6024091', 'DUMARAN', 'JAY ADRIAN', 'F.', NULL, 'M', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', 'BSC', NULL, NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', NULL, NULL),
+(187, '6019752', 'MANALO', 'MARLON VINCENT', 'O', NULL, 'M', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', NULL, NULL, NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', NULL, NULL),
+(188, '0000028', 'ADARLO', 'PAULINO', 'N.', NULL, 'M', 'REGULAR PLANTILLA (DEPED NATIONAL FUND)', '0000-00-00', 'PERMANENT', NULL, NULL, NULL, '2025-04-07 15:00:08', NULL, '2025-05-29 01:54:02', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `school_year_tbl`
+--
+
+CREATE TABLE `school_year_tbl` (
+  `sy_id` int(11) NOT NULL,
+  `sy_term` varchar(20) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `sy_status` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `school_year_tbl`
+--
+
+INSERT INTO `school_year_tbl` (`sy_id`, `sy_term`, `created_at`, `sy_status`) VALUES
+(7, '2025-2026', '2025-01-25 06:57:54', 'Active'),
+(8, '2024-2025', '2025-01-25 13:44:18', 'Inactive'),
+(9, '2026-2027', '2025-02-06 19:00:38', 'Inactive'),
+(12, '2029-2030', '2025-02-24 15:47:13', 'Inactive'),
+(13, '2027-2028', '2025-03-30 12:11:41', 'Inactive'),
+(14, '3434-2323', '2025-06-10 14:35:01', 'Inactive');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `section_tbl`
+--
+
+CREATE TABLE `section_tbl` (
+  `SectionId` int(11) NOT NULL,
+  `SectionName` varchar(100) DEFAULT NULL,
+  `GradeLevel` int(11) DEFAULT NULL,
+  `SchoolYear` varchar(20) DEFAULT NULL,
+  `Facility` varchar(50) DEFAULT NULL,
+  `SectionStrand` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `section_tbl`
+--
+
+INSERT INTO `section_tbl` (`SectionId`, `SectionName`, `GradeLevel`, `SchoolYear`, `Facility`, `SectionStrand`) VALUES
+(1, '8-B', 8, '2024-2025', 'TBA', 'STEM'),
+(2, '8-C', 8, '2024-2025', 'TBA', ''),
+(3, '9-B', 9, '2025-2026', 'TBA', ''),
+(4, '8-B', 8, '2025-2026', 'TBA', 'STEM'),
+(5, '7-D', 7, '2024-2025', 'TBA', ''),
+(6, '8-D', 8, '2025-2026', 'TBA', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `strand_track_tbl`
+--
+
+CREATE TABLE `strand_track_tbl` (
+  `id` int(11) NOT NULL,
+  `strand_track` varchar(50) DEFAULT NULL,
+  `description` varchar(50) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `strand_track_status` varchar(30) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `strand_track_tbl`
+--
+
+INSERT INTO `strand_track_tbl` (`id`, `strand_track`, `description`, `created_at`, `updated_at`, `strand_track_status`) VALUES
+(1, 'STEM', 'SCIENCE, TECHNOLOGY, ENGINEERING, AND MATHEAMTICS', '2025-03-15 14:43:43', '2025-03-26 01:34:08', 'Active');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student_grade_jhs_tbl`
+--
+
+CREATE TABLE `student_grade_jhs_tbl` (
+  `sgj_id` int(11) NOT NULL,
+  `lrn` varchar(20) NOT NULL,
+  `subject_id` int(11) NOT NULL,
+  `fstq_grade` varchar(10) DEFAULT NULL,
+  `scndq_grade` varchar(10) DEFAULT NULL,
+  `trdq_grade` varchar(10) DEFAULT NULL,
+  `fthq_grade` varchar(10) DEFAULT NULL,
+  `fstq_grade_tr` varchar(10) DEFAULT NULL,
+  `scndq_grade_tr` varchar(10) DEFAULT NULL,
+  `trdq_grade_tr` varchar(10) DEFAULT NULL,
+  `fthq_grade_tr` varchar(10) DEFAULT NULL,
+  `grade_term` varchar(20) NOT NULL,
+  `section_id` int(10) DEFAULT NULL,
+  `nested_id` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `student_grade_jhs_tbl`
+--
+
+INSERT INTO `student_grade_jhs_tbl` (`sgj_id`, `lrn`, `subject_id`, `fstq_grade`, `scndq_grade`, `trdq_grade`, `fthq_grade`, `fstq_grade_tr`, `scndq_grade_tr`, `trdq_grade_tr`, `fthq_grade_tr`, `grade_term`, `section_id`, `nested_id`) VALUES
+(1, '111575150058', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(2, '111575150058', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(3, '111575150058', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(4, '111575150058', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(5, '111575150058', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(6, '111575150058', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(7, '111575150058', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(8, '111575150058', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(9, '111575150058', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(10, '111575150058', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(11, '111575150058', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(12, '111575150058', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(13, '111575150033', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(14, '111575150033', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(15, '111575150033', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(16, '111575150033', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(17, '111575150033', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(18, '111575150033', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(19, '111575150033', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(20, '111575150033', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(21, '111575150033', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(22, '111575150033', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(23, '111575150033', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(24, '111575150033', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(25, '111575150025', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(26, '111575150025', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(27, '111575150025', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(28, '111575150025', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(29, '111575150025', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(30, '111575150025', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(31, '111575150025', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(32, '111575150025', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(33, '111575150025', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(34, '111575150025', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(35, '111575150025', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(36, '111575150025', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(37, '111555150023', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(38, '111555150023', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(39, '111555150023', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(40, '111555150023', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(41, '111555150023', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(42, '111555150023', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(43, '111555150023', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(44, '111555150023', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(45, '111555150023', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(46, '111555150023', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(47, '111555150023', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(48, '111555150023', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(49, '111575150015', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(50, '111575150015', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(51, '111575150015', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(52, '111575150015', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(53, '111575150015', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(54, '111575150015', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(55, '111575150015', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(56, '111575150015', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(57, '111575150015', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(58, '111575150015', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(59, '111575150015', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(60, '111575150015', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(61, '110524150010', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(62, '110524150010', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(63, '110524150010', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(64, '110524150010', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(65, '110524150010', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(66, '110524150010', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(67, '110524150010', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(68, '110524150010', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(69, '110524150010', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(70, '110524150010', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(71, '110524150010', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(72, '110524150010', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(73, '111575150060', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(74, '111575150060', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(75, '111575150060', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(76, '111575150060', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(77, '111575150060', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(78, '111575150060', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(79, '111575150060', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(80, '111575150060', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(81, '111575150060', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(82, '111575150060', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(83, '111575150060', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(84, '111575150060', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(85, '110524140053', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(86, '110524140053', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(87, '110524140053', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(88, '110524140053', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(89, '110524140053', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(90, '110524140053', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(91, '110524140053', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(92, '110524140053', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(93, '110524140053', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(94, '110524140053', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(95, '110524140053', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(96, '110524140053', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(97, '110635150026', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(98, '110635150026', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(99, '110635150026', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(100, '110635150026', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(101, '110635150026', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(102, '110635150026', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(103, '110635150026', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(104, '110635150026', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(105, '110635150026', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(106, '110635150026', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(107, '110635150026', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(108, '110635150026', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(109, '111575150063', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(110, '111575150063', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(111, '111575150063', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(112, '111575150063', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(113, '111575150063', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(114, '111575150063', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(115, '111575150063', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(116, '111575150063', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(117, '111575150063', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(118, '111575150063', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(119, '111575150063', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(120, '111575150063', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(121, '111575150095', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(122, '111575150095', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(123, '111575150095', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(124, '111575150095', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(125, '111575150095', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(126, '111575150095', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(127, '111575150095', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(128, '111575150095', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(129, '111575150095', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(130, '111575150095', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(131, '111575150095', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(132, '111575150095', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(133, '111575150067', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(134, '111575150067', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(135, '111575150067', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(136, '111575150067', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(137, '111575150067', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(138, '111575150067', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(139, '111575150067', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(140, '111575150067', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(141, '111575150067', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(142, '111575150067', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(143, '111575150067', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(144, '111575150067', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(145, '110512150018', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(146, '110512150018', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(147, '110512150018', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(148, '110512150018', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(149, '110512150018', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(150, '110512150018', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(151, '110512150018', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(152, '110512150018', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(153, '110512150018', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(154, '110512150018', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(155, '110512150018', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(156, '110512150018', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(157, '111578130025', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(158, '111578130025', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(159, '111578130025', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(160, '111578130025', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(161, '111578130025', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(162, '111578130025', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(163, '111578130025', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(164, '111578130025', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(165, '111578130025', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(166, '111578130025', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(167, '111578130025', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(168, '111578130025', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(169, '110512150002', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(170, '110512150002', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(171, '110512150002', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(172, '110512150002', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(173, '110512150002', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(174, '110512150002', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(175, '110512150002', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(176, '110512150002', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(177, '110512150002', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(178, '110512150002', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(179, '110512150002', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(180, '110512150002', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(181, '111575150021', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(182, '111575150021', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(183, '111575150021', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(184, '111575150021', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(185, '111575150021', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(186, '111575150021', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(187, '111575150021', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(188, '111575150021', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(189, '111575150021', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(190, '111575150021', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(191, '111575150021', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(192, '111575150021', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(193, '110524150017', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(194, '110524150017', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(195, '110524150017', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(196, '110524150017', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(197, '110524150017', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(198, '110524150017', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(199, '110524150017', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(200, '110524150017', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(201, '110524150017', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(202, '110524150017', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(203, '110524150017', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(204, '110524150017', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(205, '111575150097', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(206, '111575150097', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(207, '111575150097', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(208, '111575150097', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(209, '111575150097', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(210, '111575150097', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(211, '111575150097', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(212, '111575150097', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(213, '111575150097', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(214, '111575150097', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(215, '111575150097', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(216, '111575150097', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(217, '107246150027', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(218, '107246150027', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(219, '107246150027', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(220, '107246150027', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(221, '107246150027', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(222, '107246150027', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(223, '107246150027', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(224, '107246150027', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(225, '107246150027', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(226, '107246150027', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(227, '107246150027', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(228, '107246150027', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(229, '111575150098', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(230, '111575150098', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(231, '111575150098', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(232, '111575150098', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(233, '111575150098', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(234, '111575150098', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(235, '111575150098', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(236, '111575150098', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(237, '111575150098', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(238, '111575150098', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(239, '111575150098', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(240, '111575150098', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(241, '109625140248', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(242, '109625140248', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(243, '109625140248', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(244, '109625140248', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(245, '109625140248', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(246, '109625140248', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(247, '109625140248', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(248, '109625140248', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(249, '109625140248', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(250, '109625140248', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(251, '109625140248', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(252, '109625140248', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(253, '111555150030', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(254, '111555150030', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(255, '111555150030', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(256, '111555150030', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(257, '111555150030', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(258, '111555150030', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(259, '111555150030', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(260, '111555150030', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(261, '111555150030', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(262, '111555150030', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(263, '111555150030', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(264, '111555150030', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(265, '111575150071', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(266, '111575150071', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(267, '111575150071', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(268, '111575150071', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(269, '111575150071', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(270, '111575150071', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(271, '111575150071', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(272, '111575150071', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(273, '111575150071', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(274, '111575150071', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(275, '111575150071', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(276, '111575150071', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(277, '117468150265', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(278, '117468150265', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(279, '117468150265', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(280, '117468150265', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(281, '117468150265', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(282, '117468150265', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(283, '117468150265', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(284, '117468150265', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(285, '117468150265', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(286, '117468150265', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(287, '117468150265', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(288, '117468150265', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(289, '105587150014', 676, '89', '89', '89', '89', '94', '94', '94', '94', '2025-2026', 3, NULL),
+(290, '105587150014', 677, '89', '89', '89', '89', '94', '94', '94', '94', '2025-2026', 3, NULL),
+(291, '105587150014', 678, '89', '89', '89', '89', '94', '94', '94', '94', '2025-2026', 3, NULL),
+(292, '105587150014', 679, '89', '89', '89', '89', '94', '94', '94', '94', '2025-2026', 3, NULL),
+(293, '105587150014', 680, '89', '89', '89', '89', '94', '94', '94', '94', '2025-2026', 3, NULL),
+(294, '105587150014', 681, '89', '89', '89', '89', '94', '94', '94', '94', '2025-2026', 3, NULL),
+(295, '105587150014', 682, '89', '89', '89', '89', '94', '94', '94', '94', '2025-2026', 3, NULL),
+(296, '105587150014', 683, '94', '94', '94', '94', '97', '97', '97', '97', '2025-2026', 3, NULL),
+(297, '105587150014', 684, '89', '89', '89', '89', '94', '94', '94', '94', '2025-2026', 3, 'MAPEH-9'),
+(298, '105587150014', 685, '89', '89', '89', '89', '94', '94', '94', '94', '2025-2026', 3, 'MAPEH-9'),
+(299, '105587150014', 686, '89', '89', '89', '89', '94', '94', '94', '94', '2025-2026', 3, 'MAPEH-9'),
+(300, '105587150014', 687, '89', '89', '89', '89', '94', '94', '94', '94', '2025-2026', 3, 'MAPEH-9'),
+(301, '111575150011', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(302, '111575150011', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(303, '111575150011', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(304, '111575150011', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(305, '111575150011', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(306, '111575150011', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(307, '111575150011', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(308, '111575150011', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(309, '111575150011', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(310, '111575150011', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(311, '111575150011', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(312, '111575150011', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(313, '111575150088', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(314, '111575150088', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(315, '111575150088', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(316, '111575150088', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(317, '111575150088', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(318, '111575150088', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(319, '111575150088', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(320, '111575150088', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(321, '111575150088', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(322, '111575150088', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(323, '111575150088', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(324, '111575150088', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(325, '111578150021', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(326, '111578150021', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(327, '111578150021', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(328, '111578150021', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(329, '111578150021', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(330, '111578150021', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(331, '111578150021', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(332, '111578150021', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(333, '111578150021', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(334, '111578150021', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(335, '111578150021', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(336, '111578150021', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(337, '111575150042', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(338, '111575150042', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(339, '111575150042', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(340, '111575150042', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(341, '111575150042', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(342, '111575150042', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(343, '111575150042', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(344, '111575150042', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(345, '111575150042', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(346, '111575150042', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(347, '111575150042', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(348, '111575150042', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(349, '111575150043', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(350, '111575150043', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(351, '111575150043', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(352, '111575150043', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(353, '111575150043', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(354, '111575150043', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(355, '111575150043', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(356, '111575150043', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(357, '111575150043', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(358, '111575150043', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(359, '111575150043', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(360, '111575150043', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(361, '111555150031', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(362, '111555150031', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(363, '111555150031', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(364, '111555150031', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(365, '111555150031', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(366, '111555150031', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(367, '111555150031', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(368, '111555150031', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(369, '111555150031', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(370, '111555150031', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(371, '111555150031', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(372, '111555150031', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(373, '111578150007', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(374, '111578150007', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(375, '111578150007', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(376, '111578150007', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(377, '111578150007', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(378, '111578150007', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(379, '111578150007', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(380, '111578150007', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(381, '111578150007', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(382, '111578150007', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(383, '111578150007', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(384, '111578150007', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(385, '107624150026', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(386, '107624150026', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(387, '107624150026', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(388, '107624150026', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(389, '107624150026', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(390, '107624150026', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(391, '107624150026', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(392, '107624150026', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(393, '107624150026', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(394, '107624150026', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(395, '107624150026', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(396, '107624150026', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(397, '111575150004', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(398, '111575150004', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(399, '111575150004', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(400, '111575150004', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(401, '111575150004', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(402, '111575150004', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(403, '111575150004', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(404, '111575150004', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(405, '111575150004', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(406, '111575150004', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(407, '111575150004', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(408, '111575150004', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(409, '111578150024', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(410, '111578150024', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(411, '111578150024', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(412, '111578150024', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(413, '111578150024', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(414, '111578150024', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(415, '111578150024', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(416, '111578150024', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(417, '111578150024', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(418, '111578150024', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(419, '111578150024', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(420, '111578150024', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(421, '111578150026', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(422, '111578150026', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(423, '111578150026', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(424, '111578150026', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(425, '111578150026', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(426, '111578150026', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(427, '111578150026', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(428, '111578150026', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(429, '111578150026', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(430, '111578150026', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(431, '111578150026', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(432, '111578150026', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(433, '110524150039', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(434, '110524150039', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(435, '110524150039', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(436, '110524150039', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(437, '110524150039', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(438, '110524150039', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(439, '110524150039', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(440, '110524150039', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(441, '110524150039', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(442, '110524150039', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(443, '110524150039', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(444, '110524150039', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(445, '432002160005', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(446, '432002160005', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(447, '432002160005', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(448, '432002160005', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(449, '432002160005', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(450, '432002160005', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(451, '432002160005', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(452, '432002160005', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(453, '432002160005', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(454, '432002160005', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(455, '432002160005', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(456, '432002160005', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(457, '111575150083', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(458, '111575150083', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(459, '111575150083', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(460, '111575150083', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(461, '111575150083', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(462, '111575150083', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(463, '111575150083', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(464, '111575150083', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(465, '111575150083', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(466, '111575150083', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(467, '111575150083', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(468, '111575150083', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(469, '110635140105', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(470, '110635140105', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(471, '110635140105', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(472, '110635140105', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(473, '110635140105', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(474, '110635140105', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(475, '110635140105', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(476, '110635140105', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(477, '110635140105', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(478, '110635140105', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(479, '110635140105', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(480, '110635140105', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(481, '117460160141', 676, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(482, '117460160141', 677, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(483, '117460160141', 678, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(484, '117460160141', 679, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(485, '117460160141', 680, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(486, '117460160141', 681, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(487, '117460160141', 682, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(488, '117460160141', 683, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, NULL),
+(489, '117460160141', 684, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(490, '117460160141', 685, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(491, '117460160141', 686, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(492, '117460160141', 687, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2025-2026', 3, 'MAPEH-9'),
+(493, '110524170002', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(494, '110524170002', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(495, '110524170002', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(496, '110524170002', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(497, '110524170002', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(498, '110524170002', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(499, '110524170002', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(500, '110524170002', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(501, '110524170002', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(502, '110524170002', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(503, '110524170002', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(504, '110524170002', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(505, '111575170023', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(506, '111575170023', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(507, '111575170023', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(508, '111575170023', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(509, '111575170023', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(510, '111575170023', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL);
+INSERT INTO `student_grade_jhs_tbl` (`sgj_id`, `lrn`, `subject_id`, `fstq_grade`, `scndq_grade`, `trdq_grade`, `fthq_grade`, `fstq_grade_tr`, `scndq_grade_tr`, `trdq_grade_tr`, `fthq_grade_tr`, `grade_term`, `section_id`, `nested_id`) VALUES
+(511, '111575170023', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(512, '111575170023', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(513, '111575170023', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(514, '111575170023', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(515, '111575170023', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(516, '111575170023', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(517, '110524160006', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(518, '110524160006', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(519, '110524160006', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(520, '110524160006', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(521, '110524160006', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(522, '110524160006', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(523, '110524160006', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(524, '110524160006', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(525, '110524160006', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(526, '110524160006', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(527, '110524160006', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(528, '110524160006', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(529, '110524170006', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(530, '110524170006', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(531, '110524170006', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(532, '110524170006', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(533, '110524170006', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(534, '110524170006', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(535, '110524170006', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(536, '110524170006', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(537, '110524170006', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(538, '110524170006', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(539, '110524170006', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(540, '110524170006', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(541, '111575170040', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(542, '111575170040', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(543, '111575170040', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(544, '111575170040', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(545, '111575170040', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(546, '111575170040', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(547, '111575170040', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(548, '111575170040', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(549, '111575170040', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(550, '111575170040', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(551, '111575170040', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(552, '111575170040', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(553, '110524170008', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(554, '110524170008', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(555, '110524170008', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(556, '110524170008', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(557, '110524170008', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(558, '110524170008', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(559, '110524170008', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(560, '110524170008', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(561, '110524170008', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(562, '110524170008', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(563, '110524170008', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(564, '110524170008', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(565, '111556170023', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(566, '111556170023', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(567, '111556170023', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(568, '111556170023', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(569, '111556170023', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(570, '111556170023', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(571, '111556170023', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(572, '111556170023', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(573, '111556170023', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(574, '111556170023', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(575, '111556170023', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(576, '111556170023', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(577, '111555170022', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(578, '111555170022', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(579, '111555170022', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(580, '111555170022', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(581, '111555170022', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(582, '111555170022', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(583, '111555170022', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(584, '111555170022', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(585, '111555170022', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(586, '111555170022', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(587, '111555170022', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(588, '111555170022', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(589, '111568170004', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(590, '111568170004', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(591, '111568170004', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(592, '111568170004', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(593, '111568170004', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(594, '111568170004', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(595, '111568170004', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(596, '111568170004', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(597, '111568170004', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(598, '111568170004', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(599, '111568170004', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(600, '111568170004', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(601, '111555170009', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(602, '111555170009', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(603, '111555170009', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(604, '111555170009', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(605, '111555170009', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(606, '111555170009', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(607, '111555170009', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(608, '111555170009', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(609, '111555170009', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(610, '111555170009', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(611, '111555170009', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(612, '111555170009', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(613, '110524170013', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(614, '110524170013', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(615, '110524170013', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(616, '110524170013', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(617, '110524170013', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(618, '110524170013', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(619, '110524170013', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(620, '110524170013', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(621, '110524170013', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(622, '110524170013', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(623, '110524170013', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(624, '110524170013', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(625, '118350170025', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(626, '118350170025', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(627, '118350170025', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(628, '118350170025', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(629, '118350170025', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(630, '118350170025', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(631, '118350170025', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(632, '118350170025', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(633, '118350170025', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(634, '118350170025', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(635, '118350170025', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(636, '118350170025', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(637, '110576150012', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(638, '110576150012', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(639, '110576150012', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(640, '110576150012', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(641, '110576150012', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(642, '110576150012', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(643, '110576150012', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(644, '110576150012', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(645, '110576150012', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(646, '110576150012', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(647, '110576150012', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(648, '110576150012', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(649, '110512170006', 553, '89', '89', '89', '89', '94', '94', '94', '94', '2024-2025', 5, NULL),
+(650, '110512170006', 554, '89', '89', '89', '89', '94', '94', '94', '94', '2024-2025', 5, NULL),
+(651, '110512170006', 555, '89', '89', '89', '89', '94', '94', '94', '94', '2024-2025', 5, NULL),
+(652, '110512170006', 556, '89', '89', '89', '89', '94', '94', '94', '94', '2024-2025', 5, NULL),
+(653, '110512170006', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(654, '110512170006', 558, '89', '89', '89', '89', '94', '94', '94', '94', '2024-2025', 5, NULL),
+(655, '110512170006', 559, '89', '89', '89', '89', '94', '94', '94', '94', '2024-2025', 5, NULL),
+(656, '110512170006', 560, '94', '94', '94', '94', '97', '97', '97', '97', '2024-2025', 5, NULL),
+(657, '110512170006', 561, '89', '89', '89', '89', '94', '94', '94', '94', '2024-2025', 5, 'MAPEH-7'),
+(658, '110512170006', 562, '89', '89', '89', '89', '94', '94', '94', '94', '2024-2025', 5, 'MAPEH-7'),
+(659, '110512170006', 563, '89', '89', '89', '89', '94', '94', '94', '94', '2024-2025', 5, 'MAPEH-7'),
+(660, '110512170006', 564, '89', '89', '89', '89', '94', '94', '94', '94', '2024-2025', 5, 'MAPEH-7'),
+(661, '110512170007', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(662, '110512170007', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(663, '110512170007', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(664, '110512170007', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(665, '110512170007', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(666, '110512170007', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(667, '110512170007', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(668, '110512170007', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(669, '110512170007', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(670, '110512170007', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(671, '110512170007', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(672, '110512170007', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(673, '110524170014', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(674, '110524170014', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(675, '110524170014', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(676, '110524170014', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(677, '110524170014', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(678, '110524170014', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(679, '110524170014', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(680, '110524170014', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(681, '110524170014', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(682, '110524170014', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(683, '110524170014', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(684, '110524170014', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(685, '111570170273', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(686, '111570170273', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(687, '111570170273', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(688, '111570170273', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(689, '111570170273', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(690, '111570170273', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(691, '111570170273', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(692, '111570170273', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(693, '111570170273', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(694, '111570170273', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(695, '111570170273', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(696, '111570170273', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(697, '110512170010', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(698, '110512170010', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(699, '110512170010', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(700, '110512170010', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(701, '110512170010', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(702, '110512170010', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(703, '110512170010', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(704, '110512170010', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(705, '110512170010', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(706, '110512170010', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(707, '110512170010', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(708, '110512170010', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(709, '110524170018', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(710, '110524170018', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(711, '110524170018', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(712, '110524170018', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(713, '110524170018', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(714, '110524170018', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(715, '110524170018', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(716, '110524170018', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(717, '110524170018', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(718, '110524170018', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(719, '110524170018', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(720, '110524170018', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(721, '111575170028', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(722, '111575170028', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(723, '111575170028', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(724, '111575170028', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(725, '111575170028', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(726, '111575170028', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(727, '111575170028', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(728, '111575170028', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(729, '111575170028', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(730, '111575170028', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(731, '111575170028', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(732, '111575170028', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(733, '111575170060', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(734, '111575170060', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(735, '111575170060', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(736, '111575170060', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(737, '111575170060', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(738, '111575170060', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(739, '111575170060', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(740, '111575170060', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(741, '111575170060', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(742, '111575170060', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(743, '111575170060', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(744, '111575170060', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(745, '111568160011', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(746, '111568160011', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(747, '111568160011', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(748, '111568160011', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(749, '111568160011', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(750, '111568160011', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(751, '111568160011', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(752, '111568160011', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(753, '111568160011', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(754, '111568160011', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(755, '111568160011', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(756, '111568160011', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(757, '110516170027', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(758, '110516170027', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(759, '110516170027', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(760, '110516170027', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(761, '110516170027', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(762, '110516170027', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(763, '110516170027', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(764, '110516170027', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(765, '110516170027', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(766, '110516170027', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(767, '110516170027', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(768, '110516170027', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(769, '110524160035', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(770, '110524160035', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(771, '110524160035', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(772, '110524160035', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(773, '110524160035', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(774, '110524160035', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(775, '110524160035', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(776, '110524160035', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(777, '110524160035', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(778, '110524160035', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(779, '110524160035', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(780, '110524160035', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(781, '111575170022', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(782, '111575170022', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(783, '111575170022', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(784, '111575170022', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(785, '111575170022', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(786, '111575170022', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(787, '111575170022', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(788, '111575170022', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(789, '111575170022', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(790, '111575170022', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(791, '111575170022', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(792, '111575170022', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(793, '111575170074', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(794, '111575170074', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(795, '111575170074', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(796, '111575170074', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(797, '111575170074', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(798, '111575170074', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(799, '111575170074', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(800, '111575170074', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(801, '111575170074', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(802, '111575170074', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(803, '111575170074', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(804, '111575170074', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(805, '111575170036', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(806, '111575170036', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(807, '111575170036', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(808, '111575170036', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(809, '111575170036', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(810, '111575170036', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(811, '111575170036', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(812, '111575170036', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(813, '111575170036', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(814, '111575170036', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(815, '111575170036', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(816, '111575170036', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(817, '111575170056', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(818, '111575170056', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(819, '111575170056', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(820, '111575170056', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(821, '111575170056', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(822, '111575170056', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(823, '111575170056', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(824, '111575170056', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(825, '111575170056', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(826, '111575170056', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(827, '111575170056', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(828, '111575170056', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(829, '111564160008', 553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(830, '111564160008', 554, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(831, '111564160008', 555, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(832, '111564160008', 556, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(833, '111564160008', 557, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(834, '111564160008', 558, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(835, '111564160008', 559, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(836, '111564160008', 560, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, NULL),
+(837, '111564160008', 561, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(838, '111564160008', 562, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(839, '111564160008', 563, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7'),
+(840, '111564160008', 564, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-2025', 5, 'MAPEH-7');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student_grade_shs_tbl`
+--
+
+CREATE TABLE `student_grade_shs_tbl` (
+  `sg_id` int(11) NOT NULL,
+  `lrn` varchar(20) NOT NULL,
+  `subject_id` int(11) NOT NULL,
+  `fsts_grade` varchar(10) DEFAULT NULL,
+  `scnds_grade` varchar(10) DEFAULT NULL,
+  `fsts_grade_tr` varchar(10) DEFAULT NULL,
+  `scnds_grade_tr` varchar(10) DEFAULT NULL,
+  `grade_term` varchar(20) DEFAULT NULL,
+  `section_id` int(10) DEFAULT NULL,
+  `grade_semester` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student_tbl`
+--
+
+CREATE TABLE `student_tbl` (
+  `id` int(11) NOT NULL,
+  `lrn` varchar(20) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `grade_level` varchar(10) DEFAULT NULL,
+  `section` varchar(20) DEFAULT NULL,
+  `school_year` varchar(20) DEFAULT NULL,
+  `sex` varchar(10) DEFAULT NULL,
+  `birth_date` varchar(20) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL,
+  `mother_tongue` varchar(100) DEFAULT NULL,
+  `ethnic_group` varchar(100) DEFAULT NULL,
+  `religion` varchar(100) DEFAULT NULL,
+  `hssp` varchar(30) DEFAULT NULL,
+  `barangay` varchar(100) DEFAULT NULL,
+  `municipality_city` varchar(100) DEFAULT NULL,
+  `province` varchar(100) DEFAULT NULL,
+  `father_name` varchar(255) DEFAULT NULL,
+  `mother_maiden_name` varchar(255) DEFAULT NULL,
+  `guardian_name` varchar(255) DEFAULT NULL,
+  `guardian_relationship` varchar(100) DEFAULT NULL,
+  `contact_number` varchar(15) DEFAULT NULL,
+  `learning_modality` varchar(255) DEFAULT NULL,
+  `remarks` varchar(50) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `strand_track` varchar(30) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `student_tbl`
+--
+
+INSERT INTO `student_tbl` (`id`, `lrn`, `name`, `grade_level`, `section`, `school_year`, `sex`, `birth_date`, `age`, `mother_tongue`, `ethnic_group`, `religion`, `hssp`, `barangay`, `municipality_city`, `province`, `father_name`, `mother_maiden_name`, `guardian_name`, `guardian_relationship`, `contact_number`, `learning_modality`, `remarks`, `created_at`, `strand_track`) VALUES
+(1, '111575150058', 'ADARLO,JOHN RENZ, GAMBOA', '9', '9-B', '2025-2026', 'M', '2010-03-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ADARLO, MARK LAURENCE', 'GAMBOA,JOAN MICHELLE,AREOLA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(2, '111575150033', 'ANDRADE,RINZO JHON, GUYO', '9', '9-B', '2025-2026', 'M', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ANDRADE, RENATO DELA CRUZ', 'GUYO,RIZALITA,OSORIO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(3, '111575150025', 'ARCAYOS,ROMEL, ABIUL', '9', '9-B', '2025-2026', 'M', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ARCAYOS, MARIO GUTIEREZ', 'ABIUL,GENELITA,VALDEZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(4, '111555150023', 'ASI,BENNETH HARVEY, ARELLANO', '9', '9-B', '2025-2026', 'M', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ASI, PEDRO MADERAZO', 'ARELLANO,EVALYN,MENDOZA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(5, '111575150015', 'BONDOC,JIM JAKE, GAMIER', '9', '9-B', '2025-2026', 'M', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'BONDOC, OLIVER NOCHE', 'GAMIER,LESLIE,ARMADA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(6, '110524150010', 'DE VERA,JOHN RAFAEL, BASCOGIN', '9', '9-B', '2025-2026', 'M', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'DE VERA, ROMULO GRAGASIN', 'BASCOGIN,JOSEPHINE,OTOG,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(7, '111575150060', 'FABILLORIN,MARK ANGELO, MENDOZA', '9', '9-B', '2025-2026', 'M', '2010-06-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'FABILLORIN, GREGIE BARIGA', 'MENDOZA,MARY JANE,ILAR,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(8, '110524140053', 'GUTIERREZ,JOHN SAIRON, REANO', '9', '9-B', '2025-2026', 'M', '1970-01-01', 15, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'GUTIERREZ, JAIME M', 'REANO,MERCY,OLLA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(9, '110635150026', 'HERNANDEZ,TJ, DIMAPELES', '9', '9-B', '2025-2026', 'M', '2009-10-12', 14, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'HERNANDEZ, JEFFREY ABIUL', 'DIMAPELES,TERESITA,ROLLAN,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(10, '111575150063', 'ILAGAN,CEDRICK, MARAMOT', '9', '9-B', '2025-2026', 'M', '2010-04-03', 14, 'Tagalog', NULL, 'Christianity', NULL, 'MAHARLIKA WEST', 'TAGAYTAY CITY', 'CAVITE', 'ILAGAN, RONALD ESPELITA', 'MARAMOT,RUBY,CAUBA,', NULL, NULL, NULL, 'Face to Face', 'T/O DATE:2024/09/30', '2025-06-13 16:22:12', NULL),
+(11, '111575150095', 'ISIANG,CHARLES JEROME, DIPASUPIL', '9', '9-B', '2025-2026', 'M', '2010-07-09', 14, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ISIANG, REYNALDO BALUCA', 'DIPASUPIL,LILIBETH,DE CHAVEZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(12, '111575150067', 'MARQUEZ,JOHN MARK, ESTEVES', '9', '9-B', '2025-2026', 'M', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'MARQUEZ, RODOLFO JR FERNANDEZ', 'ESTEVES,MARNIE,ROXAS,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(13, '110512150018', 'MELEGRITO,VINCENT, NOCHE', '9', '9-B', '2025-2026', 'M', '2010-09-09', 14, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'MELEGRITO, VINCENT PAUL MEJIA', 'NOCHE,AILEEN,TANGI,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(14, '111578130025', 'MERCIALES,JENDEL MARK, DOMINGO', '9', '9-B', '2025-2026', 'M', '1970-01-01', 16, 'Tagalog', NULL, 'Christianity', NULL, 'PERSONAS', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'MERCIALES, JORGE OSINSAO', 'DOMINGO,DONNA,MERCADO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(15, '110512150002', 'NOCHE,MARK ALVIN, ALDOVINO', '9', '9-B', '2025-2026', 'M', '2010-08-05', 14, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'NOCHE, WILVIEN HOLGADO', 'ALDOVINO,BELLA,MENDOZA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(16, '111575150021', 'OCAMPO,ADRIAN, EVANGELISTA', '9', '9-B', '2025-2026', 'M', '1970-01-01', 16, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'OCAMPO, NESTORIO ARELLANO', 'EVANGELISTA,ROLEAH,DEL MUNDO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(17, '110524150017', 'OLLA,JHON CARLO, CRISOLO', '9', '9-B', '2025-2026', 'M', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'OLLA, CHRISTIAN DE CASTRO', 'CRISOLO,JUDITH,CLEOFE,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(18, '111575150097', 'PAREJA,SEAN EJ, CERVAN', '9', '9-B', '2025-2026', 'M', '2009-11-12', 14, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'PAREJA, EFREN GONAY', 'CERVAN,JEANALYN,SUMAYO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(19, '107246150027', 'PELAEZ,EMERSON, ABIAD', '9', '9-B', '2025-2026', 'M', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'PELAEZ, ELMER SAN JUAN', 'ABIAD,MARITES,DE PADUA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(20, '111575150098', 'QUI�ONES,JOHN CHRYS, JR QUIBULOY', '9', '9-B', '2025-2026', 'M', '2010-06-08', 14, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'QUI�ONES, JOHN CHRYS P', 'QUIBULOY,JANETH,C,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(21, '109625140248', 'SARAJAN,JAN JOSHUA, MINGUELA', '9', '9-B', '2025-2026', 'M', '2008-09-05', 16, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'SARAJAN, FRANCISCO MANRIQUE', 'MINGUELA,MARYJANE,DE CASTRO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(22, '111555150030', 'VILLAS,GIAN CARLO, MATIBAG', '9', '9-B', '2025-2026', 'M', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'VILLAS, RONALD CHUA', 'MATIBAG,EMELYN,A�ONUEVO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(23, '111575150071', 'ABACA,MA. JAQUELYN, BENDICION', '9', '9-B', '2025-2026', 'F', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ABACA, ROGER PACHECO', 'BENDICION,RHEA,ARCAYOS,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(24, '117468150265', 'ALDOVINO,KRIZYL KHATE, TULIO', '9', '9-B', '2025-2026', 'F', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'TUMANA', 'SANTA MARIA', 'BULACAN', 'ALDOVINO, ALEX MENDOZA', 'TULIO,NANETTE,SANCHEZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(25, '105587150014', 'ANDRES,JASMIN KEY, COMO', '9', '9-B', '2025-2026', 'F', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'ANDRES, BENJAMIN SAAVEDRA JR', 'COMO,CONEY,D,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(26, '111575150011', 'ARGENTE,JEAN, MASAPOL', '9', '9-B', '2025-2026', 'F', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ARGENTE, ALBERTO ARCAYOS', 'MASAPOL,NORA,RONDA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(27, '111575150088', 'ARIAS,RIANNA, BALDOVIA', '9', '9-B', '2025-2026', 'F', '2010-10-10', 14, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'ARIAS, ROMMEL MAGNAYE', 'BALDOVIA,JHONALYN,REA�O,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(28, '111578150021', 'BURGOS,CASSANDRA ALIAH, DE ROSALES', '9', '9-B', '2025-2026', 'F', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'PERSONAS', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'BURGOS, SANTOS ALFARO', 'DE ROSALES,MARY GRACE,RODRIGUEZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(29, '111575150042', 'CARINGAL,DIANNA, MARASIGAN', '9', '9-B', '2025-2026', 'F', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'PARANG', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'CARINGAL, SOFRONIO MANALO', 'MARASIGAN,ANNABELLE,DATINGGALING,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(30, '111575150043', 'COLLADO,KAYCEE ANN, GLORIA', '9', '9-B', '2025-2026', 'F', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'COLLADO, GREG JAVIER', 'GLORIA,JOCELYN,ARGUELLES,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(31, '111555150031', 'DELA VEGA,NADINE, HERNANDEZ', '9', '9-B', '2025-2026', 'F', '2010-02-08', 14, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'DELA VEGA, NORIEL NOLGADO', 'HERNANDEZ,MARY GRACE,CALAPIT,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(32, '111578150007', 'DELOS REYES,STEPHANIE, PALARIA', '9', '9-B', '2025-2026', 'F', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'PERSONAS', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'DELOS REYES, JEFFREY CANTARA', 'PALARIA,MARIAFE,ALBAN,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(33, '107624150026', 'DIMACULANGAN,SHANELLE, GASPAR', '9', '9-B', '2025-2026', 'F', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'DIMACULANGAN, RUBEN JAVIER', 'GASPAR,LYNBEL,COLLADO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(34, '111575150004', 'DINGLASAN,LESLIE, ALAGAO', '9', '9-B', '2025-2026', 'F', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'DINGLASAN, LEO TOLENTINO', 'ALAGAO,MARY ROSALIE,DELOS MARTIREZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(35, '111578150024', 'DIPASUPIL,MA. VENUS, CABRAL', '9', '9-B', '2025-2026', 'F', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'PERSONAS', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'DIPASUPIL, FELIX MANALO', 'CABRAL,EDNA,DE ROSALES,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(36, '111578150026', 'EVANGELISTA,EMIE, GAMIER', '9', '9-B', '2025-2026', 'F', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'PERSONAS', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'EVANGELISTA, ELPIDIO DATINGUINOO', 'GAMIER,RONA,ALMANON,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:12', NULL),
+(37, '110524150039', 'PEDILLONE,BABY JANE, BOSLON', '9', '9-B', '2025-2026', 'F', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'PEDILLONE, LANRITO COLIS', 'BOSLON,MERIAM,GUMABAO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:13', NULL),
+(38, '432002160005', 'RAMOS,FRINZES HAILEY YUAN, -', '9', '9-B', '2025-2026', 'F', '1970-01-01', 15, 'Tagalog', NULL, 'Christianity', NULL, 'PERSONAS', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', NULL, 'RAMOS,KRISTINE MAE,BALAHADIA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:13', NULL),
+(39, '111575150083', 'SUMUGAT,NATHALIE, GUNDRAN', '9', '9-B', '2025-2026', 'F', '2010-06-11', 14, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'SUMUGAT, RODERIC ALVAREZ', 'GUNDRAN,ROGELYN,SUBIDO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:13', NULL),
+(40, '110635140105', 'TAPALLA,KYLA, -', '9', '9-B', '2025-2026', 'F', '2009-06-06', 15, 'Tagalog', NULL, 'Christianity', NULL, 'CANUBING II', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', NULL, 'TAPALLA,SHIRLEY,PEREZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:13', NULL),
+(41, '117460160141', 'VERGARA,FIONA ANNE, VALLADOR', '9', '9-B', '2025-2026', 'F', '1970-01-01', 14, 'Hiligaynon', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'VERGARA, RONELO GERIANE SR', 'VALLADOR,EVELYN,NAVA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:22:13', NULL),
+(42, '110525150042', 'ALMANON,VICTOR, SIETON', '8', '8-B', '2024-2025', 'M', '1970-01-01', 15, 'Tagalog', NULL, 'Christianity', NULL, 'CANUBING II', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ALMANON, VIRGILIO ABATA', 'SIETON,PRICILLA,DELO SANTOS,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(43, '111575160067', 'ARCAYOS,JERWIN, TIONGSON', '8', '8-B', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ARCAYOS, ANTOPER MENDOZA', 'TIONGSON,JANE,RUFIDO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(44, '132067160002', 'BOOC,BRYLE, HINAY', '8', '8-B', '2024-2025', 'M', '2010-06-11', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'BOOC, BRENDO SUICO', 'HINAY,ANELYN,TAJALE,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(45, '110525160002', 'CAPACIA,ANDREY, GUTIERREZ', '8', '8-B', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'CAPACIA, RENANTE BASCOGIN', 'GUTIERREZ,REXEL,CAGITLA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(46, '111555140014', 'CAUNCERAN,GIAN CARLO, ASI', '8', '8-B', '2024-2025', 'M', '1970-01-01', 15, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'CAUNCERAN, ELMAR CONSUL', 'ASI,SHERYL,VILLAS,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(47, '111578160024', 'DE ROSALES,PETER JOHN, ATIENZA', '8', '8-B', '2024-2025', 'M', '2011-03-08', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PERSONAS', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'DE ROSALES, PEDRO CRUZAT', 'ATIENZA,JESSICA,DATINGUINOO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(48, '111555160005', 'DELA CRUZ,CHRISTIAN, UMALI', '8', '8-B', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'DELA CRUZ, ROBERTO ORTEGA', 'UMALI,CHARINA,TORRES,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(49, '111578160002', 'FALLARIA,DOMINIC, BERIOSO', '8', '8-B', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PERSONAS', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'FALLARIA, ALFREDO ALBAN', 'BERIOSO,MARICEL,GONZALES,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(50, '111575160059', 'GANDIA,PRINCE ANGELO, IGNACIO', '8', '8-B', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'GANDIA, JEHIEL SAMONTE', 'IGNACIO,NORIZEL,GALARIO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(51, '110524160010', 'LACERNA,JIAN CARL, BLANCO', '8', '8-B', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'LACERNA, JOEL BACSA', 'BLANCO,AGNES,CARANDANG,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(52, '111574160011', 'MANALO,JHORHENZ, ALMARIO', '8', '8-B', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'CANUBING II', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'MANALO, RENNEL MENDOZA', 'ALMARIO,MARY JOY,CORTEZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(53, '112185160005', 'MEJIDANA,JETT LAWRENCE, BENTING', '8', '8-B', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'MEJIDANA, ROEL DE LOS SANTOS', 'BENTING,MARIVIC,GONZALES,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(54, '111575160063', 'NEPOMUCENO,JHERZEL, BONILLA', '8', '8-B', '2024-2025', 'M', '2011-04-05', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'NEPOMUCENO, ARCELO CATIBOG', 'BONILLA,JAMAICA,ARGUELLES,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(55, '111555160027', 'PADILLON,JERMAINE, BAUTISTA', '8', '8-B', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'PADILLON, RONIE LOCQUIAO', 'BAUTISTA,ARMIE JEAN,GONAY,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(56, '136885160642', 'PLANDEZ,DARYL JAKE, PADUA', '8', '8-B', '2024-2025', 'M', '2010-05-11', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'PLANDEZ, JASON SANTOS', 'PADUA,REBECCA,ALCA�ICES,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(57, '111575160014', 'RAMIREZ,NATHAN, MA�EBO', '8', '8-B', '2024-2025', 'M', '2011-11-05', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BUHUAN', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'RAMIREZ, ROMEO VELARMINO', 'MA�EBO,MARY JANE,ARELLANO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(58, '111575160027', 'RIZA,LORENCESS, BAID', '8', '8-B', '2024-2025', 'M', '2011-01-05', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BUCAYAO', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'RIZA, LEO RAMIREZ', 'BAID,FE,TALON,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(59, '153507160036', 'SALES,KHENJIE, VINOYA', '8', '8-B', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'SALES, JAY R NAPOLITANO', 'VINOYA,RACHELLE,MANGANDI,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(60, '111575160005', 'SAMBAOA,ABDEL MORRIS, DAGOS', '8', '8-B', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', NULL, 'SAMBAOA,MARY JEAN,DAGOS,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(61, '111575160013', 'VERDERA,JERRICK, FUNELAS', '8', '8-B', '2024-2025', 'M', '2011-04-05', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'VERDERA, JERRY AGUILAR', 'FUNELAS,SHIELA,PALLE,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(62, '107514160019', 'VILLAVIRAY,AZEL JESLIAH, BORDONADA', '8', '8-B', '2024-2025', 'M', '2010-07-11', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'VILLAVIRAY, JONATHAN S', 'BORDONADA,JENNY,B,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(63, '111575160025', 'VILLAVIRAY,MALCHIEL JEUSH KEITH, VICENTE', '8', '8-B', '2024-2025', 'M', '2011-10-05', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'VILLAVIRAY, SAMUEL SAMONTE', 'VICENTE,LAYNITA,SAMBAT,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(64, '111575160078', 'ADARLO,XYRENE, DELOS SANTOS', '8', '8-B', '2024-2025', 'F', '2011-10-03', 12, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ADARLO, ONOFRE NAVARETE', 'DELOS SANTOS,MARISA,RONQUILLO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(65, '111575160082', 'ALI,JESSICA, AFABLE', '8', '8-B', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ALI, ARMANDO HUGANAS JR', 'AFABLE,AIZA,MORTELLA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(66, '111575160016', 'ALI,ZYRILLE, HIGENA', '8', '8-B', '2024-2025', 'F', '2011-01-11', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BUCAYAO', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ALI, ARTURO LUNA JR', 'HIGENA,JINALYN,DANDO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(67, '111570160092', 'ALIPIO,PRINCESS XYRELLE, ALEA', '8', '8-B', '2024-2025', 'F', '2010-10-08', 13, 'Tagalog', NULL, 'Christianity', NULL, 'LUMANG BAYAN', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ALIPIO, BOBBY RAGO', 'ALEA,MYLENE,CUETO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(68, '111575160089', 'AYENDE,PRINCESS, ARAGON', '8', '8-B', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'AYENDE, WILLIAM ARCAYOS JR', 'ARAGON,CRISTINE,PETRA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(69, '429511150204', 'BALQUIN,EUNICE GRACE, MANLUNAS', '8', '8-B', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'BALQUIN, GILBERT LUBAO', 'MANLUNAS,ESTELA,MAGSAYO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(70, '111575160024', 'BURGOS,NICOLE, GALICIA', '8', '8-B', '2024-2025', 'F', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'BURGOS, VICENTE ALFARO', 'GALICIA,EMMA,SANCHEZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(71, '111555160013', 'CANTOS,KHRIZIEL, DOTE', '8', '8-B', '2024-2025', 'F', '2011-03-06', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'CANTOS, DANILO BAES', 'DOTE,ROWENA,BAES,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(72, '110516160016', 'CUETO,MARIA JANELL, ABIUL', '8', '8-B', '2024-2025', 'F', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'CUETO, MANNY DELGADO', 'ABIUL,JASEL,MALAGENIO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(73, '111575160009', 'DATINGUINOO,NIKKA SHAIRA, DACULIO', '8', '8-B', '2024-2025', 'F', '2011-03-08', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'DATINGUINOO, MICHAEL GUNAY', 'DACULIO,GINALYN,AFABLE,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(74, '111575160008', 'DATINGUINOO,NIKKI XYRIEL, DACULIO', '8', '8-B', '2024-2025', 'F', '2011-03-08', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'DATINGUINOO, MICHAEL GUNAY', 'DACULIO,GINALYN,AFABLE,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(75, '111578160025', 'DI�O,ANGEL MAY, DALISAY', '8', '8-B', '2024-2025', 'F', '2011-05-03', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'DI�O, ERNEL ALTERADO', 'DALISAY,RONABEL,CRUEL,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(76, '111575160084', 'EBORA,JANELLA, CLOSA', '8', '8-B', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'EBORA, JUANITO SOLIS', 'CLOSA,LORETA,SURIQUEZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(77, '111578160014', 'ENRIQUEZ,JEANNA, ALMANZOR', '8', '8-B', '2024-2025', 'F', '2011-01-07', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PERSONAS', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ENRIQUEZ, RAMON AGELLON', 'ALMANZOR,GIRLIE,BELOSO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(78, '110524160024', 'GACILO,KYLA, AZUL', '8', '8-B', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'SAMPAGUITA', 'NAUJAN', 'ORIENTAL MINDORO', 'GACILO, RODRIGO CERVAS', 'AZUL,MONALYN,BAHIA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(79, '110512160003', 'GACO,MYCEL, NOCHE', '8', '8-B', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'GACO, MARVIN MARANAN', 'NOCHE,JULIETA,MATINING,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(80, '111544160034', 'MARASIGAN,CHLOE NICHOLE, MANALO', '8', '8-B', '2024-2025', 'F', '2011-09-12', 12, 'Tagalog', NULL, 'Christianity', NULL, 'PERSONAS', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'MARASIGAN, ROMEL DATINGGALING', 'MANALO,ROCHELLE,VALDEZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(81, '110505160018', 'MERCADO,LOVELYN JOY, SAGUN', '8', '8-B', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'AURORA', 'NAUJAN', 'ORIENTAL MINDORO', 'MERCADO, JERRY VALENCIA', 'SAGUN,NENIVEE,NOCHE,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(82, '129648140079', 'PALERO,ERICA, -', '8', '8-B', '2024-2025', 'F', '1970-01-01', 15, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', NULL, 'PALERO,WILMA,,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(83, '110524160002', 'ABELA,JOHN ALDRIE, GARCIA', '8', '8-C', '2024-2025', 'M', '2011-01-05', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'ABELA, ALDREN DEL ROSARIO', 'GARCIA,MARICEL,CLAUS,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(84, '117468160217', 'ALDOVINO,KHENT BRYAN, TULIO', '8', '8-C', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'ALDOVINO, ALEX MENDOZA', 'TULIO,NANETTE,SANCHEZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(85, '108019160002', 'ALEA,CHESTER DAVE, ABAS', '8', '8-C', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ALEA, MARK CUETO', 'ABAS,MARINER,PE�ARANDA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(86, '111575160092', 'CABRERA,LESTER, CORNEJO', '8', '8-C', '2024-2025', 'M', '2011-03-02', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'CABRERA, CRISTOPHER DEL RIO', 'CORNEJO,TERESITA,RAMIREZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(87, '110524160033', 'CASAO,CARLOS IVAN, DELOS REYES', '8', '8-C', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', NULL, 'CASAO,IVY ROSE,DELOS REYES,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(88, '110512160006', 'CEZAR,LHANZ JURIE, TALAY', '8', '8-C', '2024-2025', 'M', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'CEZAR, ROILAN VILLASTIQUE', 'TALAY,JOLLY ANN,DATINGUINOO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(89, '111578160008', 'CIPRES,RHAZEL, CRUEL', '8', '8-C', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'CANUBING II', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'CIPRES, RANEL LLAVANES', 'CRUEL,SHIELA,SABALLA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(90, '110512160008', 'EVANGELISTA,TRAVIZ E�IGO, FORCA', '8', '8-C', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'EVANGELISTA, BENJIE MAGBOO', 'FORCA,TERESA,CORTEZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(91, '111578160005', 'EVANGELISTA,WARREN, EVANGELISTA', '8', '8-C', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PERSONAS', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'EVANGELISTA, FORTUNATO REYES', 'EVANGELISTA,MARIE MAY,DATINGUINOO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(92, '111555160006', 'GUILO,ERONE ELISON, MONTEMAYOR', '8', '8-C', '2024-2025', 'M', '2010-11-06', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'GUILO, EDUARDO SABA', 'MONTEMAYOR,EMELYN,ANDAL,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(93, '117009160023', 'HEMENA,JAMES, OLEA', '8', '8-C', '2024-2025', 'M', '2011-07-03', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'HEMENA, VICTOR JR BARTOLEN', 'OLLA,SONIA,DE CASTRO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(94, '170002140006', 'LUZON,DEN MARK, ALBAN', '8', '8-C', '2024-2025', 'M', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'PERSONAS', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'LUZON, DENNIS TETALCOREN', 'ALBAN,EMALYN,FALLARIA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(95, '111536160060', 'MAGSINO,KIAN ZYLEX, CLANZA', '8', '8-C', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', NULL, 'MAGSINO,MAY,CLANZA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(96, '111555160009', 'MELENDEZ,KEITH ZANDER, JAVIER', '8', '8-C', '2024-2025', 'M', '2011-02-10', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'MELENDEZ, JEYMAR P', 'JAVIER,CRISTINA,ABAJA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(97, '136498160121', 'MENDOZA,MATHEW MARK, MOULIC', '8', '8-C', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'MENDOZA, JOSEPH ILAR', 'MOULIC,JOVAN ARRIANE,CALAMINOS,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(98, '111578160006', 'MORTELLA,KIEFER GIAN, DAPAT', '8', '8-C', '2024-2025', 'M', '2011-05-05', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PERSONAS', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'MORTELLA, WILLIAM BAHIA', 'DAPAT,GINA,ALDAY,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(99, '110524160013', 'OBSEQUIO,KERVEY, BASCOGIN', '8', '8-C', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'OBSEQUIO, DENNIS DELA TORRE', 'BASCOGIN,EVERLYN,CUSTODIO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(100, '111575160029', 'OPREDO,JOHN PAUL, BRIONES', '8', '8-C', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'OPREDO, ROBERTO FERNANDEZ', 'BRIONES,MA GLENDA,CEPILLO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(101, '136426160328', 'PERONA,ZHUE BERNARD DAINE, TOLENTINO', '8', '8-C', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'AURORA', 'NAUJAN', 'ORIENTAL MINDORO', 'PERONA, BERNIE BAWAS', 'TOLENTINO,AYREN,ALDOVINO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(102, '136444140536', 'QUINDAO,ALLDREM, SOLIS', '8', '8-C', '2024-2025', 'M', '1970-01-01', 16, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'QUINDAO, ALLAN TILLOR', 'SOLIS,ELMA,CAEG,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(103, '111575160039', 'RADA,REX NATHANIEL, -', '8', '8-C', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', NULL, 'RADA,GINA,ARGUELLES,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(104, '136688160038', 'RICABLANCA,JARED, GONZALES', '8', '8-C', '2024-2025', 'M', '2011-06-09', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'RICABLANCA, JOEL ABOBOTO', 'GONZALES,KAREN,RIMANDO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(105, '111575160026', 'RUBIO,ANGELO, YLAGAN', '8', '8-C', '2024-2025', 'M', '2010-11-04', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'RUBIO, RAYMOND ARELLANO', 'YLAGAN,CRISTINE,DIPASUPIL,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(106, '111575160087', 'TALAY,REYMARK, SALA', '8', '8-C', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'TALAY, REYNANTE DATINGUINOO', 'SALA,MARY ANNE,MENDOZA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(107, '111575160015', 'ABIHIN,MARY JOY, LABAJO', '8', '8-C', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'ABIHIN, ARMANDO ASCOLAR', 'LABAJO,LUCREMIA,RAMOS,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(108, '110524160031', 'ANGELES,LOVELY JANE, DIMAANO', '8', '8-C', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'AURORA', 'NAUJAN', 'ORIENTAL MINDORO', 'ANGELES, JUAN CANTOS', 'DIMAANO,VILMA,MUGAR,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(109, '111575160018', 'BALILA,PRINCES MAE ANNE, CARDINAL', '8', '8-C', '2024-2025', 'F', '2010-11-12', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'BALILA, MARLON RAMOS', 'CARDINAL,ROSEMARIE,ARCAYOS,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(110, '110524160021', 'BISA,KRISTINE MAE, ARANDA', '8', '8-C', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'BISA, RONALD OLLA', 'ARANDA,MARIBEL,PUMAR,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(111, '111566160040', 'CAPARROS,BERNADETTE, ARELLANO', '8', '8-C', '2024-2025', 'F', '2010-11-03', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'CAPARROS, BUENO COLLERA JR', 'ARELLANO,LEAH,DIMAANO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(112, '111575160065', 'CAPILI,APRIL JHOY, FRANCISCO', '8', '8-C', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'CAPILI, ALEX PAALA', 'FRANCISCO,ETHEL JOY,ROLDAN,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(113, '136546160477', 'CARLET,SOPHIA CLARENZE, PERI�A', '8', '8-C', '2024-2025', 'F', '2011-02-06', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'CARLET, ALBERT C', 'PERI�A,KRIZIA MAUREEN,GACILO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(114, '111575160011', 'DELA VEGA,LYRA JANE, CLOSA', '8', '8-C', '2024-2025', 'F', '2011-01-12', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'DELA VEGA, JACOBO SAPINOSO', 'CLOSA,MIGUELA,MADERAZO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(115, '110513130035', 'DI�O,MA ANA JAYNE, -', '8', '8-C', '2024-2025', 'F', '1970-01-01', 15, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', NULL, 'DI�O,JOY,ALTERADO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(116, '111555160018', 'ELARDE,ARYAN DANIELLE, CENIZA', '8', '8-C', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ELARDE, DANILO LAMARCA', 'CENIZA,JOJITH,RAMIREZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(117, '111575150046', 'GABA,LEALYN, -', '8', '8-C', '2024-2025', 'F', '2009-11-05', 14, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', NULL, 'GABA,RONALYN,GACILO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(118, '110505150021', 'GAMIER,ERICH MAE, MACARAIG', '8', '8-C', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'AURORA', 'NAUJAN', 'ORIENTAL MINDORO', 'GAMIER, ERIC ALMANON', 'MACARAIG,RHODA,CARIAGA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(119, '111575160093', 'GONZALES,JILLIAN, CADACIO', '8', '8-C', '2024-2025', 'F', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'GONZALES, JAYSON BASIOGCH', 'CADACIO,LEA,GUTIEREZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(120, '110544140017', 'IMBANG,KATRICE, PATULOT', '8', '8-C', '2024-2025', 'F', '1970-01-01', 15, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'IMBANG, WENIFRE DIASON', 'PATULOT,MARY GRACE,RAMOS,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(121, '111570160179', 'LACRE,JHURIS, GARDIANO', '8', '8-C', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'LACRE, JOSEPH CONDA', 'GARDIANO,CATHERINE,ROMERO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(122, '111575160021', 'LALONG-ISIP,JHANA, VALDEZ', '8', '8-C', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'LALONG-ISIP, RANDY DOLORES', 'VALDEZ,JENNY,ARELLANO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(123, '110512160004', 'LORENTE,FRENCHESKA NICOLLE, MAXINO', '8', '8-C', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'LORENTE, ALVIN SAGUN', 'MAXINO,DAISY LYN,AMPER,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(124, '110524160029', 'OLLA,KEANNA MAE, NICOLAS', '8', '8-C', '2024-2025', 'F', '2010-12-02', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'OLLA, JONATHAN PALAO', 'NICOLAS,MARIFE,DE CASTRO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(125, '111578160012', 'PALLARIA,BERNADETTE, ALBA', '8', '8-C', '2024-2025', 'F', '2010-11-02', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PERSONAS', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'PALLARIA, BENITO ALBAN', 'ALBA,JANETH,ULAYAN,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(126, '110524160030', 'REA�O,PRINCESS LOURENCE, LACERNA', '8', '8-C', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'REA�O, WILLIE OLLA', 'LACERNA,EMETERIA,BACSA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(127, '111555150020', 'VILLAS,GRACE, CONCEPCION', '8', '8-C', '2024-2025', 'F', '1970-01-01', 14, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'VILLAS, ROBERT CHUA', 'CONCEPCION,EMALYN,DEYTA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-13 16:23:55', NULL),
+(128, '110524170002', 'ANDRES,RICKS CALEB, COMO', '7', '7-D', '2024-2025', 'M', '1970-01-01', 11, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'ANDRES, BENJAMIN JR SAAVEDRA', 'COMO,CONEY,DIPASUPIL,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(129, '111575170023', 'AZUL,MARL DHANIEL, TALBAN', '7', '7-D', '2024-2025', 'M', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'AZUL, MARLON BAHIA', 'TALBAN,DHONA,SACRO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(130, '110524160006', 'CARBONEL,GEREMIAH, JOSE', '7', '7-D', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'CARBONEL, GEREMIAS MEMITA', 'JOSE,MELANIE,ESTELLES,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(131, '110524170006', 'CASAO,VINCE PATRICK, BALMES', '7', '7-D', '2024-2025', 'M', '2012-10-05', 12, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'CASAO, MELVIN DELOS REYES', 'BALMES,MERLY,FLORIDA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(132, '111575170040', 'CLANZA,PRINCE MJ, MARASIGAN', '7', '7-D', '2024-2025', 'M', '2012-10-05', 12, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'CLANZA, MELCHOR CATIPON', 'MARASIGAN,JEANYFER,MANALO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(133, '110524170008', 'COLIS,SAMWYNNE, TOLENTINO', '7', '7-D', '2024-2025', 'M', '2011-12-10', 12, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'COLIS, IAN MACATANGAY', 'TOLENTINO,MARIVIC,AGUILAR,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(134, '111556170023', 'DE VILLA,MARK ANDRIE, GUTIERREZ', '7', '7-D', '2024-2025', 'M', '2011-11-12', 12, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'DE VILLA, MARK ROSARIO', 'GUTIERREZ,CHERRY ROSE,DE LEON,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(135, '111555170022', 'EVORA,JOHN REINELL, DE CASTRO', '7', '7-D', '2024-2025', 'M', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'EVORA, RONILO DOMINGO', 'DE CASTRO,JEMELYN,AZUL,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(136, '111568170004', 'FONTE,VON KENNEDY, RAMIREZ', '7', '7-D', '2024-2025', 'M', '2011-12-09', 12, 'Tagalog', NULL, 'Christianity', NULL, 'PUTINGTUBIG', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'FONTE, MARK ANTHONY NATAL', 'RAMIREZ,MANELYN,MANIMTIM,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(137, '111555170009', 'JOVER,RIXCEL, DOMINICO', '7', '7-D', '2024-2025', 'M', '2011-11-07', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'JOVER, RICHARD BICERA', 'DOMINICO,CELIA,GAYTO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(138, '110524170013', 'LALATA,RICHARD, BARAQUEL', '7', '7-D', '2024-2025', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'LALATA, ALFONSO ELOMBRA', 'BARAQUEL,NORA,SORIQUEZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(139, '118350170025', 'MAPUTE,PRINCE KHARLMARX, SACDALAN', '7', '7-D', '2024-2025', 'M', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'MAPUTE, ANTONIO GALINATO', 'SACDALAN,MARIFE,GARCIA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(140, '110576150012', 'MERCADO,JOHN MARK, FORMALEJO', '7', '7-D', '2024-2025', 'M', '2010-10-02', 14, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'MERCADO, DARIOUS ATILLANO', 'FORMALEJO,CHONA,SAGER,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(141, '110512170006', 'OMAñA,RENZO, OPREDO', '7', '7-D', '2024-2025', 'M', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'OMAÑA, RAMSON MARILIANO', 'OPREDO,JENIFER,ABIUL,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(142, '110512170007', 'OPREDO,JAY LORD, ALDOVINO', '7', '7-D', '2024-2025', 'M', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'OPREDO, JOEY DE LLAMAS', 'ALDOVINO,RECHEL,MENDOZA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(143, '110524170014', 'PALAW,DJ, VIAÑA', '7', '7-D', '2024-2025', 'M', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'PALAW, DENNIS GUNO', 'VIAÑA,JENNIFER,MENDOZA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(144, '111570170273', 'ABAS,LEA MARNELLY, ULAYAN', '7', '7-D', '2024-2025', 'F', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'PERSONAS', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ABAS, RELLY ABACA', 'ULAYAN,ROSEMARIE,RUBION,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(145, '110512170010', 'ALVAREZ,KHATRINE ACE, PEREZ', '7', '7-D', '2024-2025', 'F', '2012-12-05', 12, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'ALVAREZ, CHRISTOPHER GONZALES', 'PEREZ,CRYZL ACE,BERIN,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(146, '110524170018', 'AZUL,PRINCES NICOLE, BISA', '7', '7-D', '2024-2025', 'F', '2012-12-03', 12, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'AZUL, BRAIAN ABAS', 'BISA,ROCHELE,OLLA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(147, '111575170028', 'CARINGAL,STEFANIE KATE, BRUCE', '7', '7-D', '2024-2025', 'F', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'CARINGAL, DON KING TUPAZ', 'BRUCE,RICHELLE,PROTACIO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(148, '111575170060', 'CLAY,RHOMA GAIL, BUENO', '7', '7-D', '2024-2025', 'F', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'CLAY, ELMAR CONCEPCION', 'BUENO,RONA,CORTEZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(149, '111568160011', 'GREGORIO,JANICE, GURAY', '7', '7-D', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'GREGORIO, ROBERT GABAY', 'GURAY,MARTHA,IGLESIAS,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(150, '110516170027', 'JAVIER,AYESHA NICOLE, DIMAANO', '7', '7-D', '2024-2025', 'F', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'AURORA', 'NAUJAN', 'ORIENTAL MINDORO', 'JAVIER, DANTE PASIGAN', 'DIMAANO,LIWAYWAY,MUGAR,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(151, '110524160035', 'MAGADIA,PRINCESS JELLIAN, GENZOLA', '7', '7-D', '2024-2025', 'F', '2011-05-09', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'MAGADIA, DENNIS MACATANGAY', 'GENZOLA,MA GELA,LIBASTIN,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL);
+INSERT INTO `student_tbl` (`id`, `lrn`, `name`, `grade_level`, `section`, `school_year`, `sex`, `birth_date`, `age`, `mother_tongue`, `ethnic_group`, `religion`, `hssp`, `barangay`, `municipality_city`, `province`, `father_name`, `mother_maiden_name`, `guardian_name`, `guardian_relationship`, `contact_number`, `learning_modality`, `remarks`, `created_at`, `strand_track`) VALUES
+(152, '111575170022', 'MORTOS,ZHIA MAE, UMALI', '7', '7-D', '2024-2025', 'F', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'MORTOS, DANNY GLORIA', 'UMALI,CRISENCIA,PENTENIO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(153, '111575170074', 'QUIÑONES,AJIEA SHANE, CANTOS', '7', '7-D', '2024-2025', 'F', '2012-08-02', 12, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'QUIÑONES, LUCIO JR BENDICION JR', 'CANTOS,EDEN,LEGASPI,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(154, '111575170036', 'RIVERO,ANGEL, ULIP', '7', '7-D', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'RIVERO, EDISON B', 'ULIP,MERLITA,ASUNCION,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(155, '111575170056', 'SALES,KHEANNA MAE, VINOYA', '7', '7-D', '2024-2025', 'F', '2012-05-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'SALES, JAY-R NAPOLITANO', 'VINOYA,RACHELLE,MANGANDI,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(156, '111564160008', 'VILLAS,ERIKA JANE, GARCIA', '7', '7-D', '2024-2025', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'MALAD', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'VILLAS, RICARDO CUETO', 'GARCIA,ROMELIE,MAYORES,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 11:42:22', NULL),
+(157, '110524170002', 'ANDRES,RICKS CALEB, COMO', '7', '8-D', '2025-2026', 'M', '1970-01-01', 11, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'ANDRES, BENJAMIN JR SAAVEDRA', 'COMO,CONEY,DIPASUPIL,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(158, '111575170023', 'AZUL,MARL DHANIEL, TALBAN', '7', '8-D', '2025-2026', 'M', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'AZUL, MARLON BAHIA', 'TALBAN,DHONA,SACRO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(159, '110524160006', 'CARBONEL,GEREMIAH, JOSE', '7', '8-D', '2025-2026', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'CARBONEL, GEREMIAS MEMITA', 'JOSE,MELANIE,ESTELLES,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(160, '110524170006', 'CASAO,VINCE PATRICK, BALMES', '7', '8-D', '2025-2026', 'M', '2012-10-05', 12, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'CASAO, MELVIN DELOS REYES', 'BALMES,MERLY,FLORIDA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(161, '111575170040', 'CLANZA,PRINCE MJ, MARASIGAN', '7', '8-D', '2025-2026', 'M', '2012-10-05', 12, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'CLANZA, MELCHOR CATIPON', 'MARASIGAN,JEANYFER,MANALO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(162, '110524170008', 'COLIS,SAMWYNNE, TOLENTINO', '7', '8-D', '2025-2026', 'M', '2011-12-10', 12, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'COLIS, IAN MACATANGAY', 'TOLENTINO,MARIVIC,AGUILAR,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(163, '111556170023', 'DE VILLA,MARK ANDRIE, GUTIERREZ', '7', '8-D', '2025-2026', 'M', '2011-11-12', 12, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'DE VILLA, MARK ROSARIO', 'GUTIERREZ,CHERRY ROSE,DE LEON,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(164, '111555170022', 'EVORA,JOHN REINELL, DE CASTRO', '7', '8-D', '2025-2026', 'M', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'EVORA, RONILO DOMINGO', 'DE CASTRO,JEMELYN,AZUL,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(165, '111568170004', 'FONTE,VON KENNEDY, RAMIREZ', '7', '8-D', '2025-2026', 'M', '2011-12-09', 12, 'Tagalog', NULL, 'Christianity', NULL, 'PUTINGTUBIG', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'FONTE, MARK ANTHONY NATAL', 'RAMIREZ,MANELYN,MANIMTIM,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(166, '111555170009', 'JOVER,RIXCEL, DOMINICO', '7', '8-D', '2025-2026', 'M', '2011-11-07', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'JOVER, RICHARD BICERA', 'DOMINICO,CELIA,GAYTO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(167, '110524170013', 'LALATA,RICHARD, BARAQUEL', '7', '8-D', '2025-2026', 'M', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'LALATA, ALFONSO ELOMBRA', 'BARAQUEL,NORA,SORIQUEZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(168, '118350170025', 'MAPUTE,PRINCE KHARLMARX, SACDALAN', '7', '8-D', '2025-2026', 'M', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'MAPUTE, ANTONIO GALINATO', 'SACDALAN,MARIFE,GARCIA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(169, '110576150012', 'MERCADO,JOHN MARK, FORMALEJO', '7', '8-D', '2025-2026', 'M', '2010-10-02', 14, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'MERCADO, DARIOUS ATILLANO', 'FORMALEJO,CHONA,SAGER,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(170, '110512170006', 'OMAñA,RENZO, OPREDO', '7', '8-D', '2025-2026', 'M', '1970-01-01', 12, 'Tagalog', '', 'Christianity', '', 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'OMAÑA, RAMSON MARILIANO', 'OPREDO,JENIFER,ABIUL,', '', '', '', 'Face to Face', 'T/I', '2025-06-14 12:09:01', NULL),
+(171, '110512170007', 'OPREDO,JAY LORD, ALDOVINO', '7', '8-D', '2025-2026', 'M', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'OPREDO, JOEY DE LLAMAS', 'ALDOVINO,RECHEL,MENDOZA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(172, '110524170014', 'PALAW,DJ, VIAÑA', '7', '8-D', '2025-2026', 'M', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'PALAW, DENNIS GUNO', 'VIAÑA,JENNIFER,MENDOZA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(173, '111570170273', 'ABAS,LEA MARNELLY, ULAYAN', '7', '8-D', '2025-2026', 'F', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'PERSONAS', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'ABAS, RELLY ABACA', 'ULAYAN,ROSEMARIE,RUBION,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(174, '110512170010', 'ALVAREZ,KHATRINE ACE, PEREZ', '7', '8-D', '2025-2026', 'F', '2012-12-05', 12, 'Tagalog', NULL, 'Christianity', NULL, 'DEL PILAR', 'NAUJAN', 'ORIENTAL MINDORO', 'ALVAREZ, CHRISTOPHER GONZALES', 'PEREZ,CRYZL ACE,BERIN,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(175, '110524170018', 'AZUL,PRINCES NICOLE, BISA', '7', '8-D', '2025-2026', 'F', '2012-12-03', 12, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'AZUL, BRAIAN ABAS', 'BISA,ROCHELE,OLLA,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(176, '111575170028', 'CARINGAL,STEFANIE KATE, BRUCE', '7', '8-D', '2025-2026', 'F', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'CARINGAL, DON KING TUPAZ', 'BRUCE,RICHELLE,PROTACIO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(177, '111575170060', 'CLAY,RHOMA GAIL, BUENO', '7', '8-D', '2025-2026', 'F', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'CLAY, ELMAR CONCEPCION', 'BUENO,RONA,CORTEZ,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(178, '111568160011', 'GREGORIO,JANICE, GURAY', '7', '8-D', '2025-2026', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'BIGA', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'GREGORIO, ROBERT GABAY', 'GURAY,MARTHA,IGLESIAS,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(179, '110516170027', 'JAVIER,AYESHA NICOLE, DIMAANO', '7', '8-D', '2025-2026', 'F', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'AURORA', 'NAUJAN', 'ORIENTAL MINDORO', 'JAVIER, DANTE PASIGAN', 'DIMAANO,LIWAYWAY,MUGAR,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(180, '110524160035', 'MAGADIA,PRINCESS JELLIAN, GENZOLA', '7', '8-D', '2025-2026', 'F', '2011-05-09', 13, 'Tagalog', NULL, 'Christianity', NULL, 'PANIQUIAN', 'NAUJAN', 'ORIENTAL MINDORO', 'MAGADIA, DENNIS MACATANGAY', 'GENZOLA,MA GELA,LIBASTIN,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(181, '111575170022', 'MORTOS,ZHIA MAE, UMALI', '7', '8-D', '2025-2026', 'F', '1970-01-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'MORTOS, DANNY GLORIA', 'UMALI,CRISENCIA,PENTENIO,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(182, '111575170074', 'QUIÑONES,AJIEA SHANE, CANTOS', '7', '8-D', '2025-2026', 'F', '2012-08-02', 12, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'QUIÑONES, LUCIO JR BENDICION JR', 'CANTOS,EDEN,LEGASPI,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(183, '111575170036', 'RIVERO,ANGEL, ULIP', '7', '8-D', '2025-2026', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'RIVERO, EDISON B', 'ULIP,MERLITA,ASUNCION,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(184, '111575170056', 'SALES,KHEANNA MAE, VINOYA', '7', '8-D', '2025-2026', 'F', '2012-05-01', 12, 'Tagalog', NULL, 'Christianity', NULL, 'COMUNAL', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'SALES, JAY-R NAPOLITANO', 'VINOYA,RACHELLE,MANGANDI,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL),
+(185, '111564160008', 'VILLAS,ERIKA JANE, GARCIA', '7', '8-D', '2025-2026', 'F', '1970-01-01', 13, 'Tagalog', NULL, 'Christianity', NULL, 'MALAD', 'CITY OF CALAPAN (Capital)', 'ORIENTAL MINDORO', 'VILLAS, RICARDO CUETO', 'GARCIA,ROMELIE,MAYORES,', NULL, NULL, NULL, 'Face to Face', 'T/I DATE:2024-07-29', '2025-06-14 12:09:01', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `subjects_tbl`
+--
+
+CREATE TABLE `subjects_tbl` (
+  `subject_id` int(11) NOT NULL,
+  `subject_code` varchar(50) DEFAULT NULL,
+  `grade_level` varchar(50) DEFAULT NULL,
+  `strand` varchar(50) DEFAULT NULL,
+  `subject_name` varchar(100) NOT NULL,
+  `subject_desc` varchar(100) DEFAULT NULL,
+  `weekly_hours` varchar(20) NOT NULL,
+  `subjectType` varchar(20) DEFAULT '0',
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `subject_term` varchar(50) NOT NULL,
+  `archive` int(10) DEFAULT NULL,
+  `subject_semester` varchar(10) DEFAULT NULL,
+  `subject_order` int(10) DEFAULT NULL,
+  `curriculum_id` int(11) DEFAULT NULL,
+  `nested_id` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `subjects_tbl`
+--
+
+INSERT INTO `subjects_tbl` (`subject_id`, `subject_code`, `grade_level`, `strand`, `subject_name`, `subject_desc`, `weekly_hours`, `subjectType`, `created_at`, `updated_at`, `subject_term`, `archive`, `subject_semester`, `subject_order`, `curriculum_id`, `nested_id`) VALUES
+(485, 'OCIC-11', '11', 'STEM', 'Oral Communication in Context', 'Develop communication skills', '20', 'Core', '2025-04-05 20:04:33', '2025-04-05 20:04:33', '2024-2025', 0, '1', 1, 1, NULL),
+(486, 'KPWKP-11', '11', 'STEM', 'Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino', 'Filipino communication study', '20', 'Core', '2025-04-05 20:04:33', '2025-04-05 20:04:33', '2024-2025', 0, '1', 2, 1, NULL),
+(487, 'GM-11', '11', 'STEM', 'General Mathematics', 'Basic math principles', '20', 'Core', '2025-04-05 20:04:33', '2025-04-05 20:04:33', '2024-2025', 0, '1', 3, 1, NULL),
+(488, 'ES-11', '11', 'STEM', 'Earth Science', 'Study of the Earth', '20', 'Core', '2025-04-05 20:04:33', '2025-04-05 20:04:33', '2024-2025', 0, '1', 4, 1, NULL),
+(489, 'PHILO-11', '11', 'STEM', 'Introduction to the Philosophy of the Human Person / Pambungad sa Pilosopiya ng Tao', 'Intro to human philosophy', '20', 'Core', '2025-04-05 20:04:33', '2025-04-05 20:04:33', '2024-2025', 0, '1', 5, 1, NULL),
+(490, 'PEH-11', '11', 'STEM', 'Physical Education and Health', 'Fitness and well-being', '20', 'Core', '2025-04-05 20:04:33', '2025-04-05 20:04:33', '2024-2025', 0, '1', 6, 1, NULL),
+(491, 'E-TECH-11', '11', 'STEM', 'Empowerment Technologies (E-Tech): ICT for Professional Tracks', 'Tech for professionals', '20', 'Applied', '2025-04-05 20:04:33', '2025-04-05 20:04:33', '2024-2025', 0, '1', 7, 1, NULL),
+(492, 'PC-11', '11', 'STEM', 'Pre-Calculus', 'Functions and graphing', '20', 'Specialized', '2025-04-05 20:04:33', '2025-04-05 20:04:33', '2024-2025', 0, '1', 8, 1, NULL),
+(493, 'RWS-11', '11', 'STEM', 'Reading and Writing Skills', 'Develop writing & reading skills', '20', 'Core', '2025-04-05 20:06:04', '2025-04-05 20:06:04', '2024-2025', 0, '2', 1, 1, NULL),
+(494, 'PPTTP-11', '11', 'STEM', 'Pagbasa at Pagsusuri ng Iba’t-Ibang Teksto Tungo sa Pananaliksik', 'Text analysis & research', '20', 'Core', '2025-04-05 20:06:04', '2025-04-05 20:06:04', '2024-2025', 0, '2', 2, 1, NULL),
+(495, 'SP-11', '11', 'STEM', 'Statistics and Probability', 'Intro to stats & probability', '20', 'Core', '2025-04-05 20:06:04', '2025-04-05 20:06:04', '2024-2025', 0, '2', 3, 1, NULL),
+(496, 'DRRR-11', '11', 'STEM', 'Disaster Readiness and Risk Reduction', 'Disaster preparedness concepts', '20', 'Core', '2025-04-05 20:06:04', '2025-04-05 20:06:04', '2024-2025', 0, '2', 4, 1, NULL),
+(497, 'PD-11', '11', 'STEM', 'Personal Development / Pansariling Kaunlaran', 'Self-growth and development', '20', 'Core', '2025-04-05 20:06:04', '2025-04-05 20:06:04', '2024-2025', 0, '2', 5, 1, NULL),
+(498, 'PEH2-11', '11', 'STEM', 'Physical Education and Health', 'PE and health (Sem 2)', '20', 'Core', '2025-04-05 20:06:04', '2025-04-05 20:06:04', '2024-2025', 0, '2', 6, 1, NULL),
+(499, 'RDL1-11', '11', 'STEM', 'Research in Daily Life 1', 'Basic research applications', '20', 'Applied', '2025-04-05 20:06:04', '2025-04-05 20:06:04', '2024-2025', 0, '2', 7, 1, NULL),
+(500, 'BC-11', '11', 'GAS', 'Basic Calculus', 'Intro to calculus concepts', '20', 'Specialized', '2025-04-05 20:06:04', '2025-04-08 01:33:02', '2024-2025', 0, '2', 8, 1, NULL),
+(501, 'GC1-11', '11', 'STEM', 'General Chemistry 1', 'Basic chemistry principles', '20', 'Specialized', '2025-04-05 20:06:04', '2025-04-05 20:06:04', '2024-2025', 0, '2', 9, 1, NULL),
+(502, '21CLPW-12', '12', 'STEM', '21st Century Literature from the Philippines and the World', 'Modern literary exploration', '20', 'Core', '2025-04-05 20:07:30', '2025-04-05 20:07:30', '2024-2025', 0, '1', 1, 1, NULL),
+(503, 'CPAR-12', '12', 'STEM', 'Contemporary Philippine Arts from the Regions', 'Modern local art focus', '20', 'Core', '2025-04-05 20:07:30', '2025-04-05 20:07:30', '2024-2025', 0, '1', 2, 1, NULL),
+(504, 'MIL-12', '12', 'STEM', 'Media and Information Literacy', 'Critical media engagement', '20', 'Core', '2025-04-05 20:07:30', '2025-04-05 20:07:30', '2024-2025', 0, '1', 3, 1, NULL),
+(505, 'UCSP-12', '12', 'STEM', 'Understanding Culture, Society and Politics', 'Social science foundation', '20', 'Core', '2025-04-05 20:07:30', '2025-04-05 20:07:30', '2024-2025', 0, '1', 4, 1, NULL),
+(506, 'PEH4-12', '12', 'STEM', 'Physical Education and Health', 'Physical wellness training', '20', 'Core', '2025-04-05 20:07:30', '2025-04-05 20:07:30', '2024-2025', 0, '1', 5, 1, NULL),
+(507, 'EAPP-12', '12', 'STEM', 'English for Academic and Professional Purposes', 'English in academia', '20', 'Applied', '2025-04-05 20:07:30', '2025-04-05 20:07:30', '2024-2025', 0, '1', 6, 1, NULL),
+(508, 'PFLA-12', '12', 'STEM', 'Pagsulat sa Filipino sa Piling Larangan (Akademik)', 'Akademik writing in Filipino', '20', 'Applied', '2025-04-05 20:07:30', '2025-04-05 20:07:30', '2024-2025', 0, '1', 7, 1, NULL),
+(509, 'GENPHY1-12', '12', 'STEM', 'General Physics 1', 'Basic physics concepts', '20', 'Specialized', '2025-04-05 20:07:30', '2025-04-05 20:07:30', '2024-2025', 0, '1', 8, 1, NULL),
+(510, 'GENBIO1-12', '12', 'STEM', 'General Biology 1', 'Introduction to biology', '20', 'Specialized', '2025-04-05 20:07:30', '2025-04-05 20:07:30', '2024-2025', 0, '1', 9, 1, NULL),
+(511, 'PEH4-12S2', '12', 'STEM', 'Physical Education and Health', 'Physical wellness training', '20', 'Core', '2025-04-05 20:08:27', '2025-04-05 20:08:27', '2024-2025', 0, '2', 1, 1, NULL),
+(512, 'RDL2-12', '12', 'STEM', 'Research in Daily Life 2', 'Research application skills', '20', 'Applied', '2025-04-05 20:08:27', '2025-04-05 20:08:27', '2024-2025', 0, '2', 2, 1, NULL),
+(513, 'ENTREP-12', '12', 'STEM', 'Entrepreneurship', 'Business startup principles', '20', 'Applied', '2025-04-05 20:08:27', '2025-04-05 20:08:27', '2024-2025', 0, '2', 3, 1, NULL),
+(514, 'RPROJ-12', '12', 'STEM', 'Research Project', 'Final research implementation', '20', 'Applied', '2025-04-05 20:08:27', '2025-04-05 20:08:27', '2024-2025', 0, '2', 4, 1, NULL),
+(515, 'GENPHY2-12', '12', 'STEM', 'General Physics 2', 'Advanced physics concepts', '20', 'Specialized', '2025-04-05 20:08:27', '2025-04-05 20:08:27', '2024-2025', 0, '2', 5, 1, NULL),
+(516, 'GENBIO2-12', '12', 'STEM', 'General Biology 2', 'Advanced biology topics', '20', 'Specialized', '2025-04-05 20:08:27', '2025-04-05 20:08:27', '2024-2025', 0, '2', 6, 1, NULL),
+(517, 'GENCHEM2-12', '12', 'STEM', 'General Chemistry 2', 'Chemistry deep dive', '20', 'Specialized', '2025-04-05 20:08:27', '2025-04-05 20:08:27', '2024-2025', 0, '2', 7, 1, NULL),
+(518, 'CAPSTONE-12', '12', 'STEM', 'Research/Capstone Project', 'Final STEM capstone work', '20', 'Specialized', '2025-04-05 20:08:27', '2025-04-05 20:08:27', '2024-2025', 0, '2', 8, 1, NULL),
+(553, 'FIL-7', '7', NULL, 'Filipino', 'Basic Filipino skills', '20', 'Core', '2025-04-05 20:48:22', '2025-04-05 20:48:22', '2024-2025', 0, NULL, 1, 1, NULL),
+(554, 'ENG-7', '7', NULL, 'English', 'Fundamental English use', '20', 'Core', '2025-04-05 20:48:22', '2025-04-05 20:48:22', '2024-2025', 0, NULL, 2, 1, NULL),
+(555, 'MATH-7', '7', NULL, 'Mathematics', 'Intro to algebra concepts', '20', 'Core', '2025-04-05 20:48:22', '2025-04-05 20:48:22', '2024-2025', 0, NULL, 3, 1, NULL),
+(556, 'SCI-7', '7', NULL, 'Science', 'Basics of scientific inquiry', '20', 'Core', '2025-04-05 20:48:22', '2025-04-05 20:48:22', '2024-2025', 0, NULL, 4, 1, NULL),
+(557, 'AP-7', '7', NULL, 'Araling Panlipunan', 'History and social studies', '20', 'Core', '2025-04-05 20:48:22', '2025-04-14 07:07:28', '2024-2025', 1, NULL, 5, 1, NULL),
+(558, 'ESP-7', '7', NULL, 'Edukasyon sa Pagpapakatao', 'Values and character education', '20', 'Core', '2025-04-05 20:48:22', '2025-04-05 20:48:22', '2024-2025', 0, NULL, 6, 1, NULL),
+(559, 'TLE-7', '7', '', 'Technology and Livelihood Education', 'Practical tech life skills', '20', 'Core', '2025-04-05 20:48:22', '2025-04-05 20:50:00', '2024-2025', 0, NULL, 7, 1, NULL),
+(560, 'MAPEH-7', '7', NULL, 'MAPEH', 'Music Arts PE Health', '20', 'Core', '2025-04-05 20:48:22', '2025-04-05 20:48:22', '2024-2025', 0, NULL, 8, 1, NULL),
+(561, 'MUS-7', '7', '', 'Music', 'Music theory and practice', '20', 'Core', '2025-04-05 20:48:22', '2025-04-05 20:54:39', '2024-2025', 0, '', 9, 1, 'MAPEH-7'),
+(562, 'ARTS-7', '7', '', 'Arts', 'Creative visual expression', '20', 'Core', '2025-04-05 20:48:22', '2025-04-05 20:54:09', '2024-2025', 0, '', 10, 1, 'MAPEH-7'),
+(563, 'PE-7', '7', '', 'Physical Education', 'Physical fitness activities', '20', 'Core', '2025-04-05 20:48:22', '2025-04-05 21:32:40', '2024-2025', 0, '', 10, 1, 'MAPEH-7'),
+(564, 'HE-7', '7', '', 'Health', 'Health and well-being', '20', 'Core', '2025-04-05 20:48:22', '2025-04-05 21:35:34', '2024-2025', 0, '', 12, 1, 'MAPEH-7'),
+(565, 'FIL-8', '8', NULL, 'Filipino', 'Intermediate Filipino skills', '20', 'Core', '2025-04-05 20:57:39', '2025-04-05 20:57:39', '2024-2025', 0, NULL, 1, 1, NULL),
+(566, 'ENG-8', '8', NULL, 'English', 'Intermediate English usage', '20', 'Core', '2025-04-05 20:57:39', '2025-04-05 20:57:39', '2024-2025', 0, NULL, 2, 1, NULL),
+(567, 'MATH-8', '8', NULL, 'Mathematics', 'Geometry and algebra topics', '20', 'Core', '2025-04-05 20:57:39', '2025-04-05 20:57:39', '2024-2025', 0, NULL, 3, 1, NULL),
+(568, 'SCI-8', '8', NULL, 'Science', 'Chemistry and physics intro', '20', 'Core', '2025-04-05 20:57:39', '2025-04-05 20:57:39', '2024-2025', 0, NULL, 4, 1, NULL),
+(569, 'AP-8', '8', NULL, 'Araling Panlipunan', 'Philippine history studies', '20', 'Core', '2025-04-05 20:57:39', '2025-04-05 20:57:39', '2024-2025', 0, NULL, 5, 1, NULL),
+(570, 'ESP-8', '8', NULL, 'Edukasyon sa Pagpapakatao', 'Values and ethics lessons', '20', 'Core', '2025-04-05 20:57:39', '2025-04-05 20:57:39', '2024-2025', 0, NULL, 6, 1, NULL),
+(571, 'TLE-8', '8', NULL, 'Technology and Livelihood Education', 'Home and tech skills', '20', 'Core', '2025-04-05 20:57:39', '2025-04-05 20:57:39', '2024-2025', 0, NULL, 7, 1, NULL),
+(572, 'MAPEH-8', '8', NULL, 'MAPEH', 'Music Arts PE Health', '20', 'Core', '2025-04-05 20:57:39', '2025-04-05 20:57:39', '2024-2025', 0, NULL, 8, 1, NULL),
+(573, 'MUS-8', '8', NULL, 'Music', 'Musical forms and rhythm', '20', 'Core', '2025-04-05 20:57:39', '2025-04-05 20:57:39', '2024-2025', 0, NULL, 9, 1, 'MAPEH-8'),
+(574, 'ARTS-8', '8', NULL, 'Arts', 'Visual and performing arts', '20', 'Core', '2025-04-05 20:57:39', '2025-04-05 20:57:39', '2024-2025', 0, NULL, 10, 1, 'MAPEH-8'),
+(575, 'PE-8', '8', '', 'Physical Education', 'Games and fitness skills', '20', 'Core', '2025-04-05 20:57:39', '2025-04-05 21:36:15', '2024-2025', 0, '', 11, 1, 'MAPEH-8'),
+(576, 'HE-8', '8', '', 'Health', 'Adolescent health topics', '20', 'Core', '2025-04-05 20:57:39', '2025-04-05 21:35:40', '2024-2025', 0, '', 12, 1, 'MAPEH-8'),
+(577, 'FIL-9', '9', NULL, 'Filipino', 'Advanced Filipino language', '20', 'Core', '2025-04-05 20:58:41', '2025-04-05 20:58:41', '2024-2025', 0, NULL, 1, 1, NULL),
+(578, 'ENG-9', '9', NULL, 'English', 'Reading and writing skills', '20', 'Core', '2025-04-05 20:58:41', '2025-04-05 20:58:41', '2024-2025', 0, NULL, 2, 1, NULL),
+(579, 'MATH-9', '9', NULL, 'Mathematics', 'Advanced algebra concepts', '20', 'Core', '2025-04-05 20:58:41', '2025-04-05 20:58:41', '2024-2025', 0, NULL, 3, 1, NULL),
+(580, 'SCI-9', '9', NULL, 'Science', 'Earth and environmental science', '20', 'Core', '2025-04-05 20:58:41', '2025-04-05 20:58:41', '2024-2025', 0, NULL, 4, 1, NULL),
+(581, 'AP-9', '9', NULL, 'Araling Panlipunan', 'Asian studies focus', '20', 'Core', '2025-04-05 20:58:41', '2025-04-05 20:58:41', '2024-2025', 0, NULL, 5, 1, NULL),
+(582, 'ESP-9', '9', NULL, 'Edukasyon sa Pagpapakatao', 'Values and civic education', '20', 'Core', '2025-04-05 20:58:41', '2025-04-05 20:58:41', '2024-2025', 0, NULL, 6, 1, NULL),
+(583, 'TLE-9', '9', NULL, 'Technology and Livelihood Education', 'Entrepreneurship and tech', '20', 'Core', '2025-04-05 20:58:41', '2025-04-05 20:58:41', '2024-2025', 0, NULL, 7, 1, NULL),
+(584, 'MAPEH-9', '9', NULL, 'MAPEH', 'Combined arts and health', '20', 'Core', '2025-04-05 20:58:41', '2025-04-05 20:58:41', '2024-2025', 0, NULL, 8, 1, NULL),
+(585, 'MUS-9', '9', NULL, 'Music', 'Contemporary music forms', '20', 'Core', '2025-04-05 20:58:41', '2025-04-05 20:58:41', '2024-2025', 0, NULL, 9, 1, 'MAPEH-9'),
+(586, 'ARTS-9', '9', NULL, 'Arts', 'Cultural art and design', '20', 'Core', '2025-04-05 20:58:41', '2025-04-05 20:58:41', '2024-2025', 0, NULL, 10, 1, 'MAPEH-9'),
+(587, 'PE-9', '9', '', 'Physical Education', 'Sports and movement', '20', 'Core', '2025-04-05 20:58:41', '2025-04-05 21:36:23', '2024-2025', 0, '', 11, 1, 'MAPEH-9'),
+(588, 'HE-9', '9', '', 'Health', 'Wellness and safety', '20', 'Core', '2025-04-05 20:58:41', '2025-04-05 21:35:47', '2024-2025', 0, '', 12, 1, 'MAPEH-9'),
+(589, 'FIL-10', '10', NULL, 'Filipino', 'Advanced Filipino literature', '20', 'Core', '2025-04-05 20:59:33', '2025-04-05 20:59:33', '2024-2025', 0, NULL, 1, 1, NULL),
+(590, 'ENG-10', '10', NULL, 'English', 'Literature and composition', '20', 'Core', '2025-04-05 20:59:33', '2025-04-05 20:59:33', '2024-2025', 0, NULL, 2, 1, NULL),
+(591, 'MATH-10', '10', NULL, 'Mathematics', 'Geometry and trigonometry', '20', 'Core', '2025-04-05 20:59:33', '2025-04-05 20:59:33', '2024-2025', 0, NULL, 3, 1, NULL),
+(592, 'SCI-10', '10', NULL, 'Science', 'Chemistry and physics basics', '20', 'Core', '2025-04-05 20:59:33', '2025-04-05 20:59:33', '2024-2025', 0, NULL, 4, 1, NULL),
+(593, 'AP-10', '10', NULL, 'Araling Panlipunan', 'Contemporary global issues', '20', 'Core', '2025-04-05 20:59:33', '2025-04-05 20:59:33', '2024-2025', 0, NULL, 5, 1, NULL),
+(594, 'ESP-10', '10', NULL, 'Edukasyon sa Pagpapakatao', 'Personal and social ethics', '20', 'Core', '2025-04-05 20:59:33', '2025-04-05 20:59:33', '2024-2025', 0, NULL, 6, 1, NULL),
+(595, 'TLE-10', '10', NULL, 'Technology and Livelihood Education', 'Advanced livelihood training', '20', 'Core', '2025-04-05 20:59:33', '2025-04-05 20:59:33', '2024-2025', 0, NULL, 7, 1, NULL),
+(596, 'MAPEH-10', '10', NULL, 'MAPEH', 'Health and performing arts', '20', 'Core', '2025-04-05 20:59:33', '2025-04-05 20:59:33', '2024-2025', 0, NULL, 8, 1, NULL),
+(597, 'MUS-10', '10', NULL, 'Music', 'Music genres and history', '20', 'Core', '2025-04-05 20:59:33', '2025-04-05 20:59:33', '2024-2025', 0, NULL, 9, 1, 'MAPEH-10'),
+(598, 'ARTS-10', '10', NULL, 'Arts', 'Modern and traditional arts', '20', 'Core', '2025-04-05 20:59:33', '2025-04-05 20:59:33', '2024-2025', 0, NULL, 10, 1, 'MAPEH-10'),
+(599, 'PE-10', '10', '', 'Physical Education', 'Sports and fitness skills', '20', 'Core', '2025-04-05 20:59:33', '2025-04-05 21:36:09', '2024-2025', 0, '', 11, 1, 'MAPEH-10'),
+(600, 'HE-10', '10', '', 'Health', 'Health awareness and safety', '20', 'Core', '2025-04-05 20:59:33', '2025-04-05 21:35:27', '2024-2025', 0, '', 12, 1, 'MAPEH-10'),
+(676, 'FIL-9', '9', NULL, 'Filipino', 'Advanced Filipino language', '20', 'Core', '2025-06-13 16:46:16', '2025-06-13 16:46:16', '2025-2026', 0, NULL, 1, 1, NULL),
+(677, 'ENG-9', '9', NULL, 'English', 'Reading and writing skills', '20', 'Core', '2025-06-13 16:46:16', '2025-06-13 16:46:16', '2025-2026', 0, NULL, 2, 1, NULL),
+(678, 'MATH-9', '9', NULL, 'Mathematics', 'Advanced algebra concepts', '20', 'Core', '2025-06-13 16:46:16', '2025-06-13 16:46:16', '2025-2026', 0, NULL, 3, 1, NULL),
+(679, 'SCI-9', '9', NULL, 'Science', 'Earth and environmental science', '20', 'Core', '2025-06-13 16:46:16', '2025-06-13 16:46:16', '2025-2026', 0, NULL, 4, 1, NULL),
+(680, 'AP-9', '9', NULL, 'Araling Panlipunan', 'Asian studies focus', '20', 'Core', '2025-06-13 16:46:16', '2025-06-13 16:46:16', '2025-2026', 0, NULL, 5, 1, NULL),
+(681, 'ESP-9', '9', NULL, 'Edukasyon sa Pagpapakatao', 'Values and civic education', '20', 'Core', '2025-06-13 16:46:16', '2025-06-13 16:46:16', '2025-2026', 0, NULL, 6, 1, NULL),
+(682, 'TLE-9', '9', NULL, 'Technology and Livelihood Education', 'Entrepreneurship and tech', '20', 'Core', '2025-06-13 16:46:16', '2025-06-13 16:46:16', '2025-2026', 0, NULL, 7, 1, NULL),
+(683, 'MAPEH-9', '9', NULL, 'MAPEH', 'Combined arts and health', '20', 'Core', '2025-06-13 16:46:16', '2025-06-13 16:46:16', '2025-2026', 0, NULL, 8, 1, NULL),
+(684, 'MUS-9', '9', NULL, 'Music', 'Contemporary music forms', '20', 'Core', '2025-06-13 16:46:16', '2025-06-13 16:46:16', '2025-2026', 0, NULL, 9, 1, 'MAPEH-9'),
+(685, 'ARTS-9', '9', NULL, 'Arts', 'Cultural art and design', '20', 'Core', '2025-06-13 16:46:16', '2025-06-13 16:46:16', '2025-2026', 0, NULL, 10, 1, 'MAPEH-9'),
+(686, 'PE-9', '9', '', 'Physical Education', 'Sports and movement', '20', 'Core', '2025-06-13 16:46:16', '2025-06-13 16:46:16', '2025-2026', 0, '', 11, 1, 'MAPEH-9'),
+(687, 'HE-9', '9', '', 'Health', 'Wellness and safety', '20', 'Core', '2025-06-13 16:46:16', '2025-06-13 16:46:16', '2025-2026', 0, '', 12, 1, 'MAPEH-9');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `subject_taught_tbl`
+--
+
+CREATE TABLE `subject_taught_tbl` (
+  `stac_id` int(10) NOT NULL,
+  `PersonnelId` varchar(50) NOT NULL,
+  `subject_taught` varchar(50) DEFAULT NULL,
+  `section` varchar(11) NOT NULL,
+  `st_day` varchar(50) NOT NULL,
+  `st_from` varchar(50) NOT NULL,
+  `st_to` varchar(50) NOT NULL,
+  `tat_min` varchar(50) NOT NULL,
+  `stac_term` varchar(100) DEFAULT NULL,
+  `subject_code` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `subject_taught_tbl`
+--
+
+INSERT INTO `subject_taught_tbl` (`stac_id`, `PersonnelId`, `subject_taught`, `section`, `st_day`, `st_from`, `st_to`, `tat_min`, `stac_term`, `subject_code`) VALUES
+(31, '152', 'English', '10-STE', 'M, T, W, Th, F', '19:20', '20:10', '250', '2024-2025', 'ENG-10'),
+(32, '152', 'English', '10-C', 'M, T, W, Th, F', '08:30', '09:30', '300', '2024-2025', 'ENG-10'),
+(33, '152', 'English', '10-E', 'M, T, W, Th, F', '10:00', '11:00', '300', '2024-2025', 'ENG-10'),
+(34, '152', 'English', '10-D', 'M, T, W, Th, F', '11:00', '12:00', '300', '2024-2025', 'ENG-10'),
+(35, '152', 'English', '10-B', 'M, T, W, Th, F', '14:00', '15:00', '300', '2024-2025', 'ENG-10'),
+(36, '153', 'Mathematics', '9-STE', 'M, T, W, Th, F', '07:20', '08:10', '250', '2023-2024', 'MATH-9'),
+(37, '153', 'Mathematics', '9-D', 'M, T, W, Th, F', '08:30', '09:30', '300', '2024-2025', 'MATH-9'),
+(38, '153', 'Mathematics', '9-E', 'M, T, W, Th, F', '10:00', '11:00', '300', '2024-2025', 'MATH-9'),
+(39, '153', 'Mathematics', '9-B', 'M, T, W, Th, F', '11:00', '12:00', '300', '2024-2025', 'MATH-9'),
+(40, '153', 'Mathematics', '9-C', 'M, T, W, Th, F', '14:00', '15:00', '300', '2024-2025', 'MATH-9'),
+(41, '155', 'English', '8-D', 'M, T, W, Th, F', '08:30', '09:30', '300', '2024-2025', 'ENG-8'),
+(42, '155', 'English', '8-STE', 'M, T, W, Th, F', '11:00', '12:00', '300', '2024-2025', 'ENG-8'),
+(43, '155', 'English', '8-B', 'M, T, W, Th, F', '13:00', '14:00', '300', '2024-2025', 'ENG-8'),
+(55, '153', 'Mathematics', '9-STE', 'M, T, W, Th, F', '07:20', '08:10', '250', '2024-2025', 'MATH-9'),
+(56, '178', 'Oral Communication in Context', '7-B', 'M, T, W, Th, F', '08:00', '09:00', '300', '2024-2025', 'OCIC-11'),
+(57, '178', 'Komunikasyon at Pananaliksik sa Wika at Kulturang ', '7-B', 'M, T, W, Th, F', '09:00', '09:30', '150', '2024-2025', 'KPWKP-11');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `transmutation_tbl`
+--
+
+CREATE TABLE `transmutation_tbl` (
+  `transmutation_id` int(11) NOT NULL,
+  `min_grade` decimal(5,2) NOT NULL,
+  `transmuted_grade` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `transmutation_tbl`
+--
+
+INSERT INTO `transmutation_tbl` (`transmutation_id`, `min_grade`, `transmuted_grade`) VALUES
+(1, 98.40, 100),
+(2, 96.80, 99),
+(3, 95.20, 98),
+(4, 93.60, 97),
+(5, 92.00, 96),
+(6, 90.40, 95),
+(7, 88.80, 94),
+(8, 87.20, 93),
+(9, 85.60, 92),
+(10, 84.00, 91),
+(11, 82.40, 90),
+(12, 80.80, 89),
+(13, 79.20, 88),
+(14, 77.60, 87),
+(15, 76.00, 86),
+(16, 74.40, 85),
+(17, 72.80, 84),
+(18, 71.20, 83),
+(19, 69.60, 82),
+(20, 68.00, 81),
+(21, 66.40, 80),
+(22, 64.80, 79),
+(23, 63.20, 78),
+(24, 61.60, 77),
+(25, 60.00, 76),
+(26, 56.00, 75),
+(27, 52.00, 74),
+(28, 48.00, 73),
+(29, 44.00, 72),
+(30, 40.00, 71),
+(31, 36.00, 70),
+(32, 32.00, 69),
+(33, 28.00, 68),
+(34, 24.00, 67),
+(35, 20.00, 66),
+(36, 16.00, 65),
+(37, 12.00, 64),
+(38, 8.00, 63),
+(39, 4.00, 61),
+(40, 0.00, 60);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_tbl`
+--
+
+CREATE TABLE `user_tbl` (
+  `UserId` int(11) NOT NULL,
+  `Identifier` varchar(20) DEFAULT NULL,
+  `UserLName` varchar(100) DEFAULT NULL,
+  `UserFName` varchar(100) DEFAULT NULL,
+  `UserMName` varchar(100) DEFAULT NULL,
+  `UserEName` varchar(50) DEFAULT NULL,
+  `Gender` varchar(50) DEFAULT NULL,
+  `BirthDate` date DEFAULT NULL,
+  `Role` varchar(100) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `username` varchar(100) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `access_level` varchar(50) DEFAULT NULL,
+  `user_status` enum('Active','Inactive') DEFAULT 'Inactive',
+  `user_account_access` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `user_tbl`
+--
+
+INSERT INTO `user_tbl` (`UserId`, `Identifier`, `UserLName`, `UserFName`, `UserMName`, `UserEName`, `Gender`, `BirthDate`, `Role`, `email`, `username`, `password`, `created_at`, `updated_at`, `access_level`, `user_status`, `user_account_access`) VALUES
+(7, '45763435', 'PVPMNHS', 'ADMIN', '', '', 'M', '2025-01-01', 'SA', 'JOHNRUSSDLN@GMAIL.COM', 'admin', '$2y$10$3ppysjrStu/AOmTZIcVxX.Pqt/mLAfXoBlboqqrh/kh2oj18Ze./u', '2025-01-17 04:57:41', '2025-06-25 07:45:48', 'SIC', 'Inactive', NULL),
+(1411, '33333333', 'SCHOOL ICT', 'COORDINATOR', '', '', 'M', '2025-01-01', 'SIC', 'SIC@GMAIL.COM', 'pvpmnhs_sic', '$2y$10$vyXT7MpWAYVzrOufw015q.dymGrs/sLijF.9Tma9f42YLGpEGcFie', '2025-04-08 01:53:11', '2025-06-04 08:57:34', 'SIC', 'Inactive', NULL),
+(2166, '11111111', 'LEARNING', 'MATERIAL PERSONNEL', '', '', 'M', '2025-01-01', 'LMP', 'LMP@GMAIL.COM', 'pvpmnhs_lmp', '$2y$10$VLEoM58u1bCDQSg1kveRK.7JNn1Q5m/Zm3O.IDAqOY.tZDPwrcfOO', '2025-04-22 06:03:56', '2025-05-16 04:17:00', 'LMP', 'Inactive', NULL),
+(2167, '22222222', 'HEALTH AND NUTRITION', ' PERSONNEL', '', '', 'M', '2025-01-01', 'HNP', 'HNP@GMAIL.COM', 'pvpmnhs_hnp', '$2y$10$CoF9BOFUE1g/9MwgUT4LTO9gcsqLXINSJlykSETp2alUEruPTK2Vm', '2025-04-22 06:05:04', '2025-05-16 04:17:00', 'HNP', 'Inactive', NULL),
+(2168, '44444444', 'SCHOOL ', ' ADMINISTRATOR ', '', '', 'M', '2025-01-01', 'SA', 'SA@GMAIL.COM', 'pvpmnhs_sa', '$2y$10$MZpL8uggBFNreQqVhTSD5eg1hZM.nRCHsw3LnELeIn55nc/UQUdF2', '2025-04-22 06:06:15', '2025-06-10 06:56:48', 'SA', 'Inactive', NULL),
+(2207, '11111111111111', 'DALINA', 'JOHN RUSSELL', 'DE LEON', '', 'F', '2025-06-27', 'SA', 'JRD@GMAIL.COM', 'admin1', '$2y$10$Z89SFWL8yodvuecWJw6stekn/mxQEzeNH/yG03OEowAckophfpD6m', '2025-06-04 02:30:40', '2025-06-04 08:57:11', 'SA', 'Inactive', NULL),
+(2215, '110525150042', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110525150042', '$2y$10$jm/1QELFlgw7Nc/tSFQec.cxpHqa.rOmXFBFvSoHb/1lYVb/DeXvm', '2025-06-10 16:16:52', '2025-06-10 16:16:52', 'STUDENT', NULL, NULL),
+(2216, '111575160067', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160067', '$2y$10$wkRV3ZG29UfrP8fXQOnhHOAgbA3gD7cG5CrW4Mmf/fPfwxxrJaunm', '2025-06-10 16:16:52', '2025-06-10 16:16:52', 'STUDENT', NULL, NULL),
+(2217, '132067160002', NULL, NULL, NULL, NULL, 'M', '2010-06-11', 'STUDENT', NULL, '132067160002', '$2y$10$sKcN6i3r/W9VV2yLMDVwCO5rEf5WdKLcoM8DqLV/8EwZUkxZOjvuC', '2025-06-10 16:16:52', '2025-06-10 16:16:52', 'STUDENT', NULL, NULL),
+(2218, '110525160002', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110525160002', '$2y$10$DiJxloUM0G4MQRvZJNs5OOgObD5uHDtaHbXt/Bz36aSQhqhP0BGsC', '2025-06-10 16:16:53', '2025-06-10 16:16:53', 'STUDENT', NULL, NULL),
+(2219, '111555140014', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111555140014', '$2y$10$NsSGROvzITnTCBKIwCcqP.kvTuOfcWaHdLlUHHzPeKl1J8Zl4nwiy', '2025-06-10 16:16:53', '2025-06-10 16:16:53', 'STUDENT', NULL, NULL),
+(2220, '111578160024', NULL, NULL, NULL, NULL, 'M', '2011-03-08', 'STUDENT', NULL, '111578160024', '$2y$10$ye6rJEUBRr9zUPVx2um2r.DwBlbpT45sSKotUqvoE2aFjmJ4x1Iyu', '2025-06-10 16:16:53', '2025-06-10 16:16:53', 'STUDENT', NULL, NULL),
+(2221, '111555160005', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111555160005', '$2y$10$FuvgvO2plUAwAuhZRPyb7ORSncob2yBZ.9dO0JdtC4vphBgbovZ6a', '2025-06-10 16:16:53', '2025-06-10 16:16:53', 'STUDENT', NULL, NULL),
+(2222, '111578160002', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111578160002', '$2y$10$fnkIZ//trGgYFRX90J0GhehS7xKMjDhxhYRDcDVTo718s6CDuY1Je', '2025-06-10 16:16:53', '2025-06-10 16:16:53', 'STUDENT', NULL, NULL),
+(2223, '111575160059', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160059', '$2y$10$QqAseSvBV2CSmn3CzetIY.0ue2oI3NEdzqh47l06LDQ0f2zsgJjWe', '2025-06-10 16:16:53', '2025-06-10 16:16:53', 'STUDENT', NULL, NULL),
+(2224, '110524160010', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110524160010', '$2y$10$RU3erv90B8YyeEi5jYV1Z.NP0qZa4HtJMb6L/HIMGMg6fk59KTADu', '2025-06-10 16:16:53', '2025-06-10 16:16:53', 'STUDENT', NULL, NULL),
+(2225, '111574160011', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111574160011', '$2y$10$6rT4JGMOnF4qe2usSqi16O9x2lLw7h3cJ0sbyPTeU2R1ws.naJ1pm', '2025-06-10 16:16:53', '2025-06-10 16:16:53', 'STUDENT', NULL, NULL),
+(2226, '112185160005', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '112185160005', '$2y$10$0cFtuvNT8VcHK9oRnhaEOOFF/JBpSeLk58vB5HElnyHCG1RJPXJ32', '2025-06-10 16:16:53', '2025-06-10 16:16:53', 'STUDENT', NULL, NULL),
+(2227, '111575160063', NULL, NULL, NULL, NULL, 'M', '2011-04-05', 'STUDENT', NULL, '111575160063', '$2y$10$GwwA2CsEA5fn8FtILesXw.7gMhwnWrazVXUui1MHQMYTGCFaZ93S6', '2025-06-10 16:16:53', '2025-06-10 16:16:53', 'STUDENT', NULL, NULL),
+(2228, '111555160027', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111555160027', '$2y$10$Sz6zdIfGi8pUFk5XfgAUS.pKQGG6sBfsNeMJZQ3qd7kGrpKD0d6ZS', '2025-06-10 16:16:53', '2025-06-10 16:16:53', 'STUDENT', NULL, NULL),
+(2229, '136885160642', NULL, NULL, NULL, NULL, 'M', '2010-05-11', 'STUDENT', NULL, '136885160642', '$2y$10$6n.kcOtX0AUmJRCep9icn.YkEOtaK0xm9xNgbvoTrxiitmBniBerC', '2025-06-10 16:16:54', '2025-06-10 16:16:54', 'STUDENT', NULL, NULL),
+(2230, '111575160014', NULL, NULL, NULL, NULL, 'M', '2011-11-05', 'STUDENT', NULL, '111575160014', '$2y$10$L4QjeOwtyJVau0XGh6S9O.jk4niCtJckTZp3keXGu9wGsKkVN2ZNK', '2025-06-10 16:16:54', '2025-06-10 16:16:54', 'STUDENT', NULL, NULL),
+(2231, '111575160027', NULL, NULL, NULL, NULL, 'M', '2011-01-05', 'STUDENT', NULL, '111575160027', '$2y$10$uWYJ3BKrIQbQ/kxnh.XF3OjjvNFVCysb9p4YGxE4ONLIwF1dGPSJ.', '2025-06-10 16:16:54', '2025-06-10 16:16:54', 'STUDENT', NULL, NULL),
+(2232, '153507160036', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '153507160036', '$2y$10$E2fqOwNMULewGuQ1pU9fW.MY4bX1eXbGqQ4IAbpi6BzRVlnz5.YaK', '2025-06-10 16:16:54', '2025-06-10 16:16:54', 'STUDENT', NULL, NULL),
+(2233, '111575160005', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160005', '$2y$10$mVoDkCw/ChXrJeB3wJ3nTeDzKbPQGK1xnlVyLXPR0iN6vGfDsTMu.', '2025-06-10 16:16:54', '2025-06-10 16:16:54', 'STUDENT', NULL, NULL),
+(2234, '111575160013', NULL, NULL, NULL, NULL, 'M', '2011-04-05', 'STUDENT', NULL, '111575160013', '$2y$10$MVCaQXb.MSJBgY6CIPa8oO1l9n677.CpV12PQ4tMJC0c8JmC1EqVG', '2025-06-10 16:16:54', '2025-06-10 16:16:54', 'STUDENT', NULL, NULL),
+(2235, '107514160019', 'ASS', 'ASS', '', '', 'M', '2010-07-11', 'STUDENT', '', '107514160019', '$2y$10$l8T/fCqd68/RRty.1sTbUO8ugd9iQgZah4oWWGfuS3qF2ooZ7GRlu', '2025-06-10 16:16:54', '2025-06-12 12:28:55', 'STUDENT', NULL, NULL),
+(2236, '111575160025', NULL, NULL, NULL, NULL, 'M', '2011-10-05', 'STUDENT', NULL, '111575160025', '$2y$10$tQX29Io9YZ7Evt5squTKiulFKLavcQlJ1RK4euCVO1ZbouW5LkEs2', '2025-06-10 16:16:54', '2025-06-10 16:16:54', 'STUDENT', NULL, NULL),
+(2237, '111575160078', NULL, NULL, NULL, NULL, 'F', '2011-10-03', 'STUDENT', NULL, '111575160078', '$2y$10$LgF/vf0Ykw.nEaddK1WYUOwC2mBgp4cFqyTTMNIePLrGfqCpdHUIy', '2025-06-10 16:16:54', '2025-06-10 16:16:54', 'STUDENT', NULL, NULL),
+(2238, '111575160082', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575160082', '$2y$10$PLFPZxDVXtUvEEeeAGdxle7Qrs64EHj/zd2A/pMl1bDV3sGQo9.oa', '2025-06-10 16:16:54', '2025-06-10 16:16:54', 'STUDENT', NULL, NULL),
+(2239, '111575160016', NULL, NULL, NULL, NULL, 'F', '2011-01-11', 'STUDENT', NULL, '111575160016', '$2y$10$3zbk79rI70XIQseW.uDFrOuSqmWYuzxww47JrrfLktaCedimLj7ki', '2025-06-10 16:16:54', '2025-06-10 16:16:54', 'STUDENT', NULL, NULL),
+(2240, '111570160092', NULL, NULL, NULL, NULL, 'F', '2010-10-08', 'STUDENT', NULL, '111570160092', '$2y$10$vG/Y0fgEIGhBsti/QlXEiutYLF.RrbLVmGvdP583.qCixA8RXqR0G', '2025-06-10 16:16:55', '2025-06-10 16:16:55', 'STUDENT', NULL, NULL),
+(2241, '111575160089', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575160089', '$2y$10$7iWeG8Y6AVuLGijRlBjnKuxsG/H5nYWTKNbs.ZaOgeFaJYejjGDii', '2025-06-10 16:16:55', '2025-06-10 16:16:55', 'STUDENT', NULL, NULL),
+(2242, '429511150204', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '429511150204', '$2y$10$EYmYUagMgH4hfomZRn/9T..4Bks8Us8sia4wAoa4SH/z5tVV3D/9S', '2025-06-10 16:16:55', '2025-06-10 16:16:55', 'STUDENT', NULL, NULL),
+(2243, '111575160024', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575160024', '$2y$10$1BkAWUpMiz7DUrR3uEdEruPrpHUu2ZYEsYgrJoCZPxd4QuC2kFOMW', '2025-06-10 16:16:55', '2025-06-10 16:16:55', 'STUDENT', NULL, NULL),
+(2244, '111555160013', NULL, NULL, NULL, NULL, 'F', '2011-03-06', 'STUDENT', NULL, '111555160013', '$2y$10$uXkTvQCOYJvuqgTVlnlZxuq80xtZHGSYgLatEK.bdE7LkgTmDmV.G', '2025-06-10 16:16:55', '2025-06-10 16:16:55', 'STUDENT', NULL, NULL),
+(2245, '110516160016', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110516160016', '$2y$10$tEK5Ygzg.xcrjjhX8s1.pu.BOvuFRWcW0uOwdzLvzs7AkrytVEGt2', '2025-06-10 16:16:55', '2025-06-10 16:16:55', 'STUDENT', NULL, NULL),
+(2246, '111575160009', NULL, NULL, NULL, NULL, 'F', '2011-03-08', 'STUDENT', NULL, '111575160009', '$2y$10$zhghqJRFuLA9hVYaUmgiQO6vxYgkttPUqoYRGkd/rWWGpugGl7h4K', '2025-06-10 16:16:55', '2025-06-10 16:16:55', 'STUDENT', NULL, NULL),
+(2247, '111575160008', NULL, NULL, NULL, NULL, 'F', '2011-03-08', 'STUDENT', NULL, '111575160008', '$2y$10$uLODCCYW4dXbg3t2sBbbP.mLBeEMl8RXyOWeNim1LwI5QoAdA.zK2', '2025-06-10 16:16:55', '2025-06-10 16:16:55', 'STUDENT', NULL, NULL),
+(2248, '111578160025', NULL, NULL, NULL, NULL, 'F', '2011-05-03', 'STUDENT', NULL, '111578160025', '$2y$10$DBmDc1BF4p.F4RCFc2y7seopwv8QtuBJoM84G0Wv7yYMn4ViZnS3e', '2025-06-10 16:16:55', '2025-06-10 16:16:55', 'STUDENT', NULL, NULL),
+(2249, '111575160084', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575160084', '$2y$10$3AMPG/rCY8qHKXwD2sX64ukCgA2q2Ui0kb9aBc2QOMrTMLujh6vqq', '2025-06-10 16:16:55', '2025-06-10 16:16:55', 'STUDENT', NULL, NULL),
+(2250, '111578160014', NULL, NULL, NULL, NULL, 'F', '2011-01-07', 'STUDENT', NULL, '111578160014', '$2y$10$s6uRkVLaJT5/kAMFyHgs9.lyr2bBJLifqcQFvlxnf1zqUUPhDi75y', '2025-06-10 16:16:55', '2025-06-10 16:16:55', 'STUDENT', NULL, NULL),
+(2251, '110524160024', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110524160024', '$2y$10$IQXFBCkSNNwwWW5oKkxa0e2OswfnkC0aW5VQ6Y6IkdZI/p12S4aU.', '2025-06-10 16:16:55', '2025-06-10 16:16:55', 'STUDENT', NULL, NULL),
+(2252, '110512160003', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110512160003', '$2y$10$ol9CE5OyAQgMib5L3t8.IeqRFWpgxUHnqjyTNnyqUJ41hD2cX3JOi', '2025-06-10 16:16:56', '2025-06-10 16:16:56', 'STUDENT', NULL, NULL),
+(2253, '111544160034', NULL, NULL, NULL, NULL, 'F', '2011-09-12', 'STUDENT', NULL, '111544160034', '$2y$10$lvDDSTkvBr4MVTOVPOewMOqV04cCty6VzUo/lxefZLveNJX9Ecvwe', '2025-06-10 16:16:56', '2025-06-10 16:16:56', 'STUDENT', NULL, NULL),
+(2254, '110505160018', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110505160018', '$2y$10$1Exz7PRVI9y5vovu.WrURO23YdSEsdMP7xmprWcO530L.P0SxwRFG', '2025-06-10 16:16:56', '2025-06-10 16:16:56', 'STUDENT', NULL, NULL),
+(2255, '129648140079', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '129648140079', '$2y$10$8cvczr8XYhCfjmL.LOTb6e/cSMWg8TGP7CNQ9XSYtrhflnbhNzfGm', '2025-06-10 16:16:56', '2025-06-10 16:16:56', 'STUDENT', NULL, NULL),
+(2256, '110524160002', NULL, NULL, NULL, NULL, 'M', '2011-01-05', 'STUDENT', NULL, '110524160002', '$2y$10$96NXqhUJFVHxVYDJ1nFLN.Fs99NVkc8vVXqb15yQw4BziClrAgPk.', '2025-06-10 16:16:56', '2025-06-10 16:16:56', 'STUDENT', NULL, NULL),
+(2257, '117468160217', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '117468160217', '$2y$10$V6CthUgXVzxwguqtDxSDOuVh2WF6nv/LjhLvQY9wis80hjEpSP0nC', '2025-06-10 16:16:56', '2025-06-10 16:16:56', 'STUDENT', NULL, NULL),
+(2258, '108019160002', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '108019160002', '$2y$10$QzZLgRwHXl1tLfHhxzlame7GoMtS0DIwX4kw.SXQTVT8/7KxfBvha', '2025-06-10 16:16:56', '2025-06-10 16:16:56', 'STUDENT', NULL, NULL),
+(2259, '111575160092', NULL, NULL, NULL, NULL, 'M', '2011-03-02', 'STUDENT', NULL, '111575160092', '$2y$10$tngCi/IG2W7RzyglPNxESue3pgQAi52.32RDrMvBMRUJi1bUCqCDC', '2025-06-10 16:16:56', '2025-06-10 16:16:56', 'STUDENT', NULL, NULL),
+(2260, '110524160033', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110524160033', '$2y$10$YyhlRVu3H9sObp6NT3XJ6eDMqgKyVb008ypobASihLkmyvezOtfTu', '2025-06-10 16:16:56', '2025-06-10 16:16:56', 'STUDENT', NULL, NULL),
+(2261, '110512160006', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110512160006', '$2y$10$1be0CXVHSsoCgU0j6NKMNOTqc.Clw1dTOUosGGsM/RLN7qZ9ayEmy', '2025-06-10 16:16:56', '2025-06-10 16:16:56', 'STUDENT', NULL, NULL),
+(2262, '111578160008', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111578160008', '$2y$10$G21GKJEbB5PuX5HHzA.prOAvW9.6J6COtwV2kXj6zln5odhGwBnA2', '2025-06-10 16:16:56', '2025-06-10 16:16:56', 'STUDENT', NULL, NULL),
+(2263, '110512160008', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110512160008', '$2y$10$362S5Pabn3aqm5NW0e/0C.NALhTN7fOSo3QDspSlmXEdhGjbtdQs6', '2025-06-10 16:16:57', '2025-06-10 16:16:57', 'STUDENT', NULL, NULL),
+(2264, '111578160005', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111578160005', '$2y$10$IjtezfzhvSMHleY9gosAUug13QgXw23ymMTOLdmmefLDeaRGMHrKy', '2025-06-10 16:16:57', '2025-06-10 16:16:57', 'STUDENT', NULL, NULL),
+(2265, '111555160006', NULL, NULL, NULL, NULL, 'M', '2010-11-06', 'STUDENT', NULL, '111555160006', '$2y$10$PUZxidmdbO.g/jfgym7Cs.h3SkHL2m5z/JSTDHm88XJVgeim9qBC2', '2025-06-10 16:16:57', '2025-06-10 16:16:57', 'STUDENT', NULL, NULL),
+(2266, '117009160023', NULL, NULL, NULL, NULL, 'M', '2011-07-03', 'STUDENT', NULL, '117009160023', '$2y$10$yNuN9OjLBhcfeNcYtof9muvOIwvi.diCr7QNz6oazEg5VgJtSe1iS', '2025-06-10 16:16:57', '2025-06-10 16:16:57', 'STUDENT', NULL, NULL),
+(2267, '170002140006', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '170002140006', '$2y$10$KZrcI7zzoH0P6iXA/2A7U.kiLPSUWeUC9XOUcNrlO9ZcS2XP3LW4m', '2025-06-10 16:16:57', '2025-06-10 16:16:57', 'STUDENT', NULL, NULL),
+(2268, '111536160060', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111536160060', '$2y$10$/f/TNSCfn0Bz8G9kjWd6X.VlCaLp3RcC0hFEnxZ9.3tDpHR6MScOm', '2025-06-10 16:16:57', '2025-06-10 16:16:57', 'STUDENT', NULL, NULL),
+(2269, '111555160009', NULL, NULL, NULL, NULL, 'M', '2011-02-10', 'STUDENT', NULL, '111555160009', '$2y$10$izGMdXh9f7qGoGIEV7Qs6un36wyvtxe9vkU.vEdBh9MAxWgR65Qnu', '2025-06-10 16:16:57', '2025-06-10 16:16:57', 'STUDENT', NULL, NULL),
+(2270, '136498160121', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '136498160121', '$2y$10$2fdXuzjCBbMMNkwxUsRDl.c9RpouFCjfk87MgIKzjs9mpGemz4AHG', '2025-06-10 16:16:57', '2025-06-10 16:16:57', 'STUDENT', NULL, NULL),
+(2271, '111578160006', NULL, NULL, NULL, NULL, 'M', '2011-05-05', 'STUDENT', NULL, '111578160006', '$2y$10$ymmzGaGFcb2NhxJ9p1ojbutUcAmMIKRAfjkB0n0dhr3zxULzeCS2.', '2025-06-10 16:16:57', '2025-06-10 16:16:57', 'STUDENT', NULL, NULL),
+(2272, '110524160013', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110524160013', '$2y$10$imMWqLmjj7yEUqlRwTGO1ekiDg7orBV5hVEMhcxWfll0dxVc2gbQi', '2025-06-10 16:16:57', '2025-06-10 16:16:57', 'STUDENT', NULL, NULL),
+(2273, '111575160029', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160029', '$2y$10$pyYlcGPuAKeCKYIkwR3LGuL4OALhsjJZOWZTIdwh7quUQZSeeBs.i', '2025-06-10 16:16:57', '2025-06-10 16:16:57', 'STUDENT', NULL, NULL),
+(2274, '136426160328', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '136426160328', '$2y$10$HxWEEhQb6cCpKYeX6eImmuaBNrCQeE6vggdj5l498qXlZ01d71av2', '2025-06-10 16:16:58', '2025-06-10 16:16:58', 'STUDENT', NULL, NULL),
+(2275, '136444140536', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '136444140536', '$2y$10$X2cg7texS0gLntMwdmsxeeVns3BaXhdVwz5bA/0ET7/4n6jexEB2O', '2025-06-10 16:16:58', '2025-06-10 16:16:58', 'STUDENT', NULL, NULL),
+(2276, '111575160039', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160039', '$2y$10$sZ3dm3JZ561HWRkNUQyLRemb/t1e1x01Dhdczw3N4U4zdtAqM/4nG', '2025-06-10 16:16:58', '2025-06-10 16:16:58', 'STUDENT', NULL, NULL),
+(2277, '136688160038', NULL, NULL, NULL, NULL, 'M', '2011-06-09', 'STUDENT', NULL, '136688160038', '$2y$10$uhOUp/EnUCORChU79XrSU.WNAUcTt5x6I8Rm9MVVH/955bjVfej8G', '2025-06-10 16:16:58', '2025-06-10 16:16:58', 'STUDENT', NULL, NULL),
+(2278, '111575160026', NULL, NULL, NULL, NULL, 'M', '2010-11-04', 'STUDENT', NULL, '111575160026', '$2y$10$nLKvIavFg1Nwyu8oYO6rcuT5UeVpjvYQ8fdnXonVQbDtv7bI/sFk2', '2025-06-10 16:16:58', '2025-06-10 16:16:58', 'STUDENT', NULL, NULL),
+(2279, '111575160087', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160087', '$2y$10$38gKhGEH.bWeCwgCmtS.aelsR1zxTFiyNITG5FPPM.4letSp59ie6', '2025-06-10 16:16:58', '2025-06-10 16:16:58', 'STUDENT', NULL, NULL),
+(2280, '111575160015', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575160015', '$2y$10$CdLQhDgR/ZsoXEHN4MnskOV/FPeBptLTpE/jt4Pl8kP/.GK8wIa46', '2025-06-10 16:16:58', '2025-06-10 16:16:58', 'STUDENT', NULL, NULL),
+(2281, '110524160031', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110524160031', '$2y$10$ymy6F2Jq271m.bz6/LD/iuP2g18wZup3oxlAemskloerlNkc0I1GW', '2025-06-10 16:16:58', '2025-06-10 16:16:58', 'STUDENT', NULL, NULL),
+(2282, '111575160018', NULL, NULL, NULL, NULL, 'F', '2010-11-12', 'STUDENT', NULL, '111575160018', '$2y$10$WYlMKVZRV27D4r.C87aSiO7EVEOhmRBBY05abxRyxGn89jVcq7Nvm', '2025-06-10 16:16:58', '2025-06-10 16:16:58', 'STUDENT', NULL, NULL),
+(2283, '110524160021', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110524160021', '$2y$10$uIsDoQyRyj7CIKGyTf8cIOhPcOFUxDxBGmF0gU1axRslqgcXIAdP2', '2025-06-10 16:16:58', '2025-06-10 16:16:58', 'STUDENT', NULL, NULL),
+(2284, '111566160040', NULL, NULL, NULL, NULL, 'F', '2010-11-03', 'STUDENT', NULL, '111566160040', '$2y$10$cw/GuoRETroEf5LUkWVkaeJwpSQa9gtBXfuxabntV0ZomLB3bXk3W', '2025-06-10 16:16:58', '2025-06-10 16:16:58', 'STUDENT', NULL, NULL),
+(2285, '111575160065', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575160065', '$2y$10$WqgQ7Lm7zNVm5HGJLfHdkuMyrlE7sBbOsUjWci5btGUZCGmiY6wPO', '2025-06-10 16:16:58', '2025-06-10 16:16:58', 'STUDENT', NULL, NULL),
+(2286, '136546160477', NULL, NULL, NULL, NULL, 'F', '2011-02-06', 'STUDENT', NULL, '136546160477', '$2y$10$mzAc1bsoHTz7eE0rIBY4s.kV98SGHWGaB1qJ3FOF1XZppIsTRKhDK', '2025-06-10 16:16:59', '2025-06-10 16:16:59', 'STUDENT', NULL, NULL),
+(2287, '111575160011', NULL, NULL, NULL, NULL, 'F', '2011-01-12', 'STUDENT', NULL, '111575160011', '$2y$10$NJaDWDywVyqxT7DmtI7t0OghuWbQZWrzgVkdYK2NDZTAcPRnagDT6', '2025-06-10 16:16:59', '2025-06-10 16:16:59', 'STUDENT', NULL, NULL),
+(2288, '110513130035', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110513130035', '$2y$10$O7TkStriT9acFecO0100zufYa9ls9dMX24hqJknJ5Tguf4eMBhAgG', '2025-06-10 16:16:59', '2025-06-10 16:16:59', 'STUDENT', NULL, NULL),
+(2289, '111555160018', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111555160018', '$2y$10$KIsJ3IFMEk64CwA.L9thXea4gTbPkvvaz.qR1tpPwjp71IVGAnWli', '2025-06-10 16:16:59', '2025-06-10 16:16:59', 'STUDENT', NULL, NULL),
+(2290, '111575150046', NULL, NULL, NULL, NULL, 'F', '2009-11-05', 'STUDENT', NULL, '111575150046', '$2y$10$nGE5It5zmsW0znwWh2zBM.nHxKrK80PbOoNSbHQpbXoFYkDVxmhh2', '2025-06-10 16:16:59', '2025-06-10 16:16:59', 'STUDENT', NULL, NULL),
+(2291, '110505150021', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110505150021', '$2y$10$4ZxKKfRjgeDkdv4rl2ODNOnP241PkVGtoCrpJSRTBjh.2NtnKknMK', '2025-06-10 16:16:59', '2025-06-10 16:16:59', 'STUDENT', NULL, NULL),
+(2292, '111575160093', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575160093', '$2y$10$ysKhSNUY6Ex7/i6cy6i3fe.2cvKxoL8JLq8hTRuFQidDnIxtTsUFm', '2025-06-10 16:16:59', '2025-06-10 16:16:59', 'STUDENT', NULL, NULL),
+(2293, '110544140017', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110544140017', '$2y$10$wenMOm2jTmLLqpj2nzc9QeR56OGZeieDK.etuKBcODjyN1ScjcFRK', '2025-06-10 16:16:59', '2025-06-10 16:16:59', 'STUDENT', NULL, NULL),
+(2294, '111570160179', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111570160179', '$2y$10$RDigem0vanCQWXAvm1n3HOlFK53kCLmaPP/Y3I58DDeUlgaQJXZqK', '2025-06-10 16:16:59', '2025-06-10 16:16:59', 'STUDENT', NULL, NULL),
+(2295, '111575160021', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575160021', '$2y$10$MKXMQaC2Pi.OGbfuBFlnKOKhBMhh7RHJpzZkhcDCHnptr/Cqy.8US', '2025-06-10 16:16:59', '2025-06-10 16:16:59', 'STUDENT', NULL, NULL),
+(2296, '110512160004', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110512160004', '$2y$10$zNixgMPFDUxk0nGp3g27wOEh/nWEUCrhlfU22i/de/iqfXhRt1B82', '2025-06-10 16:16:59', '2025-06-10 16:16:59', 'STUDENT', NULL, NULL),
+(2297, '110524160029', NULL, NULL, NULL, NULL, 'F', '2010-12-02', 'STUDENT', NULL, '110524160029', '$2y$10$YihjZNJR85g0PBEmWhespO5Xitq04CMNr3RA1uGrEexrhrxOWlve2', '2025-06-10 16:17:00', '2025-06-10 16:17:00', 'STUDENT', NULL, NULL),
+(2298, '111578160012', NULL, NULL, NULL, NULL, 'F', '2010-11-02', 'STUDENT', NULL, '111578160012', '$2y$10$6zwP.5jx3fS3zNTp9OwH7.cL7p8ykvpkZzM4EUxJqM5QWucZCOsEa', '2025-06-10 16:17:00', '2025-06-10 16:17:00', 'STUDENT', NULL, NULL),
+(2299, '110524160030', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110524160030', '$2y$10$5Mcgup1sw5hZ2weeYNvKLuSo0jpPvgzbm7LynaGhMdF.s4ZJmViVK', '2025-06-10 16:17:00', '2025-06-10 16:17:00', 'STUDENT', NULL, NULL),
+(2300, '111555150020', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111555150020', '$2y$10$2X1Dm5X3KOYI5M4lHTOzK.BoCVFRa5HwQQPHMrf1JZ7NOThYdwP7G', '2025-06-10 16:17:00', '2025-06-10 16:17:00', 'STUDENT', NULL, NULL),
+(2301, '111551160018', NULL, NULL, NULL, NULL, 'M', '2011-02-02', 'STUDENT', NULL, '111551160018', '$2y$10$qj7TjCtGDJ78xB0/HvEvNuQzz.GWKu/e4INpNV4orJkN7R3DqhN.a', '2025-06-10 16:17:00', '2025-06-10 16:17:00', 'STUDENT', NULL, NULL),
+(2302, '111575160057', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160057', '$2y$10$DA1vAfseRnABu3kF4aPJxeLfvq00Q87acKTZZJXI.xfVd4wuJf2me', '2025-06-10 16:17:00', '2025-06-10 16:17:00', 'STUDENT', NULL, NULL),
+(2303, '111555160001', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111555160001', '$2y$10$dWn3LnFbwT.lzbD8qBuebuhjbpJGMJLRBI9nxis/Wc7C2dQ6GWm6y', '2025-06-10 16:17:00', '2025-06-10 16:17:00', 'STUDENT', NULL, NULL),
+(2304, '111575160036', NULL, NULL, NULL, NULL, 'M', '2010-09-09', 'STUDENT', NULL, '111575160036', '$2y$10$HhzKwBC71ATtMkOCcLm5Les4z2Xi5f7//gN4l.dBYMitdxa6j8KcW', '2025-06-10 16:17:00', '2025-06-10 16:17:00', 'STUDENT', NULL, NULL),
+(2305, '111575160033', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160033', '$2y$10$CWQnVFDttADRYmkKc3/rWuH5YIUYKvPjU5UGTJUs083PNzvLykFKS', '2025-06-10 16:17:00', '2025-06-10 16:17:00', 'STUDENT', NULL, NULL),
+(2306, '111575160085', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160085', '$2y$10$HY2R7TdJcZlUfGrJxUcN/O4HTWp1hBoJgWz3vQb1thG/eSHGeR3hG', '2025-06-10 16:17:00', '2025-06-10 16:17:00', 'STUDENT', NULL, NULL),
+(2307, '111555160002', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111555160002', '$2y$10$OhVFPAryvWWhKH4z/auhT.hYXW2M9.jwfQgkNL59VIjQdINhry8Mu', '2025-06-10 16:17:00', '2025-06-10 16:17:00', 'STUDENT', NULL, NULL),
+(2308, '116354150060', NULL, NULL, NULL, NULL, 'M', '2010-07-05', 'STUDENT', NULL, '116354150060', '$2y$10$NN00l66mBH7lZRRAiCxFqeBWhQupRQgbbevgV6tw1H4KehrVZ5Cri', '2025-06-10 16:17:00', '2025-06-10 16:17:00', 'STUDENT', NULL, NULL),
+(2309, '111575160002', NULL, NULL, NULL, NULL, 'M', '2010-11-09', 'STUDENT', NULL, '111575160002', '$2y$10$Ry/ityAsf.6xo/MEAdYtMOn1RqX21BEeRLQMqFoa/3B7lqaOrfqja', '2025-06-10 16:17:01', '2025-06-10 16:17:01', 'STUDENT', NULL, NULL),
+(2310, '136551160025', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '136551160025', '$2y$10$pAfwYZWrhB1V1KOkrhBC2u/ZoZA5L7afHXVIif/RKSVUyPyBpRuWy', '2025-06-10 16:17:01', '2025-06-10 16:17:01', 'STUDENT', NULL, NULL),
+(2311, '111536160040', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111536160040', '$2y$10$JBwyTFsVoip837Yr/jpeD.sN86HHvsYZShFE8hsMoi07wv0XliwN.', '2025-06-10 16:17:01', '2025-06-10 16:17:01', 'STUDENT', NULL, NULL),
+(2312, '111575160047', NULL, NULL, NULL, NULL, 'M', '2011-08-01', 'STUDENT', NULL, '111575160047', '$2y$10$WGIOO57QnrgoxA6A6B1U9.AkWQfgCUiXb1Laub88t8ptToGMDMTYq', '2025-06-10 16:17:01', '2025-06-10 16:17:01', 'STUDENT', NULL, NULL),
+(2313, '111578160003', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111578160003', '$2y$10$p.ffnvwzko51qbtReBPek.VhPNXncdBPAhDgrYaSsR7ELBvagyxSi', '2025-06-10 16:17:01', '2025-06-10 16:17:01', 'STUDENT', NULL, NULL),
+(2314, '111555140024', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111555140024', '$2y$10$qT57zBKzc8JJI0a5pMPPy.Vp5Qw7tnXyotV8TSiYC1f1mGIBXN6NO', '2025-06-10 16:17:01', '2025-06-10 16:17:01', 'STUDENT', NULL, NULL),
+(2315, '111575160090', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160090', '$2y$10$PhamMUG9pSRJECTo3nG/P.ApHoMf8Xj9uHuWnct8E4beE/p8JRjWe', '2025-06-10 16:17:01', '2025-06-10 16:17:01', 'STUDENT', NULL, NULL),
+(2316, '110524160012', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110524160012', '$2y$10$tpno5jIFFxiPHux90q7heuPSjXeLRWCKnafvZ4QRJfyS5.PX0ceW6', '2025-06-10 16:17:01', '2025-06-10 16:17:01', 'STUDENT', NULL, NULL),
+(2317, '136793160023', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '136793160023', '$2y$10$Z8fs.Wpb8uXTucMQPwLYr.CKRo7HK7W4z9lycUPRo7a4TGMMtGQvy', '2025-06-10 16:17:01', '2025-06-10 16:17:01', 'STUDENT', NULL, NULL),
+(2318, '110524160014', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110524160014', '$2y$10$I8EeL0HI8ohss61D.hVg/OcFsn2MoM9iEawu8TycZItdLb2oNeyZ6', '2025-06-10 16:17:01', '2025-06-10 16:17:01', 'STUDENT', NULL, NULL),
+(2319, '111575160028', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160028', '$2y$10$1VRukZLFIbyXD/KqDc3P7.AUwKAsHl8QUMI25YMiqIrP8N4ep0h6i', '2025-06-10 16:17:01', '2025-06-10 16:17:01', 'STUDENT', NULL, NULL),
+(2320, '127809160074', NULL, NULL, NULL, NULL, 'M', '2010-07-05', 'STUDENT', NULL, '127809160074', '$2y$10$o3ny7P4mu51EOWBe0I16PuYOKEplGsTFKC9ZFFUnfvIeFJoS/Yo5y', '2025-06-10 16:17:02', '2025-06-10 16:17:02', 'STUDENT', NULL, NULL),
+(2321, '111555160011', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111555160011', '$2y$10$Tgm6EYoABdX571CGt5wNwOLNPr/RY2rhJnNjjDORb1CAVnyy6AcqO', '2025-06-10 16:17:02', '2025-06-10 16:17:02', 'STUDENT', NULL, NULL),
+(2322, '111575160038', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160038', '$2y$10$JjTajphYo7rYghMUV4Hp2uDuCFWtrzQI13226LtSPjWeTTwGUu8zu', '2025-06-10 16:17:02', '2025-06-10 16:17:02', 'STUDENT', NULL, NULL),
+(2323, '111575160037', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160037', '$2y$10$nXcS9x1nU4CUmkmsx2Y9YuKhF4zwgf/X1Ayla9j/iJjHQGioCzNte', '2025-06-10 16:17:02', '2025-06-10 16:17:02', 'STUDENT', NULL, NULL),
+(2324, '110524160016', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110524160016', '$2y$10$rApF2wBGNtQ8bCUVmPDbZOU7uYvKjWGAQ1DKoi8uoQ8lL4UfhsXGG', '2025-06-10 16:17:02', '2025-06-10 16:17:02', 'STUDENT', NULL, NULL),
+(2325, '111575160081', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160081', '$2y$10$rGE9UE9i/jPVJ/X9bCe0GefhGjMBdYY1NRIWXTgF6QPDb6JLu6OUO', '2025-06-10 16:17:02', '2025-06-10 16:17:02', 'STUDENT', NULL, NULL),
+(2326, '110512160010', NULL, NULL, NULL, NULL, 'M', '2011-04-07', 'STUDENT', NULL, '110512160010', '$2y$10$wnBZgAb0K5sMrd65cWhUauV1CuTOeTDLnXeEKH3FvEfB9lKE2tHLG', '2025-06-10 16:17:02', '2025-06-10 16:17:02', 'STUDENT', NULL, NULL),
+(2327, '110524160019', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110524160019', '$2y$10$.Uf/S3bjWO.V55Sw.LYx7uVQGPhAxkk3IGRG4tBy4I.S9f390J35.', '2025-06-10 16:17:02', '2025-06-10 16:17:02', 'STUDENT', NULL, NULL),
+(2328, '111537130054', NULL, NULL, NULL, NULL, 'F', '2008-03-07', 'STUDENT', NULL, '111537130054', '$2y$10$w/Mp3kqoyydZy8zUaQcQnOQFz2GPoHK0tBMkgQGwgXoDbjBhCo3OW', '2025-06-10 16:17:02', '2025-06-10 16:17:02', 'STUDENT', NULL, NULL),
+(2329, '111578160015', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111578160015', '$2y$10$JlfZlOL0u/xsi0HcGWsgZ.z3ZF0F1Zchi1YmEUOfE2PkeCK7wPMyC', '2025-06-10 16:17:02', '2025-06-10 16:17:02', 'STUDENT', NULL, NULL),
+(2330, '111555160012', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111555160012', '$2y$10$4eYu4KKISejgHfR4PFhVw.0MS.OFCWTocWpih8SsWpwVrEMdJ6BRO', '2025-06-10 16:17:03', '2025-06-10 16:17:03', 'STUDENT', NULL, NULL),
+(2331, '110514160042', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110514160042', '$2y$10$aIsz2QA03nffWJ1ENOgMx.Tf2uLhX7zPmNdyujpHTWTNLL3uG/isO', '2025-06-10 16:17:03', '2025-06-10 16:17:03', 'STUDENT', NULL, NULL),
+(2332, '110626160027', NULL, NULL, NULL, NULL, 'F', '2012-01-12', 'STUDENT', NULL, '110626160027', '$2y$10$M7sAPP6cKd4GjxQ/uNXRv.8TgYwxD/5d04Brj.VfyCI7xsI795GkO', '2025-06-10 16:17:03', '2025-06-10 16:17:03', 'STUDENT', NULL, NULL),
+(2333, '111575160020', NULL, NULL, NULL, NULL, 'F', '2010-11-10', 'STUDENT', NULL, '111575160020', '$2y$10$y86bXHRV8VxlsWesH3dEuedODX.YFvHB0Dl8t6EIV1QzOx7LRbdTa', '2025-06-10 16:17:03', '2025-06-10 16:17:03', 'STUDENT', NULL, NULL),
+(2334, '105387160121', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '105387160121', '$2y$10$zcehI/36vreCHgffx048r.Dp7/qPR7DhADi4X2iNLRsCgQhXYr20y', '2025-06-10 16:17:03', '2025-06-10 16:17:03', 'STUDENT', NULL, NULL),
+(2335, '111575160071', NULL, NULL, NULL, NULL, 'F', '2011-04-01', 'STUDENT', NULL, '111575160071', '$2y$10$0T2aXUaxAR/BhwZs355xVuU327hrfh9.1db9BgskrGaOinNBSL2eO', '2025-06-10 16:17:03', '2025-06-10 16:17:03', 'STUDENT', NULL, NULL),
+(2336, '110512160005', NULL, NULL, NULL, NULL, 'F', '2011-03-07', 'STUDENT', NULL, '110512160005', '$2y$10$jR5rTlEmpJIhkDYWxoAy9.JcqL8fFo1uDcbR9jvDhRkToKb6KkvkC', '2025-06-10 16:17:03', '2025-06-10 16:17:03', 'STUDENT', NULL, NULL),
+(2337, '111578160007', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111578160007', '$2y$10$vCjfCfhW2.r0FNz87n4BPeuvaoMne2230ldnjWSZHuC2ZWGS57yaC', '2025-06-10 16:17:03', '2025-06-10 16:17:03', 'STUDENT', NULL, NULL),
+(2338, '111575160042', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575160042', '$2y$10$B6yP5y8OStp4kB6aPJbCyuaNi0oXtVfuo9oGBfxsGNLsC3bXsPgiG', '2025-06-10 16:17:03', '2025-06-10 16:17:03', 'STUDENT', NULL, NULL),
+(2339, '110524160026', NULL, NULL, NULL, NULL, 'F', '2011-02-02', 'STUDENT', NULL, '110524160026', '$2y$10$nFWTb2MZsH1qPaP.LIUj4.svaS.26V9btB0Du27pKzea5JkKnBHQu', '2025-06-10 16:17:03', '2025-06-10 16:17:03', 'STUDENT', NULL, NULL),
+(2340, '110524160036', NULL, NULL, NULL, NULL, 'F', '2011-07-06', 'STUDENT', NULL, '110524160036', '$2y$10$1c6oRDMvkK42ftiTcpS7o.V.o19Rthn5mktRBOqO.2psX/AaOmbza', '2025-06-10 16:17:03', '2025-06-10 16:17:03', 'STUDENT', NULL, NULL),
+(2341, '110524160028', NULL, NULL, NULL, NULL, 'F', '2011-10-08', 'STUDENT', NULL, '110524160028', '$2y$10$nd6FcZQWYG6zlsLOSZ0oguoXNRlv1WqkNUstwoi2.VPBNG1h7GVCe', '2025-06-10 16:17:04', '2025-06-10 16:17:04', 'STUDENT', NULL, NULL),
+(2342, '111575160023', NULL, NULL, NULL, NULL, 'F', '2011-03-03', 'STUDENT', NULL, '111575160023', '$2y$10$F6QMQMYZwsi8WX7HMLZt7uIQIzFgQuaEnh/XLbJVMTc0DCA.yOTym', '2025-06-10 16:17:04', '2025-06-10 16:17:04', 'STUDENT', NULL, NULL),
+(2343, '111575160073', NULL, NULL, NULL, NULL, 'F', '2011-10-10', 'STUDENT', NULL, '111575160073', '$2y$10$uWrwnm9ln4MbkvO5SPLLs.HJTPJB7Xs0BfMjdm3GskbESBmoSxHe.', '2025-06-10 16:17:04', '2025-06-10 16:17:04', 'STUDENT', NULL, NULL),
+(2344, '110512160009', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110512160009', '$2y$10$h7w0uvyR7DiSgWpioWt.n.WlRzXPfAM4t9hU/33/WBRNf1wJ3YZ3q', '2025-06-10 16:17:04', '2025-06-10 16:17:04', 'STUDENT', NULL, NULL),
+(2345, '110512160012', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110512160012', '$2y$10$TdK4uJPVmMYEzERG/JQ4SuZAFLohj2puA/oSurcFUTOD8sS5aRv4.', '2025-06-10 16:17:04', '2025-06-10 16:17:04', 'STUDENT', NULL, NULL),
+(2346, '111575160035', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160035', '$2y$10$b9nJEZHcpyEHQbEvvTd1V.cBVaDSn7uHoChs0Cs/n5Txlz3e0KPfe', '2025-06-10 16:17:04', '2025-06-10 16:17:04', 'STUDENT', NULL, NULL),
+(2347, '111575160034', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160034', '$2y$10$yhnl0WdWGqn4E5kGy6U4duyXX8snhLZX/CZiow19Fg2qqL2wnL0NG', '2025-06-10 16:17:04', '2025-06-10 16:17:04', 'STUDENT', NULL, NULL),
+(2348, '111575160060', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160060', '$2y$10$zW7PCvodYJBUevezeFEJT.1SIIIgvNTOxRP1JWKqvUAWpc89EMc7O', '2025-06-10 16:17:04', '2025-06-10 16:17:04', 'STUDENT', NULL, NULL),
+(2349, '111575160061', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575160061', '$2y$10$73h9ptqA.MFcurmaeIGhqeIJhs2t8LmZEtYvv1a4Xvw16eP1Ea19m', '2025-06-10 16:17:04', '2025-06-10 16:17:04', 'STUDENT', NULL, NULL),
+(2350, '111575160046', NULL, NULL, NULL, NULL, 'F', '2010-10-05', 'STUDENT', NULL, '111575160046', '$2y$10$.tyA7eM6bhdLmUlO.Qu.tuCLJ.n/oOSzgDXfAtHsoPw7CF7RbdytK', '2025-06-10 16:17:04', '2025-06-10 16:17:04', 'STUDENT', NULL, NULL),
+(2351, '111575160006', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575160006', '$2y$10$0BH/IAy97hoH2k/8aTWgCORJ4Aa2fcr1Az1P7s2kvYmeuWV0b0CBO', '2025-06-10 16:17:04', '2025-06-10 16:17:04', 'STUDENT', NULL, NULL),
+(2352, '403548150068', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '403548150068', '$2y$10$pXVyo8EgrtbIYEoir0DKGuBzuRkktxFqyZn/f.AFj2BRH/UIVzdgS', '2025-06-10 16:17:05', '2025-06-10 16:17:05', 'STUDENT', NULL, NULL),
+(2353, '111578160016', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111578160016', '$2y$10$q0bYP2wFUV.j0uQdVjs7XejPBKkecaVQNcbhY6Nx6QvWrj26klVTq', '2025-06-10 16:17:05', '2025-06-10 16:17:05', 'STUDENT', NULL, NULL),
+(2354, '111578160011', NULL, NULL, NULL, NULL, 'F', '2011-06-10', 'STUDENT', NULL, '111578160011', '$2y$10$yTPPQOTfeHsdgOePPHHeU.GZ2BdMSN/gq0a0WHqok0vq4Bhi2Fqsa', '2025-06-10 16:17:05', '2025-06-10 16:17:05', 'STUDENT', NULL, NULL),
+(2355, '111575160007', NULL, NULL, NULL, NULL, 'F', '2011-02-09', 'STUDENT', NULL, '111575160007', '$2y$10$3wlFrWq7MnteHv3zoCDwg.F30Tuc1NlMsfpNDG96l7Av0nj/.Oj8y', '2025-06-10 16:17:05', '2025-06-10 16:17:05', 'STUDENT', NULL, NULL),
+(2356, '111575160048', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575160048', '$2y$10$34B0p4dw8uuRunsrBPL5vuOuQj3ikHAD0wC8GaGiUa4Ns0WmbR0Ha', '2025-06-10 16:17:05', '2025-06-10 16:17:05', 'STUDENT', NULL, NULL),
+(2357, '111575160076', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575160076', '$2y$10$F8ic3qSKVnLtaLcr7oZ.E.GyB4k99UGx9zKzkumA84OPpu4Gvufnq', '2025-06-10 16:17:05', '2025-06-10 16:17:05', 'STUDENT', NULL, NULL),
+(2358, '111578160010', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111578160010', '$2y$10$AkTfKE87wzj68BuVBkm4/etiS1jYlsP3ZGDMGpTlV1YnYaClOJStS', '2025-06-10 16:17:05', '2025-06-10 16:17:05', 'STUDENT', NULL, NULL),
+(2359, '110524160022', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110524160022', '$2y$10$HvpSSlt1hJl1KFsMc/8AWumkI7mixYn0COk2gmK1Bz85wlh1aL.SW', '2025-06-10 16:17:05', '2025-06-10 16:17:05', 'STUDENT', NULL, NULL),
+(2360, '426813150009', NULL, NULL, NULL, NULL, 'F', '2010-12-09', 'STUDENT', NULL, '426813150009', '$2y$10$ywu6oWGf4QMlXqLT1iDU5.a7UzfnJGvSNhSdeWrZA32iM9P8CjoJO', '2025-06-10 16:17:05', '2025-06-10 16:17:05', 'STUDENT', NULL, NULL),
+(2361, '111575160012', NULL, NULL, NULL, NULL, 'F', '2011-03-08', 'STUDENT', NULL, '111575160012', '$2y$10$WbFcJG20iLgVVnQdXl95pum8yfSNrYHjJMxbZ/A5CJRhTtAAUnjmm', '2025-06-10 16:17:05', '2025-06-10 16:17:05', 'STUDENT', NULL, NULL),
+(2362, '403545150502', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '403545150502', '$2y$10$ii6jFa0EahvZfpEl/JFQyuD3/ReEg9XyL/FSjuUx7dLmiLaE8y2BW', '2025-06-10 16:17:05', '2025-06-10 16:17:05', 'STUDENT', NULL, NULL),
+(2363, '110524150037', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110524150037', '$2y$10$sPPUVc.G5TOvgAnRLaPwBOBHhYhpnNkcZ0t0btgcL1fADA0XZu9GC', '2025-06-10 16:17:05', '2025-06-10 16:17:05', 'STUDENT', NULL, NULL),
+(2364, '111575160053', NULL, NULL, NULL, NULL, 'F', '2011-05-10', 'STUDENT', NULL, '111575160053', '$2y$10$/ZvNztEwpV3DjJgvyVn/ReKULi.dvPKAI.IyRHd.twj1cbeEdx5Em', '2025-06-10 16:17:06', '2025-06-10 16:17:06', 'STUDENT', NULL, NULL),
+(2365, '107514160023', NULL, NULL, NULL, NULL, 'F', '2010-12-01', 'STUDENT', NULL, '107514160023', '$2y$10$xpUCNSs1Xn8N9maX389aw.zRV5roWqlCLdiNVUWHDHC2Pr0l8q5Mu', '2025-06-10 16:17:06', '2025-06-10 16:17:06', 'STUDENT', NULL, NULL),
+(2366, '111575160022', NULL, NULL, NULL, NULL, 'F', '2011-05-04', 'STUDENT', NULL, '111575160022', '$2y$10$CpF8L46u391u20WhGPQRbOqNP5m0uMzO1ebsN./0q2uiAi3Ayemo2', '2025-06-10 16:17:06', '2025-06-10 16:17:06', 'STUDENT', NULL, NULL),
+(2367, '111575160054', NULL, NULL, NULL, NULL, 'F', '2011-07-09', 'STUDENT', NULL, '111575160054', '$2y$10$doTwLK4iGBANKpyF28UK9.KBxlOGZ3ayzICS8I/J5EH2Qti3iC2jW', '2025-06-10 16:17:06', '2025-06-10 16:17:06', 'STUDENT', NULL, NULL),
+(2368, '110449160035', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110449160035', '$2y$10$276x5lodbj0.JPXDZhs4neRRAZOymwMSeFkqjwCxzGR5cYpQW7WAe', '2025-06-10 16:17:06', '2025-06-10 16:17:06', 'STUDENT', NULL, NULL),
+(2369, '110505160019', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110505160019', '$2y$10$slc/vMS/W0qlGc6.iKJ9NOAtAWoVnqYNmzceqsZhoWGd4IMKObnFG', '2025-06-10 16:17:06', '2025-06-10 16:17:06', 'STUDENT', NULL, NULL),
+(2370, '111575160055', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575160055', '$2y$10$PdHPzmaksMQxmOkDu2PFcOuTEq0POVmFO0KiGyIVVwOq/y.BZ5z9y', '2025-06-10 16:17:06', '2025-06-10 16:17:06', 'STUDENT', NULL, NULL),
+(2371, '111575160056', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575160056', '$2y$10$6139OsoHErOn1W8UQeYYDOTz5CMrD3kfPADx5amWuBxUZygVR7P5G', '2025-06-10 16:17:06', '2025-06-10 16:17:06', 'STUDENT', NULL, NULL),
+(2372, '111575160070', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575160070', '$2y$10$THzMjzXcYDPI4scQxgPXouKjgWV7yOl8HgPnA5/F.SPb/1/BYzLU6', '2025-06-10 16:17:06', '2025-06-10 16:17:06', 'STUDENT', NULL, NULL),
+(2373, '105874160022', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '105874160022', '$2y$10$zqzU9OnW1ANISivl1qUBoOItwzgvaMqGnO3tGR1KGP5gV.skVDK9G', '2025-06-10 16:17:06', '2025-06-10 16:17:06', 'STUDENT', NULL, NULL),
+(2374, '111575160045', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575160045', '$2y$10$3ghxkQK.hb1wy2FskOjMkeoCDpqsDpZfr72YuASBYlaSatHhilcYq', '2025-06-10 16:17:06', '2025-06-10 16:17:06', 'STUDENT', NULL, NULL),
+(2375, '111575150058', NULL, NULL, NULL, NULL, 'M', '2010-03-01', 'STUDENT', NULL, '111575150058', '$2y$10$PKabl.PJmUKU1HUH9w/q3e5kRcVNZFxM0uXoXi/Bc/JNR1wUqctta', '2025-06-13 15:57:27', '2025-06-13 15:57:27', 'STUDENT', NULL, NULL),
+(2376, '111575150033', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575150033', '$2y$10$23qqRtqtiiOxKnek6V0XnOIBPXi.TFizheRxoL02kAiJY2Zi0vG7.', '2025-06-13 15:57:27', '2025-06-13 15:57:27', 'STUDENT', NULL, NULL),
+(2377, '111575150025', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575150025', '$2y$10$pGvur74VFS0TQqWm9IC6Oen9A8JWD6SUsRbLpQvL3zXZRZMS8vL3.', '2025-06-13 15:57:27', '2025-06-13 15:57:27', 'STUDENT', NULL, NULL),
+(2378, '111555150023', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111555150023', '$2y$10$bfI3R.8EJpowGTws2sRewuKm64LvbIk5JRzPHRdJY1DWg0mIPgSh6', '2025-06-13 15:57:27', '2025-06-13 15:57:27', 'STUDENT', NULL, NULL),
+(2379, '111575150015', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575150015', '$2y$10$Y78hdBVurK01F7nNwcPVkeY5w2D0g6lRele7tv.3Fmif/46q6Lkwq', '2025-06-13 15:57:27', '2025-06-13 15:57:27', 'STUDENT', NULL, NULL),
+(2380, '110524150010', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110524150010', '$2y$10$pK0yunAy2laGif2MGlKlyu20OE4/0blOk9V6ql7CAwO3vwnzx97wG', '2025-06-13 15:57:27', '2025-06-13 15:57:27', 'STUDENT', NULL, NULL),
+(2381, '111575150060', NULL, NULL, NULL, NULL, 'M', '2010-06-01', 'STUDENT', NULL, '111575150060', '$2y$10$AoAc88/S1qirNMSDksQAoOWputGOQcOwZ2HnO0tkfjdSSf/HXIxNq', '2025-06-13 15:57:27', '2025-06-13 15:57:27', 'STUDENT', NULL, NULL),
+(2382, '110524140053', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110524140053', '$2y$10$tbnxlEZvRQH/vKmDxQmWVucezd1kSTIEsaGY4YflHz7N4RQC68OFi', '2025-06-13 15:57:27', '2025-06-13 15:57:27', 'STUDENT', NULL, NULL),
+(2383, '110635150026', NULL, NULL, NULL, NULL, 'M', '2009-10-12', 'STUDENT', NULL, '110635150026', '$2y$10$VE8YT7o2Gatxcaejp9mLpe2YR7JrSc5M41W04HWmA/pdhptNPTRhe', '2025-06-13 15:57:28', '2025-06-13 15:57:28', 'STUDENT', NULL, NULL),
+(2384, '111575150063', NULL, NULL, NULL, NULL, 'M', '2010-04-03', 'STUDENT', NULL, '111575150063', '$2y$10$fZkvF4h16WvHjCyl4GZzFeSy43/KLwBuHbjYprWGKqNpQ40UnD5Fq', '2025-06-13 15:57:28', '2025-06-13 15:57:28', 'STUDENT', NULL, NULL),
+(2385, '111575150095', NULL, NULL, NULL, NULL, 'M', '2010-07-09', 'STUDENT', NULL, '111575150095', '$2y$10$JXZ2Srd74MdqwtZFHTmUnu5.Bz8lFLFSc5qyeZVFDBVk2lgPB4rbC', '2025-06-13 15:57:28', '2025-06-13 15:57:28', 'STUDENT', NULL, NULL),
+(2386, '111575150067', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575150067', '$2y$10$gooinY9AQDQeIxK6E5GFkOgktroFiim7zsX2v/yBiX5mIA1TTXHi.', '2025-06-13 15:57:28', '2025-06-13 15:57:28', 'STUDENT', NULL, NULL),
+(2387, '110512150018', NULL, NULL, NULL, NULL, 'M', '2010-09-09', 'STUDENT', NULL, '110512150018', '$2y$10$fjMlIFT/Zyl5U.QQIImAqeHdRhtMT6pz6Ivqnslrqa/DcGYnUo2am', '2025-06-13 15:57:28', '2025-06-13 15:57:28', 'STUDENT', NULL, NULL),
+(2388, '111578130025', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111578130025', '$2y$10$obVS48ONjd3gsPjwxdyKAenJYWfSXf0m1xum0qCSu7f89gp1aLAOK', '2025-06-13 15:57:28', '2025-06-13 15:57:28', 'STUDENT', NULL, NULL),
+(2389, '110512150002', NULL, NULL, NULL, NULL, 'M', '2010-08-05', 'STUDENT', NULL, '110512150002', '$2y$10$9lRAemNqruKbgi9LRmBsxemMRMWsZUJOVZnget5WS0XCllO0e/FwW', '2025-06-13 15:57:28', '2025-06-13 15:57:28', 'STUDENT', NULL, NULL),
+(2390, '111575150021', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575150021', '$2y$10$LtbtXO4imm1tUvcf01bCMON5oqzhSYf5hRbINQsYnBQhJxzNHBnCO', '2025-06-13 15:57:28', '2025-06-13 15:57:28', 'STUDENT', NULL, NULL),
+(2391, '110524150017', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110524150017', '$2y$10$dAuOXWMc3W7NuSe/BlYpC.ENpWcHrsU5fi2hs8GgRuq/o7Iv6yjWW', '2025-06-13 15:57:28', '2025-06-13 15:57:28', 'STUDENT', NULL, NULL),
+(2392, '111575150097', NULL, NULL, NULL, NULL, 'M', '2009-11-12', 'STUDENT', NULL, '111575150097', '$2y$10$5vH1Q9ZYPlqEpmSpQmtFQehInRDS3fbZNuvYjpb8KwHXpdX8qkeA2', '2025-06-13 15:57:28', '2025-06-13 15:57:28', 'STUDENT', NULL, NULL),
+(2393, '107246150027', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '107246150027', '$2y$10$kAut93JO61gHk0eV7ltTbOonZtWglhowIxm11C2BWxA8w3oUECcv.', '2025-06-13 15:57:29', '2025-06-13 15:57:29', 'STUDENT', NULL, NULL),
+(2394, '111575150098', NULL, NULL, NULL, NULL, 'M', '2010-06-08', 'STUDENT', NULL, '111575150098', '$2y$10$yZiPOyvBftNFXj5tzv3avOo5SI7VznGJ/IJKGqYXOTIDz66jMGRDy', '2025-06-13 15:57:29', '2025-06-13 15:57:29', 'STUDENT', NULL, NULL),
+(2395, '109625140248', NULL, NULL, NULL, NULL, 'M', '2008-09-05', 'STUDENT', NULL, '109625140248', '$2y$10$zTFSAkZWuBFNQvARRvO37euQXw2GOhSiAlKb7qmt0k1wAm3adq.My', '2025-06-13 15:57:29', '2025-06-13 15:57:29', 'STUDENT', NULL, NULL),
+(2396, '111555150030', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111555150030', '$2y$10$OKrTi3E3M4PUZFRVVhwnAegBHtDR9XsIgpjWAXz1BHf8ngBK19pv2', '2025-06-13 15:57:29', '2025-06-13 15:57:29', 'STUDENT', NULL, NULL),
+(2397, '111575150071', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575150071', '$2y$10$HxZ1QCK88twMv86TpW78guKjtXwAqMLCu/UiQaxowEVMLXcZhEfu2', '2025-06-13 15:57:29', '2025-06-13 15:57:29', 'STUDENT', NULL, NULL),
+(2398, '117468150265', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '117468150265', '$2y$10$SS2QL3X.zrBkCGDXHPQFS.cohUcgRVd13gXJWkjcWphtAZITVWdvG', '2025-06-13 15:57:29', '2025-06-13 15:57:29', 'STUDENT', NULL, NULL),
+(2399, '105587150014', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '105587150014', '$2y$10$MAtjTYFmDityc6NZtmanSOg/Tc/EYSboYhGwqOpUs4ztZJgQnPP1m', '2025-06-13 15:57:29', '2025-06-13 15:57:29', 'STUDENT', NULL, NULL),
+(2400, '111575150011', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575150011', '$2y$10$CNYc1KOxdpzMhE/nn0Ac4umEiwsGa1vddS87JRdLrumDKrVyqqfZe', '2025-06-13 15:57:29', '2025-06-13 15:57:29', 'STUDENT', NULL, NULL),
+(2401, '111575150088', NULL, NULL, NULL, NULL, 'F', '2010-10-10', 'STUDENT', NULL, '111575150088', '$2y$10$qjKXaNuccdAsBqSEK3R1x.Dd9gpLR8DIYz0rNU25phXnCCYSBeici', '2025-06-13 15:57:29', '2025-06-13 15:57:29', 'STUDENT', NULL, NULL),
+(2402, '111578150021', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111578150021', '$2y$10$ewEWUiTDrSo4.kMfUkz8x.DJ1Bg1KgTDoTnBtvU.TuDe.ihYJzPvi', '2025-06-13 15:57:29', '2025-06-13 15:57:29', 'STUDENT', NULL, NULL),
+(2403, '111575150042', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575150042', '$2y$10$tXs0Ne0XOiC1GOEFh4Qz7uKLwl7IgpByzQHeM9EN560x83w/aYHRC', '2025-06-13 15:57:29', '2025-06-13 15:57:29', 'STUDENT', NULL, NULL),
+(2404, '111575150043', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575150043', '$2y$10$Bxve8oU7AtVGWrt2SdVNfe/NN6FUggjogDUn6bTz3VEx6FQKja0.C', '2025-06-13 15:57:30', '2025-06-13 15:57:30', 'STUDENT', NULL, NULL),
+(2405, '111555150031', NULL, NULL, NULL, NULL, 'F', '2010-02-08', 'STUDENT', NULL, '111555150031', '$2y$10$AsBm.Xnpjw/u7UHJYg5Hu.9suodyYtiW6P1Ah.SjovxiKwTHAHWL6', '2025-06-13 15:57:30', '2025-06-13 15:57:30', 'STUDENT', NULL, NULL),
+(2406, '111578150007', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111578150007', '$2y$10$JUUJM1nLD504.bGJVQD4IO/O8UqRlEigOFxuIjNIk0ljvJtJ0N05O', '2025-06-13 15:57:30', '2025-06-13 15:57:30', 'STUDENT', NULL, NULL),
+(2407, '107624150026', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '107624150026', '$2y$10$wZsXjAnFVHn.ZeU8P1H2Ee0KTScsjm.wOEVMhAz71p2InVzjizawO', '2025-06-13 15:57:30', '2025-06-13 15:57:30', 'STUDENT', NULL, NULL),
+(2408, '111575150004', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575150004', '$2y$10$1M1k.aleRzUF0sQCrOLOMeS267Hyv.FJYbgUgwYsacqhCDV0.11vu', '2025-06-13 15:57:30', '2025-06-13 15:57:30', 'STUDENT', NULL, NULL),
+(2409, '111578150024', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111578150024', '$2y$10$yXEatNKgw4l4dVIJznC68eWYfjdXvSwVE8mAPlQDdGDbZK67SCwby', '2025-06-13 15:57:30', '2025-06-13 15:57:30', 'STUDENT', NULL, NULL),
+(2410, '111578150026', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111578150026', '$2y$10$lYc/jvDSpZMGSLqKTnSul.H13aTpD5UWc6kZ.rewG451VHUImwvfK', '2025-06-13 15:57:30', '2025-06-13 15:57:30', 'STUDENT', NULL, NULL),
+(2411, '110524150039', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110524150039', '$2y$10$lrniHIsEyWhnmq/VphZF9OF6qQLvfC8R6Y/BArlFGiP8JPEoQXyb.', '2025-06-13 15:57:30', '2025-06-13 15:57:30', 'STUDENT', NULL, NULL),
+(2412, '432002160005', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '432002160005', '$2y$10$Wo/AfrVUg/WA0m67d7iMeOROefcon.X4xs/XCfqckSpVYNIJVeDv.', '2025-06-13 15:57:30', '2025-06-13 15:57:30', 'STUDENT', NULL, NULL),
+(2413, '111575150083', NULL, NULL, NULL, NULL, 'F', '2010-06-11', 'STUDENT', NULL, '111575150083', '$2y$10$tiSDkNJvPSl82yskhohcNebAmlbYc.tWbkqQ0OIp4qmM4ial/0Dt.', '2025-06-13 15:57:30', '2025-06-13 15:57:30', 'STUDENT', NULL, NULL),
+(2414, '110635140105', NULL, NULL, NULL, NULL, 'F', '2009-06-06', 'STUDENT', NULL, '110635140105', '$2y$10$ikdKZywqR.Y7dW285kTrDu9BAzKHHCcISt0lUWlshVvqtraL8x6Xy', '2025-06-13 15:57:30', '2025-06-13 15:57:30', 'STUDENT', NULL, NULL),
+(2415, '117460160141', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '117460160141', '$2y$10$JpOJJeSNaGcQ..Dqf.tQzeV5yDhccgLz6DjuEhSgFfLHcX/X8AHmW', '2025-06-13 15:57:31', '2025-06-13 15:57:31', 'STUDENT', NULL, NULL),
+(2416, '110524170002', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110524170002', '$2y$10$Pm3vXpcSfAz.Nl81TqXvhOf/XuCNfOlp/.N89FCz0wXWtZ2VIKoDW', '2025-06-14 11:42:22', '2025-06-14 11:42:22', 'STUDENT', NULL, NULL),
+(2417, '111575170023', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111575170023', '$2y$10$ot9jeD351Pot8e5hoKc0E.qDKcTccbshAzBnR7WW3Nz52JYQ58PWC', '2025-06-14 11:42:23', '2025-06-14 11:42:23', 'STUDENT', NULL, NULL),
+(2418, '110524160006', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110524160006', '$2y$10$ys1wwV44gSZYXZo6Y4iDZuQiIOqZxxfpDl6nk.FLURyW8d470eCMy', '2025-06-14 11:42:23', '2025-06-14 11:42:23', 'STUDENT', NULL, NULL),
+(2419, '110524170006', NULL, NULL, NULL, NULL, 'M', '2012-10-05', 'STUDENT', NULL, '110524170006', '$2y$10$Nndvm/9ZvAs4Kn39wgHKdOSOJhE5KR2jgrRuHuPTmE/XAtlMBS68u', '2025-06-14 11:42:23', '2025-06-14 11:42:23', 'STUDENT', NULL, NULL),
+(2420, '111575170040', NULL, NULL, NULL, NULL, 'M', '2012-10-05', 'STUDENT', NULL, '111575170040', '$2y$10$HLrauJ9ehWjPVFe5/g3ujOTY9mXrALzOq4K91zoyfwBbD0nMWmP9u', '2025-06-14 11:42:23', '2025-06-14 11:42:23', 'STUDENT', NULL, NULL),
+(2421, '110524170008', NULL, NULL, NULL, NULL, 'M', '2011-12-10', 'STUDENT', NULL, '110524170008', '$2y$10$O/mqgzLzYLTloCxvMY2fdei3.65hCuqbTOzfwRkA1.pZGssyGASTC', '2025-06-14 11:42:23', '2025-06-14 11:42:23', 'STUDENT', NULL, NULL),
+(2422, '111556170023', NULL, NULL, NULL, NULL, 'M', '2011-11-12', 'STUDENT', NULL, '111556170023', '$2y$10$lIwNqFJDRvIIIV2PN8RlteTvwgG9ib4jfoHDtSNJVSz1UVVlwxW1q', '2025-06-14 11:42:23', '2025-06-14 11:42:23', 'STUDENT', NULL, NULL);
+INSERT INTO `user_tbl` (`UserId`, `Identifier`, `UserLName`, `UserFName`, `UserMName`, `UserEName`, `Gender`, `BirthDate`, `Role`, `email`, `username`, `password`, `created_at`, `updated_at`, `access_level`, `user_status`, `user_account_access`) VALUES
+(2423, '111555170022', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '111555170022', '$2y$10$5YEfCmwO9EsuiqXpjKZ/u.zMYUoY62iZMeHbVr.Mhxaxp9leZ6os.', '2025-06-14 11:42:23', '2025-06-14 11:42:23', 'STUDENT', NULL, NULL),
+(2424, '111568170004', NULL, NULL, NULL, NULL, 'M', '2011-12-09', 'STUDENT', NULL, '111568170004', '$2y$10$XgThcY5/ifrsC1.RLAPDyO5DmPLfwImYr.PCmFGHmnlhmmc2o1a36', '2025-06-14 11:42:23', '2025-06-14 11:42:23', 'STUDENT', NULL, NULL),
+(2425, '111555170009', NULL, NULL, NULL, NULL, 'M', '2011-11-07', 'STUDENT', NULL, '111555170009', '$2y$10$jC80IlZxC.nDvG8.AlkvjudLKrD4kQGYZ03gJTST0CH3AX7iVugCC', '2025-06-14 11:42:23', '2025-06-14 11:42:23', 'STUDENT', NULL, NULL),
+(2426, '110524170013', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110524170013', '$2y$10$UTaP45SV6sHWbcBizdTtXOmLYN/Jg0u5f7e6BPuFQ0DhUyJMqOQne', '2025-06-14 11:42:24', '2025-06-14 11:42:24', 'STUDENT', NULL, NULL),
+(2427, '118350170025', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '118350170025', '$2y$10$Agp5kh45vJX4kLPcOb6Npu1n./4t2/I0CS.biZ.pm0FGP8Eu2YNUe', '2025-06-14 11:42:24', '2025-06-14 11:42:24', 'STUDENT', NULL, NULL),
+(2428, '110576150012', NULL, NULL, NULL, NULL, 'M', '2010-10-02', 'STUDENT', NULL, '110576150012', '$2y$10$d1MQms2nrQKf8AvHZQ9TU.YRPLsGmB1f.j6r/dM0Wr7zmam7xhN/q', '2025-06-14 11:42:24', '2025-06-14 11:42:24', 'STUDENT', NULL, NULL),
+(2429, '110512170006', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110512170006', '$2y$10$d/SaEf/cKgnKBe47yPoYKuSSGpRfLLCRy.GSjeejBMES5sMFyGuO2', '2025-06-14 11:42:24', '2025-06-14 11:42:24', 'STUDENT', NULL, NULL),
+(2430, '110512170007', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110512170007', '$2y$10$fov7koDfDMBGO2RxuCJXeePF9Fj8EKvADmCjrdUCDn0hSthJfIyzm', '2025-06-14 11:42:24', '2025-06-14 11:42:24', 'STUDENT', NULL, NULL),
+(2431, '110524170014', NULL, NULL, NULL, NULL, 'M', '1970-01-01', 'STUDENT', NULL, '110524170014', '$2y$10$p4hAaBdVoIkPMadbdf6cNerllzoYMiBG.ASLE.sdfuRTc/LxqUK3e', '2025-06-14 11:42:24', '2025-06-14 11:42:24', 'STUDENT', NULL, NULL),
+(2432, '111570170273', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111570170273', '$2y$10$sXKa9YlqE35wvBWAS6a6NuW3AebJKI8A9Y5GNZ5xqU3Oej/fyoTYa', '2025-06-14 11:42:24', '2025-06-14 11:42:24', 'STUDENT', NULL, NULL),
+(2433, '110512170010', NULL, NULL, NULL, NULL, 'F', '2012-12-05', 'STUDENT', NULL, '110512170010', '$2y$10$E/6Owlg6mwpaiN3fNAptG.9Ji6F0OxY1vN/TEOqg7b/4pHpOoWBTa', '2025-06-14 11:42:24', '2025-06-14 11:42:24', 'STUDENT', NULL, NULL),
+(2434, '110524170018', NULL, NULL, NULL, NULL, 'F', '2012-12-03', 'STUDENT', NULL, '110524170018', '$2y$10$.TJSNVdJhlSyl5.7YkBwnOONimMhDZeOx5EMKGcKy8eHQY6GpxQd2', '2025-06-14 11:42:24', '2025-06-14 11:42:24', 'STUDENT', NULL, NULL),
+(2435, '111575170028', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575170028', '$2y$10$7JvMeQGcH.C7JgDZS72qmeSMEd/h6zLuGC6vu6iFG0xg6/8X/9mTG', '2025-06-14 11:42:25', '2025-06-14 11:42:25', 'STUDENT', NULL, NULL),
+(2436, '111575170060', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575170060', '$2y$10$07cqcw67CGmLtoVN2V9MZuzFsFVeVF18EShSVBkhiAwPRxQMS9NQa', '2025-06-14 11:42:25', '2025-06-14 11:42:25', 'STUDENT', NULL, NULL),
+(2437, '111568160011', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111568160011', '$2y$10$qv7GBQaw.daHmsiHBn5h4.iGtl0onBUuLryxyS7xJlL5YfKZympJu', '2025-06-14 11:42:25', '2025-06-14 11:42:25', 'STUDENT', NULL, NULL),
+(2438, '110516170027', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '110516170027', '$2y$10$gMNAr2aNaw2SVeugYXAD/O1GV/PRalLika3EFGMFb6/zd/MOoDA/K', '2025-06-14 11:42:25', '2025-06-14 11:42:25', 'STUDENT', NULL, NULL),
+(2439, '110524160035', NULL, NULL, NULL, NULL, 'F', '2011-05-09', 'STUDENT', NULL, '110524160035', '$2y$10$QfmJj9EINPzGtfMBAuyMTOGo8w0/O6K33nDnBovyFDt7LI6KXIDyO', '2025-06-14 11:42:25', '2025-06-14 11:42:25', 'STUDENT', NULL, NULL),
+(2440, '111575170022', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575170022', '$2y$10$2UzE8hKKq6jYlWleF5kpJeus2biBc6XN81P0L4CLf.wBv6xgNzOUO', '2025-06-14 11:42:25', '2025-06-14 11:42:25', 'STUDENT', NULL, NULL),
+(2441, '111575170074', NULL, NULL, NULL, NULL, 'F', '2012-08-02', 'STUDENT', NULL, '111575170074', '$2y$10$1jldNTpwnQEchMzpH1F78.KHTi7OpvkPUqcx3o5Uq5ph3wPTaz/Gy', '2025-06-14 11:42:25', '2025-06-14 11:42:25', 'STUDENT', NULL, NULL),
+(2442, '111575170036', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111575170036', '$2y$10$SN8GJexQ1zMI1vfrdxGwdeCQE0ZiFcr58/O8dqSykRE6tMKpDTZYS', '2025-06-14 11:42:25', '2025-06-14 11:42:25', 'STUDENT', NULL, NULL),
+(2443, '111575170056', NULL, NULL, NULL, NULL, 'F', '2012-05-01', 'STUDENT', NULL, '111575170056', '$2y$10$0zew0ybfGIQTKBKyYRPqJu1ecRuU7adVLNYlZKE1btommLhbeg1Qi', '2025-06-14 11:42:25', '2025-06-14 11:42:25', 'STUDENT', NULL, NULL),
+(2444, '111564160008', NULL, NULL, NULL, NULL, 'F', '1970-01-01', 'STUDENT', NULL, '111564160008', '$2y$10$ro5MfQT64noMALMbUZt77.FjWzPNTvuUTYGZu9yOyktn61Fp2XZs6', '2025-06-14 11:42:25', '2025-06-14 11:42:25', 'STUDENT', NULL, NULL);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `anc_ass_list_tbl`
+--
+ALTER TABLE `anc_ass_list_tbl`
+  ADD PRIMARY KEY (`anc_ass_list_id`);
+
+--
+-- Indexes for table `anc_ass_tbl`
+--
+ALTER TABLE `anc_ass_tbl`
+  ADD PRIMARY KEY (`anc_ass_id`);
+
+--
+-- Indexes for table `announcement_tbl`
+--
+ALTER TABLE `announcement_tbl`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `attendance_tbl`
+--
+ALTER TABLE `attendance_tbl`
+  ADD PRIMARY KEY (`attendance_id`);
+
+--
+-- Indexes for table `choices_tracer_tbl`
+--
+ALTER TABLE `choices_tracer_tbl`
+  ADD PRIMARY KEY (`choices_id`);
+
+--
+-- Indexes for table `control_tbl`
+--
+ALTER TABLE `control_tbl`
+  ADD PRIMARY KEY (`c_id`);
+
+--
+-- Indexes for table `dble_holidays_tbl`
+--
+ALTER TABLE `dble_holidays_tbl`
+  ADD PRIMARY KEY (`dble_id`);
+
+--
+-- Indexes for table `export_record_tbl`
+--
+ALTER TABLE `export_record_tbl`
+  ADD PRIMARY KEY (`er_id`);
+
+--
+-- Indexes for table `grade_tbl`
+--
+ALTER TABLE `grade_tbl`
+  ADD PRIMARY KEY (`grade_id`);
+
+--
+-- Indexes for table `health_nutrition_tbl`
+--
+ALTER TABLE `health_nutrition_tbl`
+  ADD PRIMARY KEY (`health_nutrition_id`);
+
+--
+-- Indexes for table `holidays_tbl`
+--
+ALTER TABLE `holidays_tbl`
+  ADD PRIMARY KEY (`holiday_id`);
+
+--
+-- Indexes for table `learning_material_tbl`
+--
+ALTER TABLE `learning_material_tbl`
+  ADD PRIMARY KEY (`learning_material_id`);
+
+--
+-- Indexes for table `plantilla_pos_list_tbl`
+--
+ALTER TABLE `plantilla_pos_list_tbl`
+  ADD PRIMARY KEY (`ppl_id`);
+
+--
+-- Indexes for table `plantilla_pos_tbl`
+--
+ALTER TABLE `plantilla_pos_tbl`
+  ADD PRIMARY KEY (`pp_id`);
+
+--
+-- Indexes for table `prom_achievement_tbl`
+--
+ALTER TABLE `prom_achievement_tbl`
+  ADD PRIMARY KEY (`pa_id`);
+
+--
+-- Indexes for table `quest_tracer_tbl`
+--
+ALTER TABLE `quest_tracer_tbl`
+  ADD PRIMARY KEY (`question_id`);
+
+--
+-- Indexes for table `responses`
+--
+ALTER TABLE `responses`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `response_log_tbl`
+--
+ALTER TABLE `response_log_tbl`
+  ADD PRIMARY KEY (`response_log_id`);
+
+--
+-- Indexes for table `school_curriculum_tbl`
+--
+ALTER TABLE `school_curriculum_tbl`
+  ADD PRIMARY KEY (`curriculum_id`);
+
+--
+-- Indexes for table `school_info_tbl`
+--
+ALTER TABLE `school_info_tbl`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `school_per_tbl`
+--
+ALTER TABLE `school_per_tbl`
+  ADD PRIMARY KEY (`PersonnelId`),
+  ADD UNIQUE KEY `EmpNo` (`EmpNo`),
+  ADD UNIQUE KEY `EmpNo_2` (`EmpNo`),
+  ADD UNIQUE KEY `EmpNo_3` (`EmpNo`);
+
+--
+-- Indexes for table `school_year_tbl`
+--
+ALTER TABLE `school_year_tbl`
+  ADD PRIMARY KEY (`sy_id`);
+
+--
+-- Indexes for table `section_tbl`
+--
+ALTER TABLE `section_tbl`
+  ADD PRIMARY KEY (`SectionId`);
+
+--
+-- Indexes for table `strand_track_tbl`
+--
+ALTER TABLE `strand_track_tbl`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `student_grade_jhs_tbl`
+--
+ALTER TABLE `student_grade_jhs_tbl`
+  ADD PRIMARY KEY (`sgj_id`);
+
+--
+-- Indexes for table `student_grade_shs_tbl`
+--
+ALTER TABLE `student_grade_shs_tbl`
+  ADD PRIMARY KEY (`sg_id`);
+
+--
+-- Indexes for table `student_tbl`
+--
+ALTER TABLE `student_tbl`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `subjects_tbl`
+--
+ALTER TABLE `subjects_tbl`
+  ADD PRIMARY KEY (`subject_id`);
+
+--
+-- Indexes for table `subject_taught_tbl`
+--
+ALTER TABLE `subject_taught_tbl`
+  ADD PRIMARY KEY (`stac_id`);
+
+--
+-- Indexes for table `transmutation_tbl`
+--
+ALTER TABLE `transmutation_tbl`
+  ADD PRIMARY KEY (`transmutation_id`);
+
+--
+-- Indexes for table `user_tbl`
+--
+ALTER TABLE `user_tbl`
+  ADD PRIMARY KEY (`UserId`),
+  ADD UNIQUE KEY `Identifier` (`Identifier`),
+  ADD UNIQUE KEY `email` (`email`),
+  ADD UNIQUE KEY `username` (`username`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `anc_ass_list_tbl`
+--
+ALTER TABLE `anc_ass_list_tbl`
+  MODIFY `anc_ass_list_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
+
+--
+-- AUTO_INCREMENT for table `announcement_tbl`
+--
+ALTER TABLE `announcement_tbl`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
+-- AUTO_INCREMENT for table `attendance_tbl`
+--
+ALTER TABLE `attendance_tbl`
+  MODIFY `attendance_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `choices_tracer_tbl`
+--
+ALTER TABLE `choices_tracer_tbl`
+  MODIFY `choices_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+
+--
+-- AUTO_INCREMENT for table `control_tbl`
+--
+ALTER TABLE `control_tbl`
+  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `dble_holidays_tbl`
+--
+ALTER TABLE `dble_holidays_tbl`
+  MODIFY `dble_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `export_record_tbl`
+--
+ALTER TABLE `export_record_tbl`
+  MODIFY `er_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `grade_tbl`
+--
+ALTER TABLE `grade_tbl`
+  MODIFY `grade_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `health_nutrition_tbl`
+--
+ALTER TABLE `health_nutrition_tbl`
+  MODIFY `health_nutrition_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `holidays_tbl`
+--
+ALTER TABLE `holidays_tbl`
+  MODIFY `holiday_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
+
+--
+-- AUTO_INCREMENT for table `learning_material_tbl`
+--
+ALTER TABLE `learning_material_tbl`
+  MODIFY `learning_material_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+
+--
+-- AUTO_INCREMENT for table `plantilla_pos_list_tbl`
+--
+ALTER TABLE `plantilla_pos_list_tbl`
+  MODIFY `ppl_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `plantilla_pos_tbl`
+--
+ALTER TABLE `plantilla_pos_tbl`
+  MODIFY `pp_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+
+--
+-- AUTO_INCREMENT for table `prom_achievement_tbl`
+--
+ALTER TABLE `prom_achievement_tbl`
+  MODIFY `pa_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=186;
+
+--
+-- AUTO_INCREMENT for table `quest_tracer_tbl`
+--
+ALTER TABLE `quest_tracer_tbl`
+  MODIFY `question_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+
+--
+-- AUTO_INCREMENT for table `responses`
+--
+ALTER TABLE `responses`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=132;
+
+--
+-- AUTO_INCREMENT for table `response_log_tbl`
+--
+ALTER TABLE `response_log_tbl`
+  MODIFY `response_log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `school_curriculum_tbl`
+--
+ALTER TABLE `school_curriculum_tbl`
+  MODIFY `curriculum_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `school_info_tbl`
+--
+ALTER TABLE `school_info_tbl`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `school_per_tbl`
+--
+ALTER TABLE `school_per_tbl`
+  MODIFY `PersonnelId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=189;
+
+--
+-- AUTO_INCREMENT for table `school_year_tbl`
+--
+ALTER TABLE `school_year_tbl`
+  MODIFY `sy_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT for table `section_tbl`
+--
+ALTER TABLE `section_tbl`
+  MODIFY `SectionId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `strand_track_tbl`
+--
+ALTER TABLE `strand_track_tbl`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `student_grade_jhs_tbl`
+--
+ALTER TABLE `student_grade_jhs_tbl`
+  MODIFY `sgj_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=841;
+
+--
+-- AUTO_INCREMENT for table `student_grade_shs_tbl`
+--
+ALTER TABLE `student_grade_shs_tbl`
+  MODIFY `sg_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `student_tbl`
+--
+ALTER TABLE `student_tbl`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=186;
+
+--
+-- AUTO_INCREMENT for table `subjects_tbl`
+--
+ALTER TABLE `subjects_tbl`
+  MODIFY `subject_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=688;
+
+--
+-- AUTO_INCREMENT for table `subject_taught_tbl`
+--
+ALTER TABLE `subject_taught_tbl`
+  MODIFY `stac_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+
+--
+-- AUTO_INCREMENT for table `transmutation_tbl`
+--
+ALTER TABLE `transmutation_tbl`
+  MODIFY `transmutation_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+
+--
+-- AUTO_INCREMENT for table `user_tbl`
+--
+ALTER TABLE `user_tbl`
+  MODIFY `UserId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2445;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

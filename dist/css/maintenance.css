@@ -1,0 +1,307 @@
+/* Global Reset & Enhancements */
+* {
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar for Internet Explorer and Edge */
+    box-sizing: border-box;
+}
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.main-sidebar::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar */
+}
+/* Smooth Scroll Effect */
+html {
+    scroll-behavior: smooth !important;
+}
+/* Content Wrapper */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    overflow-y: auto !;
+}
+/* Content Header */
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+}
+/* Card Hader */
+.card-header {
+    justify-content: space-between;
+    padding: 10px;
+    background: linear-gradient(to right, #281E5D, #1565C0);
+    color: white;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Main Sidebar */
+.main-sidebar {
+    max-height: 100vh;
+    background: linear-gradient(to right, #1565C0, #281E5D);
+    color: #ffffff;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2) !important;
+}
+/* Brand Link */
+.brand-link {
+    display: flex;
+    align-items: center;
+    padding: 11px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+.brand-link:hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    color: #ffffff;
+}
+.brand-image {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border: 2px solid #ffffff;
+}
+.brand-text {
+    font-weight: 500;
+    font-size: 1rem;
+}
+/* Icon Styling */
+.user-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #ffffff;
+}
+/* User Details Container */
+.user-details {
+    text-align: left;
+}
+/* Identifier Styling */
+.Identifier {
+    font-weight: lighter;
+    margin-bottom: 0px !important;
+}
+/* Access Level Styling */
+.access-level {
+    margin-top: 0px !important;
+    font-size: 0.7rem;
+    font-style: italic;
+}
+/* Sidebar Links */
+.brand-link-card {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.brand-link-card:hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    color: #ffffff;
+}
+.brand-link:hover {
+    background-color: #ffffff52;
+    color: #ffffff;
+}
+.brand-link-card i {
+    margin-right: 10px;
+    font-size: 1rem;
+}
+/* Submenus (Access Levels) */
+.brand-text {
+    display: block;
+    margin: 2px 5px;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.brand-text:hover {
+    color: #d1d1e0;
+}
+.brand-text i {
+    margin-right: 8px;
+    font-size: 1rem;
+}
+/* Scrollbar Customization */
+.main-sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+.content_wrapper::-webkit-scrollbar {
+    display: none;
+}
+.main-sidebar::-webkit-scrollbar-thumb {
+    background: #605ca8;
+    border-radius: 3px;
+}
+.main-sidebar::-webkit-scrollbar-thumb:hover {
+    background: #7b74cc;
+}
+/* Footer Links */
+.main-sidebar a:last-child {
+    margin-bottom: 20px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-sidebar {
+        width: 200px;
+    }
+    .brand-text,
+    .brand-link-card {
+        font-size: 0.85rem;
+    }
+    .brand-image {
+        width: 35px;
+        height: 35px;
+    }
+}
+/* Nav Link Style */
+.nav-link.brand-text {
+    color: #ffffff;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-link.brand-text:hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    color: #ffffff;
+}
+.brand-link-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 20px;
+}
+.brand-link-item:hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    color: #ffffff;
+}
+/* Nested Nav Items */
+.nav.flex-column.pl-3 {
+    padding-left: 0px !important;
+}
+.brand-link-item {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    padding: 8px;
+    margin-bottom: 0px !important;
+    margin-right: 0px !important;
+}
+/* Icon Styling */
+.brand-link-item i {
+    margin-right: 20px;
+    color: #ffffff;
+}
+/* Sidebar Logo Container */
+.sidebar-logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* Shadow Animation */
+@keyframes shadowColorChange {
+    0% {
+        box-shadow: 0 4px 10px rgba(28, 255, 255, 0.5);
+    }
+    25% {
+        box-shadow: 0 4px 10px rgba(255, 251, 29, 0.5);
+    }
+    50% {
+        box-shadow: 0 4px 10px rgba(44, 241, 255, 0.5);
+    }
+    75% {
+        box-shadow: 0 4px 10px rgba(219, 141, 39, 0.5);
+    }
+    100% {
+        box-shadow: 0 4px 10px rgba(28, 255, 255, 0.5);
+    }
+}
+.school-logo {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    animation: shadowColorChange 10s infinite;
+}
+/* Button Small Style */
+.btn-sm {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    cursor: pointer;
+}
+/* Icon Style for Button */
+.btn-sm i {
+    color: #3728a7;
+    font-size: 1rem;
+}
+/* Font Awesome Icons */
+.fas {
+    font-size: 0.9rem;
+    margin: 2px;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0px;
+}
+.fas:hover {
+    color: #e84c4c;
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+    background: none !important;
+    border: none !important;
+}
+/* Footer Styling */
+.main-footer {
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: left;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: 0.8rem;
+}
+/* Right Content in Footer */
+.main-footer .float-right {
+    text-align: right;
+    margin-top: 0px;
+}
+/* Footer Mobile Adjustments */
+@media (max-width: 768px) {
+    .main-footer {
+        font-size: 0.9rem;
+    }
+}

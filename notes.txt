@@ -1,0 +1,23 @@
+MAIN ADMIN
+username: admin
+password: admin
+
+SCHOOL ADMINISTRATOR (SA)
+username: pvpmnhs_sa
+password: pvpmnhs_sa
+
+SCHOOL ICT COORDINATOR (SIC)
+username: pvpmnhs_sic
+password: pvpmnhs_sic
+
+LEARNING MATERIAL PERSONNEL (LMP)
+username: pvpmnhs_lmp
+password: pvpmnhs_lmp
+
+HEALTH AND NUTRITION PERSONNEL (HNP)
+username: pvpmnhs_hnp
+password: pvpmnhs_hnp
+
+PVPMNHS EMAIL:
+email: pvpmnhs1998@gmail.com
+password: 19Pvpmnhs_98
